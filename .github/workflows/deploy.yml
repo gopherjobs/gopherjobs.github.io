@@ -1,0 +1,43 @@
+name: Job Scan Pipeline
+
+on:
+  workflow_dispatch:
+
+jobs:
+  job-scan:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Initialize
+        run: echo 'job scanning is running'
+
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install Python dependencies
+        run: |
+          pip install --upgrade pip
+          pip install \
+            requests \
+            jobspy \
+            v2ray2proxy \
+            jobsparser \
+            python-jobspy \
+            pandas \
+            "requests[socks]" \
+            PySocks
+
+      - name: Execute job script
+        run: bash scripts/job.sh
+
+      - name: Publish job results
+        uses: actions/upload-artifact@v4
+        with:
+          name: job_results
+          path: job_results
+          retention-days: 14
