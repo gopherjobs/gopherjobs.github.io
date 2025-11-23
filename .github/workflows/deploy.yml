@@ -55,6 +55,7 @@ jobs:
           fi
           
           echo -e "bin/\nstatic/\njob_results/" > .gitignore
+          echo '<!DOCTYPE html><html><head><meta http-equiv="refresh" content="0; url=list1.html"></head><body></body></html>' > index.html
           
           cp -r static/html/* .
           
