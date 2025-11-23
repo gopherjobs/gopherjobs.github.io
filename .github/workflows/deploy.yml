@@ -30,6 +30,39 @@ jobs:
       - name: Execute job script
         run: bash scripts/job.sh
 
+      - name: Set up Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: 1.25.1
+
+      - name: Build Go project
+        run: go build -o ./bin/out ./cmd/.
+
+      - name: Run Go project to generate HTML
+        run: ./bin/out
+
+
+      - name: Commit HTML to view branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          # Check if branch exists
+          if git show-ref --quiet refs/heads/view; then
+            git checkout view
+          else
+            git checkout --orphan view
+            git rm -rf .
+          fi
+
+          # Copy generated HTML
+          cp -r static/html/* .
+
+          git add .
+          git commit -m "Update static HTML from job scan"
+          git push origin view --force
+
+
       - name: list scripts
         run: ls scripts/job.sh
 
