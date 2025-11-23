@@ -6,26 +6,6 @@
 countries=(
   "Berlin"
   "Germany"
-  "Abu Dhabi"
-  "United Arab Emirates"
-  "Doha"
-  "Qatar"
-  "Muscat"
-  "Oman"
-  "Kuwait City"
-  "Kuwait"
-  "Manama"
-  "Bahrain"
-  "Amman"
-  "Jordan"
-  "Damascus"
-  "Syria"
-  "Beirut"
-  "Lebanon"
-  "Dushanbe"
-  "Tajikistan"
-  "Moscow"
-  "Russia"
 )
 
 # Proxy list
