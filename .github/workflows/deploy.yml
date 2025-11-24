@@ -38,7 +38,7 @@ jobs:
           mkdir -p job_results
           
           echo ">>> Running jobsparser for Berlin"
-          
+          echo "$PROXY_ADDRESS"
           jobsparser \
             --search-term '"Golang Developer" OR "Go Developer" OR "Backend Golang Developer" OR "Backend Engineer Go" OR "Software Engineer Go"' \
             --location "Berlin" \
