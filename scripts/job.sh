@@ -8,9 +8,17 @@ countries=(
   "Germany"
 )
 
+# Validate proxy input
+if [ -z "${1:-}" ]; then
+  echo "Proxy not provided. Exiting."
+  exit 1
+fi
+
+INPUT_PROXY="$1"
+
 # Proxy list
 proxies=(
-  localhost
+  "$INPUT_PROXY"
 )
 
 # Build proxies args
