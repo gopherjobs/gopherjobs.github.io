@@ -44,6 +44,6 @@ for country in "${countries[@]}"; do
     --hours-old 72 \
     --max-retries 0 \
     --output-dir "job_results" \
-    --proxies "$1"
+    --proxies "http://mili:2rnUhgD2jO2uQAWm0aW1R8YQ@192.227.165.177:4410"
 #    "${proxy_args[@]}"
 done
