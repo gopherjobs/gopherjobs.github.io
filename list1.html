@@ -1,0 +1,475 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Gopher Jobs</title>
+    <style>
+        body {
+            font-family: Inter, Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f7fafc;
+            color: #1a202c;
+            font-size: 16px;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 24px auto;
+            padding: 16px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 6px 18px rgba(10,20,30,0.06);
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 28px;
+            font-weight: 700;
+        }
+
+        .meta {
+            color: #6b7280;
+            font-size: 14px;
+        }
+
+        .jobs { margin-top: 20px; }
+
+        .job {
+            padding: 14px;
+            border-bottom: 1px solid #eef2f7;
+        }
+
+        .job a {
+            display: flex;
+            justify-content: space-between;
+            gap: 12px;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .job .title {
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        .job .metaSmall {
+            color: #64748b;
+            font-size: 14px;
+        }
+
+        .additional {
+            margin-top: 4px;
+            font-size: 13px;
+            color: #4b5563;
+        }
+
+        .badges {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            align-items: flex-end;
+        }
+
+        .badge {
+            background: #eef2ff;
+            color: #1e40af;
+            padding: 4px 8px;
+            border-radius: 999px;
+            font-size: 12px;
+        }
+
+         
+        nav.pagination {
+            display: flex;
+            gap: 6px;
+            justify-content: center;
+            margin-top: 22px;
+            flex-wrap: wrap;
+        }
+
+        nav.pagination a,
+        nav.pagination span {
+            padding: 8px 12px;
+            background: #e6eef8;
+            border-radius: 6px;
+            text-decoration: none;
+            color: #0f172a;
+            font-size: 14px;
+        }
+
+        nav.pagination .current {
+            background: #0ea5a6;
+            color: #fff;
+        }
+
+        nav.pagination .dots {
+            background: transparent;
+            color: #94a3b8;
+        }
+
+        footer {
+            margin-top: 20px;
+            text-align: center;
+            color: #94a3b8;
+            font-size: 14px;
+        }
+
+        @media (max-width: 600px) {
+            h1 { font-size: 22px; }
+            .job .title { font-size: 16px; }
+            .metaSmall, .additional { font-size: 13px; }
+        }
+    </style>
+</head>
+
+<body>
+<div class="container">
+    <header>
+        <div>
+            <h1>Gopher Jobs</h1>
+            <div class="meta">Updated: <span id="createdAt">1764354370</span></div>
+        </div>
+        <div class="meta">Page 1 / 3</div>
+    </header>
+
+    <section class="jobs">
+        
+        <div class="job">
+            <a href="jobs/li-4339142053.html">
+                <div>
+                    <div class="title">Senior Software Engineer Go - Isovalent (Europe Remote)</div>
+                    <div class="metaSmall">Cisco • Berlin, Berlin, Germany • fulltime</div>
+                    <div class="additional">mid-senior level • Software Development</div>
+                </div>
+                <div class="badges">
+                    <div class="badge">Remote</div>
+                    
+                </div>
+            </a>
+        </div>
+        
+        <div class="job">
+            <a href="jobs/li-4339142053.html">
+                <div>
+                    <div class="title">Senior Software Engineer Go - Isovalent (Europe Remote)</div>
+                    <div class="metaSmall">Cisco • Berlin, Berlin, Germany • fulltime</div>
+                    <div class="additional">mid-senior level • Software Development</div>
+                </div>
+                <div class="badges">
+                    <div class="badge">Remote</div>
+                    
+                </div>
+            </a>
+        </div>
+        
+        <div class="job">
+            <a href="jobs/li-4347773296.html">
+                <div>
+                    <div class="title">Senior Software Engineer</div>
+                    <div class="metaSmall">WeDo •  • fulltime</div>
+                    <div class="additional">mid-senior level • Technology, Information and Media</div>
+                </div>
+                <div class="badges">
+                    <div class="badge">Remote</div>
+                    
+                </div>
+            </a>
+        </div>
+        
+        <div class="job">
+            <a href="jobs/li-4347584429.html">
+                <div>
+                    <div class="title">Staff Software Engineer</div>
+                    <div class="metaSmall">WeDo •  • fulltime</div>
+                    <div class="additional">mid-senior level • Technology, Information and Media</div>
+                </div>
+                <div class="badges">
+                    <div class="badge">Remote</div>
+                    
+                </div>
+            </a>
+        </div>
+        
+        <div class="job">
+            <a href="jobs/li-4347674583.html">
+                <div>
+                    <div class="title">Software Engineer</div>
+                    <div class="metaSmall">KWAN • Braga, Portugal • fulltime</div>
+                    <div class="additional">mid-senior level • IT Services and IT Consulting</div>
+                </div>
+                <div class="badges">
+                    
+                    <div class="badge">Relocation</div>
+                </div>
+            </a>
+        </div>
+        
+        <div class="job">
+            <a href="jobs/li-4339801157.html">
+                <div>
+                    <div class="title">Staff Backend Engineer - Go</div>
+                    <div class="metaSmall">Back Market • Barcelona, Catalonia, Spain • fulltime</div>
+                    <div class="additional">mid-senior level • Internet Marketplace Platforms</div>
+                </div>
+                <div class="badges">
+                    <div class="badge">Remote</div>
+                    
+                </div>
+            </a>
+        </div>
+        
+        <div class="job">
+            <a href="jobs/li-4339399913.html">
+                <div>
+                    <div class="title">Golang Developer</div>
+                    <div class="metaSmall">SOLID.Jobs • Warsaw, Mazowieckie, Poland • fulltime</div>
+                    <div class="additional">associate • Technology, Information and Internet</div>
+                </div>
+                <div class="badges">
+                    <div class="badge">Remote</div>
+                    
+                </div>
+            </a>
+        </div>
+        
+        <div class="job">
+            <a href="jobs/li-4339399913.html">
+                <div>
+                    <div class="title">Golang Developer</div>
+                    <div class="metaSmall">SOLID.Jobs • Warsaw, Mazowieckie, Poland • fulltime</div>
+                    <div class="additional">associate • Technology, Information and Internet</div>
+                </div>
+                <div class="badges">
+                    <div class="badge">Remote</div>
+                    
+                </div>
+            </a>
+        </div>
+        
+        <div class="job">
+            <a href="jobs/li-4347912294.html">
+                <div>
+                    <div class="title">Senior Software Engineer (Go)</div>
+                    <div class="metaSmall">CloudTalk • Prague, Prague, Czech Republic • fulltime</div>
+                    <div class="additional">mid-senior level • Software Development</div>
+                </div>
+                <div class="badges">
+                    <div class="badge">Remote</div>
+                    
+                </div>
+            </a>
+        </div>
+        
+        <div class="job">
+            <a href="jobs/li-4305626999.html">
+                <div>
+                    <div class="title">Sr Golang Developer/Remote</div>
+                    <div class="metaSmall">Motion Recruitment • Toronto, Ontario, Canada • fulltime</div>
+                    <div class="additional">mid-senior level • Staffing and Recruiting</div>
+                </div>
+                <div class="badges">
+                    <div class="badge">Remote</div>
+                    
+                </div>
+            </a>
+        </div>
+        
+        <div class="job">
+            <a href="jobs/li-4347710472.html">
+                <div>
+                    <div class="title">Golang Developer</div>
+                    <div class="metaSmall">Ubisoft • Montreal, Quebec, Canada • fulltime</div>
+                    <div class="additional">associate • Entertainment</div>
+                </div>
+                <div class="badges">
+                    
+                    <div class="badge">Relocation</div>
+                </div>
+            </a>
+        </div>
+        
+        <div class="job">
+            <a href="jobs/li-4230192977.html">
+                <div>
+                    <div class="title">Golang Developer - Remote - Latin America</div>
+                    <div class="metaSmall">FullStack • Mar del Plata, Buenos Aires Province, Argentina • fulltime</div>
+                    <div class="additional">mid-senior level • IT Services and IT Consulting, Computer and Network Security, and Information Services</div>
+                </div>
+                <div class="badges">
+                    <div class="badge">Remote</div>
+                    
+                </div>
+            </a>
+        </div>
+        
+        <div class="job">
+            <a href="jobs/li-4339193191.html">
+                <div>
+                    <div class="title">Software Engineer - Python/Golang - Kubernetes</div>
+                    <div class="metaSmall">Canonical • São Paulo, São Paulo, Brazil • fulltime</div>
+                    <div class="additional">entry level • Software Development</div>
+                </div>
+                <div class="badges">
+                    <div class="badge">Remote</div>
+                    
+                </div>
+            </a>
+        </div>
+        
+        <div class="job">
+            <a href="jobs/li-4347800682.html">
+                <div>
+                    <div class="title">Remote Golang Developer</div>
+                    <div class="metaSmall">Scopic •  • fulltime</div>
+                    <div class="additional">mid-senior level • Software Development</div>
+                </div>
+                <div class="badges">
+                    <div class="badge">Remote</div>
+                    
+                </div>
+            </a>
+        </div>
+        
+        <div class="job">
+            <a href="jobs/li-4339376882.html">
+                <div>
+                    <div class="title">Remote Golang Developer</div>
+                    <div class="metaSmall">Scopic • São Paulo, São Paulo, Brazil • fulltime</div>
+                    <div class="additional">mid-senior level • IT Services and IT Consulting</div>
+                </div>
+                <div class="badges">
+                    <div class="badge">Remote</div>
+                    
+                </div>
+            </a>
+        </div>
+        
+        <div class="job">
+            <a href="jobs/li-4339319107.html">
+                <div>
+                    <div class="title">Software Engineer - Python/Golang - Kubernetes</div>
+                    <div class="metaSmall">Canonical • Rio de Janeiro, Rio de Janeiro, Brazil • fulltime</div>
+                    <div class="additional">entry level • Software Development</div>
+                </div>
+                <div class="badges">
+                    <div class="badge">Remote</div>
+                    
+                </div>
+            </a>
+        </div>
+        
+        <div class="job">
+            <a href="jobs/li-4338962303.html">
+                <div>
+                    <div class="title">Senior Software Engineer Go - Isovalent (Europe Remote)</div>
+                    <div class="metaSmall">Cisco • Amsterdam, North Holland, Netherlands • fulltime</div>
+                    <div class="additional">mid-senior level • Software Development</div>
+                </div>
+                <div class="badges">
+                    <div class="badge">Remote</div>
+                    
+                </div>
+            </a>
+        </div>
+        
+        <div class="job">
+            <a href="jobs/li-4230197461.html">
+                <div>
+                    <div class="title">Golang Developer - Remote - Latin America</div>
+                    <div class="metaSmall">FullStack •  • fulltime</div>
+                    <div class="additional">mid-senior level • IT Services and IT Consulting, Computer and Network Security, and Information Services</div>
+                </div>
+                <div class="badges">
+                    <div class="badge">Remote</div>
+                    
+                </div>
+            </a>
+        </div>
+        
+        <div class="job">
+            <a href="jobs/li-4230192990.html">
+                <div>
+                    <div class="title">Golang Developer - Remote - Latin America</div>
+                    <div class="metaSmall">FullStack • Manta, Manabí, Ecuador • fulltime</div>
+                    <div class="additional">mid-senior level • IT Services and IT Consulting, Computer and Network Security, and Information Services</div>
+                </div>
+                <div class="badges">
+                    <div class="badge">Remote</div>
+                    
+                </div>
+            </a>
+        </div>
+        
+        <div class="job">
+            <a href="jobs/li-4339392918.html">
+                <div>
+                    <div class="title">Software Engineer - Python/Golang - Kubernetes</div>
+                    <div class="metaSmall">Canonical • Ecatepec de Morelos, México, Mexico • fulltime</div>
+                    <div class="additional">entry level • Software Development</div>
+                </div>
+                <div class="badges">
+                    <div class="badge">Remote</div>
+                    
+                </div>
+            </a>
+        </div>
+        
+    </section>
+
+    <nav class="pagination">
+        
+        
+
+        
+
+        
+        <a href="list1.html" class="current">1</a>
+
+        
+        
+
+        
+        
+        
+        
+        
+        <a href="list2.html">2</a>
+        
+        
+
+        
+        
+
+        
+        
+        <a href="list3.html" >3</a>
+        
+
+        
+        <a href="list2.html">Next</a>
+        
+    </nav>
+
+    <footer>
+        <a href="https://github.com/milad-rasouli">Created by Milad Rasouli</a>
+    </footer>
+</div>
+
+<script>
+    (function(){
+        const el = document.getElementById('createdAt');
+        if(!el) return;
+        const ts = Number(el.textContent) * 1000;
+        el.textContent = new Date(ts).toLocaleString();
+    })();
+</script>
+</body>
+</html>
