@@ -20,6 +20,9 @@ func loadTemplate(name string) *template.Template {
 		"minus": func(a, b int) int { return a - b },
 		"plus":  func(a, b int) int { return a + b },
 		"seq": func(start, end int) []int {
+			if end < start {
+				return []int{}
+			}
 			r := make([]int, end-start+1)
 			for i := range r {
 				r[i] = start + i
@@ -32,6 +35,7 @@ func loadTemplate(name string) *template.Template {
 			}
 			return b
 		},
+
 		"min": func(a, b int) int {
 			if a < b {
 				return a
@@ -39,8 +43,10 @@ func loadTemplate(name string) *template.Template {
 			return b
 		},
 	}).ParseFS(templatesFS, "assets/"+name)
+
 	if err != nil {
 		log.Fatalf("Error parsing template file %s: %v", name, err)
 	}
+
 	return tmpl
 }
