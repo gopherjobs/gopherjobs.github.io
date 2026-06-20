@@ -40,6 +40,35 @@
             font-size: 14px;
         }
 
+        .search {
+            margin-top: 18px;
+            position: relative;
+        }
+
+        .search input {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 12px 14px;
+            font-size: 16px;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            outline: none;
+            background: #fff;
+            color: #1a202c;
+        }
+
+        .search input:focus {
+            border-color: #0ea5a6;
+            box-shadow: 0 0 0 3px rgba(14,165,166,0.12);
+        }
+
+        .searchInfo {
+            margin-top: 8px;
+            color: #6b7280;
+            font-size: 14px;
+            min-height: 18px;
+        }
+
         .jobs { margin-top: 20px; }
 
         .job {
@@ -139,7 +168,14 @@
         <div class="meta">Page {{ .Page }} / {{ .TotalPages }}</div>
     </header>
 
-    <section class="jobs">
+    <div class="search">
+        <input id="searchInput" type="search" placeholder="Search jobs (title, company, location, level…)" autocomplete="off" />
+        <div class="searchInfo" id="searchInfo"></div>
+    </div>
+
+    <section class="jobs" id="searchResults" hidden></section>
+
+    <section class="jobs" id="staticJobs">
         {{ range .Jobs }}
         <div class="job">
             <a href="jobs/{{ .ID }}.html">
@@ -157,7 +193,7 @@
         {{ end }}
     </section>
 
-    <nav class="pagination">
+    <nav class="pagination" id="pagination">
         {{ $page := .Page }}
         {{ $total := .TotalPages }}
 
@@ -203,11 +239,117 @@
 </div>
 
 <script>
-    (function(){
+    (function() {
         const el = document.getElementById('createdAt');
         if(!el) return;
         const ts = Number(el.textContent) * 1000;
         el.textContent = new Date(ts).toLocaleString();
+    })();
+
+    (function() {
+        const input = document.getElementById('searchInput');
+        const info = document.getElementById('searchInfo');
+        const results = document.getElementById('searchResults');
+        const staticJobs = document.getElementById('staticJobs');
+        const pagination = document.getElementById('pagination');
+        if(!input || !results || !staticJobs) return;
+
+        let jobs = null;
+        let loading = false;
+
+        function escapeHTML(s) {
+            return String(s == null ? '' : s)
+                .replace(/&/g, '&amp;')
+                .replace(/</g, '&lt;')
+                .replace(/>/g, '&gt;')
+                .replace(/"/g, '&quot;');
+        }
+
+        function badges(job) {
+            let b = '';
+            if(job.remote) b += '<div class="badge">Remote</div>';
+            if(job.relocation) b += '<div class="badge">Relocation</div>';
+            return b;
+        }
+
+        function renderJob(job) {
+            return '<div class="job">' +
+                '<a href="jobs/' + encodeURIComponent(job.id) + '.html">' +
+                    '<div>' +
+                        '<div class="title">' + escapeHTML(job.title) + '</div>' +
+                        '<div class="metaSmall">' + escapeHTML(job.company) + ' • ' + escapeHTML(job.location) + ' • ' + escapeHTML(job.type) + '</div>' +
+                        '<div class="additional">' + escapeHTML(job.level) + ' • ' + escapeHTML(job.company_industry) + '</div>' +
+                    '</div>' +
+                    '<div class="badges">' + badges(job) + '</div>' +
+                '</a>' +
+            '</div>';
+        }
+
+        function showStatic() {
+            results.hidden = true;
+            results.innerHTML = '';
+            staticJobs.hidden = false;
+            if(pagination) pagination.hidden = false;
+            info.textContent = '';
+        }
+
+        function filterJobs(query) {
+            const q = query.toLowerCase();
+            return jobs.filter(function(job) {
+                return [job.title, job.company, job.location, job.level, job.type, job.company_industry]
+                    .some(function(field) {
+                        return String(field || '').toLowerCase().indexOf(q) !== -1;
+                    });
+            });
+        }
+
+        function runSearch() {
+            const query = input.value.trim();
+            if(!query) {
+                showStatic();
+                return;
+            }
+            if(!jobs) {
+                info.textContent = loading ? 'Loading…' : '';
+                return;
+            }
+            const matches = filterJobs(query);
+            staticJobs.hidden = true;
+            if(pagination) pagination.hidden = true;
+            results.hidden = false;
+            if(matches.length === 0) {
+                results.innerHTML = '';
+                info.textContent = 'No jobs found.';
+                return;
+            }
+            results.innerHTML = matches.map(renderJob).join('');
+            info.textContent = matches.length + ' result' + (matches.length === 1 ? '' : 's') + ' found.';
+        }
+
+        function loadJobs() {
+            if(jobs || loading) return;
+            loading = true;
+            info.textContent = 'Loading…';
+            fetch('jobs.json')
+                .then(function(r) { if(!r.ok) throw new Error('failed'); return r.json(); })
+                .then(function(data) {
+                    jobs = data;
+                    loading = false;
+                    runSearch();
+                })
+                .catch(function() {
+                    loading = false;
+                    info.textContent = 'Failed to load search index.';
+                });
+        }
+
+        let timer = null;
+        input.addEventListener('input', function() {
+            if(!jobs) loadJobs();
+            clearTimeout(timer);
+            timer = setTimeout(runSearch, 120);
+        });
+        input.addEventListener('focus', loadJobs);
     })();
 </script>
 </body>

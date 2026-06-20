@@ -2,6 +2,7 @@ package htmlCreator
 
 import (
 	"bytes"
+	"encoding/json"
 	"errors"
 	"fmt"
 	"github.com/gopherjobs/gopherjobs.github.io/internal/entity"
@@ -55,6 +56,11 @@ func (h *htmlCreator) Generate(jobs []*entity.Job, outputPath string) error {
 	}
 
 	createdAt := time.Now().Unix()
+
+	// generate search index (jobs.json) used by the client-side search on the home page
+	if err := h.writeSearchIndex(jobs, htmlDir); err != nil {
+		return err
+	}
 
 	// generate list pages
 	for p := 1; p <= pages; p++ {
@@ -127,6 +133,49 @@ func (h *htmlCreator) Generate(jobs []*entity.Job, outputPath string) error {
 		h.logger.Info("wrote job description", slog.String("file", outFile))
 	}
 
+	return nil
+}
+
+// searchEntry is the trimmed-down job representation written to jobs.json
+type searchEntry struct {
+	ID              string `json:"id"`
+	Title           string `json:"title"`
+	Company         string `json:"company"`
+	Location        string `json:"location"`
+	Level           string `json:"level"`
+	Type            string `json:"type"`
+	CompanyIndustry string `json:"company_industry"`
+	Remote          bool   `json:"remote"`
+	Relocation      bool   `json:"relocation"`
+}
+
+func (h *htmlCreator) writeSearchIndex(jobs []*entity.Job, htmlDir string) error {
+	entries := make([]searchEntry, 0, len(jobs))
+	for _, job := range jobs {
+		entries = append(entries, searchEntry{
+			ID:              job.ID,
+			Title:           job.Title,
+			Company:         job.Company,
+			Location:        job.Location,
+			Level:           job.Level,
+			Type:            job.Type,
+			CompanyIndustry: job.CompanyIndustry,
+			Remote:          job.Remote,
+			Relocation:      job.Relocation,
+		})
+	}
+
+	data, err := json.Marshal(entries)
+	if err != nil {
+		return fmt.Errorf("failed to marshal search index: %w", err)
+	}
+
+	outFile := filepath.Join(htmlDir, "jobs.json")
+	if err := os.WriteFile(outFile, data, 0o644); err != nil {
+		return fmt.Errorf("failed to write search index %s: %w", outFile, err)
+	}
+
+	h.logger.Info("wrote search index", slog.String("file", outFile), slog.Int("jobs", len(entries)))
 	return nil
 }
 
