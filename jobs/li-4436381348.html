@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Developer</title>
+    <style>
+        body{font-family:Inter, Arial, Helvetica, sans-serif;background:#f7fafc;color:#111;margin:0;padding:20px}
+        .wrap{max-width:900px;margin:0 auto;background:#fff;padding:20px;border-radius:8px;box-shadow:0 8px 24px rgba(12,20,30,0.06)}
+        h1{margin:0 0 8px 0}
+        .meta{color:#6b7280;font-size:13px;margin-bottom:8px}
+        .apply{display:inline-block;background:#0ea5a6;color:#fff;padding:8px 12px;border-radius:6px;text-decoration:none}
+        .back{display:inline-block;margin-left:12px;color:#374151;text-decoration:none}
+        .section{margin-top:16px}
+        .apply-section {display: flex;align-items: center;gap: 12px;}
+        .apply-section .apply {margin-left: auto;}
+
+         
+        .desc {line-height:1.6;font-size:15px;color:#111;}
+        .desc h1,.desc h2,.desc h3 {margin-top:20px;margin-bottom:10px;}
+        .desc pre{background:#f8fafc;padding:12px;border-radius:6px;border:1px solid #eef2f7;overflow-x:auto}
+        .desc code{background:#f1f5f9;padding:2px 4px;border-radius:4px}
+        .desc ul{padding-left:20px;margin:8px 0}
+        .desc p{margin:10px 0}
+
+        footer{margin-top:18px;text-align:center;color:#94a3b8}
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <h1>Developer</h1>
+    <div class="meta">CustardLabs • Oslo, Norway • fulltime</div>
+
+
+    <div class="section apply-section">
+        <a class="back" href="../list1.html">Back to Home</a>
+        <a class="apply" href="https://www.linkedin.com/jobs/view/4436381348" target="_blank" rel="noopener">Apply</a>
+    </div>
+
+    <div class="section">
+        <strong>Remote:</strong> Yes •
+        <strong>Relocation:</strong> No
+    </div>
+
+    <div class="section">
+        <h3>Description</h3>
+        <div class="desc"><p>We are looking for someone to help with the development of our core membership system. Candidates should be able to manage their own time and combine remote work with occasional office catch-up time at our Oslo location. Working language (documentation, tickets, project related discussions) is English, however Norwegian (or Swedish) is also highly desirable for some direct customer communications.</p>
+<p>Ideally you would be able to lighten the load on the existing team in all areas, so the list of &quot;desired&quot; skills is quite long, however we are of course open to realistic proposals.</p>
+<p>Salary range from 500,000 to 999,000 (Norwegian Kroner) depending on experience, plus bonuses (profit share).</p>
+<p>Not looking to work with recruiters at this time.</p>
+<p> </p>
+<p><strong>Responsibilities</strong></p>
+<ul>
+<li>Convert design (e.g. From Figma) to Symfony/Twig/Doctrine/Tailwind using latest software</li>
+<li>Support customers with legacy software (Symfony 1, Doctrine 1 - patched to support PHP 8.x)</li>
+<li>Manage tickets and support workflow (Currently Redmine)</li>
+<li>Work with entire stack to varying extent (Linux, PostgreSQL, Apache2, Git, etc.)</li>
+</ul>
+<p><strong>Qualifications</strong></p>
+<ul>
+<li>PHP or similar language and a desire to work with PHP</li>
+<li>Symfony framework experience, or at least a desire to learn and work with it</li>
+<li>Ability to communicate with customers/partners directly when implementing solutions</li>
+<li>Ability to work alone when necessary, taking a design and implementing through to release</li>
+</ul>
+</div>
+    </div>
+
+    <footer>
+        <a href="https://github.com/milad-rasouli">Created by Milad Rasouli</a>
+    </footer>
+</div>
+
+<script>
+    (function(){
+        const el = document.getElementById('createdAt');
+        if(!el) return;
+        const ts = Number(el.textContent) * 1000;
+        const d = new Date(ts);
+        el.textContent = d.toLocaleString();
+    })();
+</script>
+</body>
+</html>
