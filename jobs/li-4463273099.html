@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Platform Engineer - LLM Inference Infrastructure</title>
+    <style>
+        body{font-family:Inter, Arial, Helvetica, sans-serif;background:#f7fafc;color:#111;margin:0;padding:20px}
+        .wrap{max-width:900px;margin:0 auto;background:#fff;padding:20px;border-radius:8px;box-shadow:0 8px 24px rgba(12,20,30,0.06)}
+        h1{margin:0 0 8px 0}
+        .meta{color:#6b7280;font-size:13px;margin-bottom:8px}
+        .apply{display:inline-block;background:#0ea5a6;color:#fff;padding:8px 12px;border-radius:6px;text-decoration:none}
+        .back{display:inline-block;margin-left:12px;color:#374151;text-decoration:none}
+        .section{margin-top:16px}
+        .apply-section {display: flex;align-items: center;gap: 12px;}
+        .apply-section .apply {margin-left: auto;}
+
+         
+        .desc {line-height:1.6;font-size:15px;color:#111;}
+        .desc h1,.desc h2,.desc h3 {margin-top:20px;margin-bottom:10px;}
+        .desc pre{background:#f8fafc;padding:12px;border-radius:6px;border:1px solid #eef2f7;overflow-x:auto}
+        .desc code{background:#f1f5f9;padding:2px 4px;border-radius:4px}
+        .desc ul{padding-left:20px;margin:8px 0}
+        .desc p{margin:10px 0}
+
+        footer{margin-top:18px;text-align:center;color:#94a3b8}
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <h1>Platform Engineer - LLM Inference Infrastructure</h1>
+    <div class="meta">Verda • Helsinki, Uusimaa, Finland • fulltime</div>
+
+
+    <div class="section apply-section">
+        <a class="back" href="../list1.html">Back to Home</a>
+        <a class="apply" href="https://www.linkedin.com/jobs/view/4463273099" target="_blank" rel="noopener">Apply</a>
+    </div>
+
+    <div class="section">
+        <strong>Remote:</strong> Yes •
+        <strong>Relocation:</strong> No
+    </div>
+
+    <div class="section">
+        <h3>Description</h3>
+        <div class="desc"><p>At Verda, we're building a full-stack AI cloud, covering everything from data centers and hardware to our own cloud platform that the world's leading AI teams use to do serious AI work.</p>
+<p>We strive to make a positive mark on the world through the infrastructure we build and give leading teams a service they can truly depend on. Headquartered in Helsinki, we operate globally with offices in London and San Francisco.</p>
+<p>Join Verda while it’s still being built - not once it’s finished.</p>
+<p><strong>About The Role</strong>
+We run a multi-tenant LLM inference platform: customers send requests to an OpenAI-compatible gateway, and we handle routing, tenancy, access control, usage metering and billing on top of our own GPU fleet.</p>
+<p>You would own backend services and the Kubernetes platform they run on. This is not a role where infrastructure is someone else’s problem, you write the Go service, the Helm chart, the network policy and the runbook, and you are the one who verifies it in production.</p>
+<p>We are moving deliberately toward a
+<strong>Kubernetes-native architecture</strong>
+: less imperative tooling and hand-run scripts, more declarative APIs, custom resources and controllers that reconcile state. If you have wanted to build operators and control planes rather than consume them, that is the direction of this role.</p>
+<p><strong>Your Responsibilities</strong></p>
+<ul>
+<li>Backend services in Go - the platform API, the customer-facing usage API, the metering and billing pipeline. Small, focused services with real correctness requirements.</li>
+<li>Kubernetes-native platform work - GitOps deployment, custom resources and controllers, progressive rollout, network policy, secret and certificate management. Moving what is currently scripted into something that reconciles.</li>
+<li>Multi-tenancy and access control - tenant provisioning, per-project model access, credential handling across environments.</li>
+<li>Usage metering and billing correctness - a pipeline that turns raw requests into per-tenant token accounting, plus the reconciliation that proves what we bill matches what actually happened. This is money, and it has to be right.</li>
+<li>Observability - logs, metrics and traces that answer questions during an incident rather than after it.</li>
+</ul>
+<p><strong>Your key competencies</strong></p>
+<ul>
+<li>4+ years of experience</li>
+<li>Strong Go. You have shipped and maintained production Go services, and you are comfortable with concurrency, context propagation and error handling that fails loudly instead of silently.</li>
+<li>Real Kubernetes depth. Not just kubectl apply. You understand the control loop, know why a pod is not ready without guessing, and have written Helm charts, network policies and RBAC that you then had to debug.</li>
+<li>SQL and relational data modelling. PostgreSQL specifically. You can reason about transactions, indexes and migration safety.</li>
+<li>You verify your work. You do not report something as working because it deployed and the health check is green. You go and prove it, and you say plainly what you did not test.</li>
+<li>Clear written English. Design notes, runbooks, incident write-ups. Much of our engineering context lives in writing.</li>
+</ul>
+<p><strong>Nice to have</strong></p>
+<ul>
+<li>Building Kubernetes operators / controllers (controller-runtime, CRDs, kubebuilder, Operator SDK)</li>
+<li>GitOps at scale - Argo CD or Flux, ApplicationSets, multi-cluster</li>
+<li>LLM serving internals - vLLM, SGLang, TensorRT-LLM, KServe, or similar; GPU scheduling, batching, KV cache behaviour</li>
+<li>Distributed messaging (NATS, Kafka) and event-driven pipelines</li>
+<li>Traefik or Envoy/Istio at the ingress layer</li>
+<li>Time-series and log stores (VictoriaMetrics/VictoriaLogs, Prometheus, ClickHouse)</li>
+<li>Frontend competence (React + TypeScript) - our operator console is ours to maintain, and being able to fix it end to end is valuable</li>
+<li>Billing, metering or payments systems, or anything else where being wrong is expensive</li>
+<li>Python, for the gateway extension layer</li>
+</ul>
+<p><strong>Why Verda</strong></p>
+<ul>
+<li>Cash and equity compensation along with various fringe benefits (healthcare, lunch, wellbeing, and more).</li>
+<li>Profitable operations with rapid, sustained growth.</li>
+<li>40+ nationalities, with 6 different ones on the management team.</li>
+<li>A real chance to make an impact and work alongside world class engineers, researchers, and partners across the global AI ecosystem.</li>
+</ul>
+<p><strong>Practicalities</strong></p>
+<ul>
+<li>Work mode: Based in Helsinki / London or remote in Europe</li>
+<li>Level: Senior</li>
+<li>Employment type: Full time and permanent</li>
+</ul>
+<p><strong>What's Next</strong>
+We're building fast and this role needs the right person behind it. There's no artificial deadline, but when we find who we're looking for, we move. If this sounds like your next move, apply now.</p>
+<p>Please submit your application through our Careers page. We don't accept applications sent by email.</p>
+</div>
+    </div>
+
+    <footer>
+        <a href="https://github.com/milad-rasouli">Created by Milad Rasouli</a>
+    </footer>
+</div>
+
+<script>
+    (function(){
+        const el = document.getElementById('createdAt');
+        if(!el) return;
+        const ts = Number(el.textContent) * 1000;
+        const d = new Date(ts);
+        el.textContent = d.toLocaleString();
+    })();
+</script>
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Full Stack Developer</title>
+    <style>
+        body{font-family:Inter, Arial, Helvetica, sans-serif;background:#f7fafc;color:#111;margin:0;padding:20px}
+        .wrap{max-width:900px;margin:0 auto;background:#fff;padding:20px;border-radius:8px;box-shadow:0 8px 24px rgba(12,20,30,0.06)}
+        h1{margin:0 0 8px 0}
+        .meta{color:#6b7280;font-size:13px;margin-bottom:8px}
+        .apply{display:inline-block;background:#0ea5a6;color:#fff;padding:8px 12px;border-radius:6px;text-decoration:none}
+        .back{display:inline-block;margin-left:12px;color:#374151;text-decoration:none}
+        .section{margin-top:16px}
+        .apply-section {display: flex;align-items: center;gap: 12px;}
+        .apply-section .apply {margin-left: auto;}
+
+         
+        .desc {line-height:1.6;font-size:15px;color:#111;}
+        .desc h1,.desc h2,.desc h3 {margin-top:20px;margin-bottom:10px;}
+        .desc pre{background:#f8fafc;padding:12px;border-radius:6px;border:1px solid #eef2f7;overflow-x:auto}
+        .desc code{background:#f1f5f9;padding:2px 4px;border-radius:4px}
+        .desc ul{padding-left:20px;margin:8px 0}
+        .desc p{margin:10px 0}
+
+        footer{margin-top:18px;text-align:center;color:#94a3b8}
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <h1>Full Stack Developer</h1>
+    <div class="meta">H3 Zoom • Singapore, Singapore • fulltime</div>
+
+
+    <div class="section apply-section">
+        <a class="back" href="../list1.html">Back to Home</a>
+        <a class="apply" href="https://www.linkedin.com/jobs/view/4464934923" target="_blank" rel="noopener">Apply</a>
+    </div>
+
+    <div class="section">
+        <strong>Remote:</strong> Yes •
+        <strong>Relocation:</strong> No
+    </div>
+
+    <div class="section">
+        <h3>Description</h3>
+        <div class="desc"><p>📍 Singapore | Remote considered for candidates in Vietnam or Indonesia</p>
+<p><strong>Role Summary</strong></p>
+<p>As our Full Stack Developer, you'll take end-to-end ownership of both production applications and the AWS infrastructure that serves them. That means the React SPA and its build pipeline, the Django/Channels backend and its real-time WebSocket layer, our companion Node/Express CommonDB service, and the AWS hosting and DevOps practices tying it all together. You'll bring structure and modern engineering practice — version control, CI/CD, infrastructure as code — to a codebase that's currently run by the founder with AI-assisted tooling, and you'll have real autonomy to shape how it's built going forward.</p>
+<p><strong>What You'll Work On</strong></p>
+<ul>
+<li>Frontend: Maintain and evolve the React (CRA) single-page app, including its code-split bundle structure, geospatial mapping (OpenLayers), and CAD/BIM viewing integrations (Sketchfab, Autodesk APS/Forge for Revit, Navisworks, and Inventor files).</li>
+<li>Backend &amp; real-time: Develop and extend the Django backend, including the Django Channels/ASGI real-time layer that powers live WebSocket features, served through Daphne and Nginx.</li>
+<li>Async processing: Own the Celery, Celery Beat, and Flower job pipeline for background and scheduled work.</li>
+<li>Integrations: Maintain the Node/Express CommonDB service and external integrations including Autodesk APS/Forge, Stripe, and Google Maps.</li>
+<li>Cloud &amp; DevOps: Manage and evolve our AWS footprint in ap-southeast-1 — EC2, ALB, CloudFront/OAC, S3, ACM, Route 53 — including migrating manual deployment processes into automated, reproducible pipelines.</li>
+<li>Take ownership of the source code itself: import the React and Django repositories into Git and establish a proper branching and versioning workflow.</li>
+</ul>
+<p><strong>Tech Stack You'll Work With</strong></p>
+<p><strong>Frontend:</strong>
+React (Create React App) with code-split bundles, OpenLayers, Sketchfab viewer, Autodesk Platform Services (APS/Forge), Chart.js, Bootstrap 4, Font Awesome, animate.css, toastr, jQuery, Stripe.js, Google Maps, Google Analytics, and custom i18n (English, Malay, Indonesian, German, Portuguese, Spanish, French)</p>
+<p><strong>Backend &amp; real-time:</strong>
+Django, Django Channels (ASGI), Daphne, Nginx reverse proxy, Django REST Framework token auth, Django admin</p>
+<p><strong>Async / jobs:</strong>
+Celery, Celery Beat, Flower, Redis/ElastiCache broker</p>
+<p><strong>Other services:</strong>
+CommonDB (Node.js/Express API on EC2), Autodesk APS/Forge OAuth integration</p>
+<p><strong>AWS / hosting:</strong>
+EC2, EBS (GP2→GP3), VPC/subnets/security groups, Application Load Balancer, ACM, CloudFront (OAC, CloudFront Functions), S3, Route 53</p>
+<p><strong>DevOps &amp; tooling:</strong>
+Git, AWS CloudShell, AWS Budgets &amp; Cost Anomaly Detection, S3 Intelligent-Tiering (current state); GitHub Actions/OIDC, Terraform/CloudFormation (target state)</p>
+<p><strong>Must-Have Skills</strong></p>
+<ul>
+<li>Strong React experience, including Create React App projects: code-splitting, hashed asset builds, and client-side SPA routing.</li>
+<li>Solid Python/Django experience; familiarity with Django Channels, ASGI, and WebSockets is a strong plus.</li>
+<li>Working knowledge of core AWS services: EC2, S3, CloudFront, ALB, ACM, IAM, VPC, and Route 53.</li>
+<li>Proficiency with Git and standard branching/versioning workflows.</li>
+<li>A security-minded approach to frontend builds — comfortable identifying and removing browser-exposed secrets, fixing mixed-content issues, and excluding source maps from production.</li>
+</ul>
+<p><strong>Nice-to-Have / Bonus</strong></p>
+<ul>
+<li>Experience with Autodesk Platform Services / Forge, or CAD/BIM file formats (Revit, Navisworks, Inventor).</li>
+<li>3D/WebGL experience, particularly three.js.</li>
+<li>Celery, Celery Beat, and Flower for async job orchestration.</li>
+<li>Infrastructure as Code with Terraform or CloudFormation.</li>
+<li>CI/CD pipeline design, especially GitHub Actions with OIDC.</li>
+<li>Payment integration experience (Stripe).</li>
+<li>Geospatial mapping (OpenLayers) and multi-language i18n at scale.</li>
+<li>Node.js/Express experience.</li>
+<li>Containerization (Docker).</li>
+<li>AWS Cognito, or AWS cost-optimization practices (Budgets, Cost Anomaly Detection, S3 Intelligent-Tiering).</li>
+</ul>
+<p><strong>Who You Are</strong></p>
+<ul>
+<li>You take genuine ownership — you don't wait to be told what to fix next.</li>
+<li>You're security-minded by default, not just when prompted.</li>
+<li>You're pragmatic: comfortable balancing shipping speed against technical debt in an early-stage environment.</li>
+<li>You communicate clearly and directly with a non-DevOps founder, translating technical tradeoffs into plain language.</li>
+<li>You're comfortable working alongside AI-assisted development and DevOps workflows.</li>
+</ul>
+<p><strong>Why Join Us</strong></p>
+<p>This is a rare opportunity to take a live, revenue-generating SaaS product and architect its engineering foundations from the ground up — building the CI/CD pipeline, introducing Infrastructure as Code, and hardening production security — with full visibility into your impact and high autonomy over how the work gets done. You won't be one of many engineers maintaining someone else's system; you'll be the engineer who defines how this system is built and run going forward.</p>
+</div>
+    </div>
+
+    <footer>
+        <a href="https://github.com/milad-rasouli">Created by Milad Rasouli</a>
+    </footer>
+</div>
+
+<script>
+    (function(){
+        const el = document.getElementById('createdAt');
+        if(!el) return;
+        const ts = Number(el.textContent) * 1000;
+        const d = new Date(ts);
+        el.textContent = d.toLocaleString();
+    })();
+</script>
+</body>
+</html>

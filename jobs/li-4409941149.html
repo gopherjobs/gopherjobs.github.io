@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Software Engineer</title>
+    <style>
+        body{font-family:Inter, Arial, Helvetica, sans-serif;background:#f7fafc;color:#111;margin:0;padding:20px}
+        .wrap{max-width:900px;margin:0 auto;background:#fff;padding:20px;border-radius:8px;box-shadow:0 8px 24px rgba(12,20,30,0.06)}
+        h1{margin:0 0 8px 0}
+        .meta{color:#6b7280;font-size:13px;margin-bottom:8px}
+        .apply{display:inline-block;background:#0ea5a6;color:#fff;padding:8px 12px;border-radius:6px;text-decoration:none}
+        .back{display:inline-block;margin-left:12px;color:#374151;text-decoration:none}
+        .section{margin-top:16px}
+        .apply-section {display: flex;align-items: center;gap: 12px;}
+        .apply-section .apply {margin-left: auto;}
+
+         
+        .desc {line-height:1.6;font-size:15px;color:#111;}
+        .desc h1,.desc h2,.desc h3 {margin-top:20px;margin-bottom:10px;}
+        .desc pre{background:#f8fafc;padding:12px;border-radius:6px;border:1px solid #eef2f7;overflow-x:auto}
+        .desc code{background:#f1f5f9;padding:2px 4px;border-radius:4px}
+        .desc ul{padding-left:20px;margin:8px 0}
+        .desc p{margin:10px 0}
+
+        footer{margin-top:18px;text-align:center;color:#94a3b8}
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <h1>Software Engineer</h1>
+    <div class="meta">Builders • Rotterdam, South Holland, Netherlands • fulltime</div>
+
+
+    <div class="section apply-section">
+        <a class="back" href="../list1.html">Back to Home</a>
+        <a class="apply" href="https://www.linkedin.com/jobs/view/4409941149" target="_blank" rel="noopener">Apply</a>
+    </div>
+
+    <div class="section">
+        <strong>Remote:</strong> Yes •
+        <strong>Relocation:</strong> No
+    </div>
+
+    <div class="section">
+        <h3>Description</h3>
+        <div class="desc"><p>We're building Alaura, a private AI advisor for founders and CEOs. We capture every meeting and turn it into coaching on how you actually lead, not how you think you lead. Wave 01 is live with a first group of paying users and feedback comes in daily, directly to the founders.</p>
+<p>We've been building fast. But we see what we could be building, and we want to get there even faster. That's where you come in.</p>
+<p>We're looking for the best AI engineer out there. Not a generalist who also does AI. But someone who lives in this stuff, ships fast, and wants ownership over what we build next.</p>
+<p><strong>How we got here</strong></p>
+<p>A few months ago, three of us (
+<strong>Marleen</strong>
+,
+<strong>Michael</strong>
+and
+<strong>Sharon</strong>
+) kept circling the same problem: as a founder, you spend most of your time explaining your business to advisors and coaches. By the time someone has the full picture, the moment you actually needed the advice is long gone. How objective is advice when it's never in real time, and never with the full context?</p>
+<p>So we started experimenting. Recording everything. Analyzing how decisions actually get made. Turning behavior into something you could learn from in the moment.</p>
+<p>Then
+<strong>House of Founders</strong>
+happened. Eight Dutch top founders, one villa in Cape Town, five days, AI as the ninth co-founder. Alaura was one of the companies built that week. Ruben joined right after as Co-founder to lead the company forward and a few weeks later, 1.200 entrepreneurs saw what we'd made at the launch event in Rotterdam, and we haven't stopped sprinting since.</p>
+<p>This is the kind of momentum you only get a couple of times in your career. We'd like you in the room for it.</p>
+<p><strong>What Alaura actually does</strong></p>
+<ul>
+<li>Captures meetings end-to-end (audio, structure, who said what, encrypted)</li>
+<li>Analyzes how you communicate, how you listen, how you decide, how you show up under pressure</li>
+<li>Reflects it back to you. Your leadership profile, your patterns, your blind spots</li>
+<li>Coaches you in real time, in the moment you actually need it</li>
+</ul>
+<p>Think of it as the most observant, most honest advisor you've ever had. Except it has the full picture, every time.</p>
+<p><strong>What we're looking for</strong></p>
+<p>You'll be one of the first engineers and own large parts of the AI stack. Concretely, you'll be working on things like:</p>
+<ul>
+<li>Meeting-processing pipelines that work reliably across messy, multi-speaker, multi-language conversations</li>
+<li>Speaker diarization, intent and behavior modeling, turning raw conversation into signals</li>
+<li>LLM-driven analysis layers for leadership patterns, listening quality, engagement, decision-making</li>
+<li>Eval infrastructure so we can actually tell when the product gets better, not just feel it</li>
+<li>Privacy and encryption by design, this is sensitive data and we treat it that way</li>
+<li>Latency, cost and quality trade-offs in production, not in a slide deck</li>
+</ul>
+<p>You will ship to real users in week one. That's the standard.</p>
+<p><strong>Our stack (high level)</strong></p>
+<p>You don't need to match this exactly, the specific versions and providers will keep moving. This is the shape of what's already running for real users.</p>
+<ul>
+<li>Analysis pipeline: event-driven, runs in daily windows. Each conversation goes through an LLM (currently Gemini) that extracts dozens of leadership and business signals as structured JSON. Parallel inference, prompt templates under version control.</li>
+<li>AI surface: streaming chat advisor with tool use and per-user memory, plus daily and weekly narratives. We mix models by job (cheap for extraction, mid-tier for chat, top-tier for the daily tip).</li>
+<li>Audio + ingestion: conversations come in from wearables and other meeting sources as audio and speaker-labeled transcripts. Primarily Dutch with English mixed in, so everything downstream handles both.</li>
+<li>Backend &amp; data: Next.js on Vercel, Postgres, JSONB-heavy schema.</li>
+<li>Mobile: Expo / React Native iOS app with OTA updates.</li>
+<li>Auth &amp; comms: Clerk for auth, Expo Push for nudges.</li>
+<li>Privacy posture: per-user isolation, encryption at rest, scoped tokens. The product promise is &quot;only for your eyes&quot;, and that constraint shapes a lot of architectural decisions.</li>
+</ul>
+<p>Where we'd love your fingerprints: real eval infra around the signal extractors, lower-latency real-time coaching loops, smarter speaker diarization, on-device or privacy-preserving inference where it makes sense, and a cleaner story for fine-tuning the leadership-specific bits.</p>
+<p><strong>You'll probably love this if you</strong></p>
+<ul>
+<li>Have built and shipped real production AI systems: RAG, agents, voice, multimodal, doesn't matter, but it has to have actually run for real users</li>
+<li>Are AI-first: you live in modern LLM and agent tooling and pick up whatever language the job needs (today that's mostly TypeScript and Python)</li>
+<li>Have hands-on experience with speech / audio / ASR or are excited to go deep there</li>
+<li>Care about evals as much as you care about the model itself</li>
+<li>Move fast, kill your darlings fast, and don't need a roadmap to know what to do tomorrow</li>
+<li>Can sit with a founder, debug a customer call, and ship a fix the same day</li>
+</ul>
+<p><strong>Bonus points</strong></p>
+<ul>
+<li>You've built coaching, behavioral, conversational analytics, or B2B SaaS products before</li>
+<li>You've worked with on-device or privacy-preserving inference</li>
+<li>You've fine-tuned or post-trained models for narrow, high-quality use cases</li>
+<li>You have strong opinions on the speech / audio stack — Whisper, Deepgram, Gemini-native, and what's coming next</li>
+</ul>
+<p><strong>What we offer</strong></p>
+<ul>
+<li>Competitive base (€60k–€95k) plus meaningful founding-team equity. Real ownership</li>
+<li>Direct work with four operator-founders who've done this before</li>
+<li>A product with real, paying users from day one, no &quot;we'll get there&quot;</li>
+<li>The kind of speed and access you only get pre-Series A</li>
+<li>Rotterdam-based role. We work in person often, this isn't a remote position</li>
+</ul>
+<p><em>Alaura is a company, born out of House of Founders .</em></p>
+</div>
+    </div>
+
+    <footer>
+        <a href="https://github.com/milad-rasouli">Created by Milad Rasouli</a>
+    </footer>
+</div>
+
+<script>
+    (function(){
+        const el = document.getElementById('createdAt');
+        if(!el) return;
+        const ts = Number(el.textContent) * 1000;
+        const d = new Date(ts);
+        el.textContent = d.toLocaleString();
+    })();
+</script>
+</body>
+</html>

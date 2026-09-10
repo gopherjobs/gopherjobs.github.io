@@ -1,0 +1,630 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Gopher Jobs</title>
+    <style>
+        body {
+            font-family: Inter, Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f7fafc;
+            color: #1a202c;
+            font-size: 16px;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 24px auto;
+            padding: 16px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 6px 18px rgba(10,20,30,0.06);
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 28px;
+            font-weight: 700;
+        }
+
+        .meta {
+            color: #6b7280;
+            font-size: 14px;
+        }
+
+        .search {
+            margin-top: 18px;
+            position: relative;
+        }
+
+        .search input {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 12px 14px;
+            font-size: 16px;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            outline: none;
+            background: #fff;
+            color: #1a202c;
+        }
+
+        .search input:focus {
+            border-color: #0ea5a6;
+            box-shadow: 0 0 0 3px rgba(14,165,166,0.12);
+        }
+
+        .searchInfo {
+            margin-top: 8px;
+            color: #6b7280;
+            font-size: 14px;
+            min-height: 18px;
+        }
+
+        .jobs { margin-top: 20px; }
+
+        .job {
+            padding: 14px;
+            border-bottom: 1px solid #eef2f7;
+        }
+
+        .job a {
+            display: flex;
+            justify-content: space-between;
+            gap: 12px;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .job .title {
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        .job .metaSmall {
+            color: #64748b;
+            font-size: 14px;
+        }
+
+        .additional {
+            margin-top: 4px;
+            font-size: 13px;
+            color: #4b5563;
+        }
+
+        .badges {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            align-items: flex-end;
+        }
+
+        .badge {
+            background: #eef2ff;
+            color: #1e40af;
+            padding: 4px 8px;
+            border-radius: 999px;
+            font-size: 12px;
+        }
+
+        [hidden] {
+            display: none !important;
+        }
+
+        nav.pagination {
+            display: flex;
+            gap: 6px;
+            justify-content: center;
+            margin-top: 22px;
+            flex-wrap: wrap;
+        }
+
+        nav.pagination a,
+        nav.pagination span {
+            padding: 8px 12px;
+            background: #e6eef8;
+            border-radius: 6px;
+            text-decoration: none;
+            color: #0f172a;
+            font-size: 14px;
+        }
+
+        nav.pagination .current {
+            background: #0ea5a6;
+            color: #fff;
+        }
+
+        nav.pagination .dots {
+            background: transparent;
+            color: #94a3b8;
+        }
+
+        footer {
+            margin-top: 20px;
+            text-align: center;
+            color: #94a3b8;
+            font-size: 14px;
+        }
+
+        @media (max-width: 600px) {
+            h1 { font-size: 22px; }
+            .job .title { font-size: 16px; }
+            .metaSmall, .additional { font-size: 13px; }
+        }
+    </style>
+</head>
+
+<body>
+<div class="container">
+    <header>
+        <div>
+            <h1>Gopher Jobs</h1>
+            <div class="meta">Updated: <span id="createdAt">1789005643</span></div>
+        </div>
+        <div class="meta">Page 4 / 68</div>
+    </header>
+
+    <div class="search">
+        <input id="searchInput" type="search" placeholder="Search jobs (title, company, location, level…)" autocomplete="off" />
+        <div class="searchInfo" id="searchInfo"></div>
+    </div>
+
+    <section class="jobs" id="searchResults" hidden></section>
+
+    <section class="jobs" id="staticJobs">
+        
+        <div class="job">
+            <a href="jobs/li-4455544621.html">
+                <div>
+                    <div class="title">Forward Deployed Engineer - Software Engineer - Germany</div>
+                    <div class="metaSmall">ElevenLabs •  • fulltime</div>
+                    <div class="additional">entry level • Research Services</div>
+                </div>
+                <div class="badges">
+                    <div class="badge">Remote</div>
+                    
+                </div>
+            </a>
+        </div>
+        
+        <div class="job">
+            <a href="jobs/li-4432257810.html">
+                <div>
+                    <div class="title">Senior / Staff Software Engineering (m/f/d) - Payments &amp; Entitlements</div>
+                    <div class="metaSmall">Axel Springer Tech GmbH • Berlin, Germany • fulltime</div>
+                    <div class="additional">mid-senior level • Book and Periodical Publishing</div>
+                </div>
+                <div class="badges">
+                    
+                    <div class="badge">Relocation</div>
+                </div>
+            </a>
+        </div>
+        
+        <div class="job">
+            <a href="jobs/li-4462980082.html">
+                <div>
+                    <div class="title">Software Engineer (Python)</div>
+                    <div class="metaSmall">Audatic • Berlin, Germany • fulltime</div>
+                    <div class="additional">entry level • Software Development</div>
+                </div>
+                <div class="badges">
+                    <div class="badge">Remote</div>
+                    
+                </div>
+            </a>
+        </div>
+        
+        <div class="job">
+            <a href="jobs/li-4464354644.html">
+                <div>
+                    <div class="title">Software Engineer – Treasury &amp; Financial Systems – Remote - €100,000</div>
+                    <div class="metaSmall">Findr •  • fulltime</div>
+                    <div class="additional">mid-senior level • Software Development, IT System Custom Software Development, and Technology, Information and Media</div>
+                </div>
+                <div class="badges">
+                    <div class="badge">Remote</div>
+                    
+                </div>
+            </a>
+        </div>
+        
+        <div class="job">
+            <a href="jobs/li-4464307668.html">
+                <div>
+                    <div class="title">Staff Software Engineer (Front-end)</div>
+                    <div class="metaSmall">Gigs • Berlin, Berlin, Germany • fulltime</div>
+                    <div class="additional">mid-senior level • Construction, Software Development, and IT Services and IT Consulting</div>
+                </div>
+                <div class="badges">
+                    <div class="badge">Remote</div>
+                    
+                </div>
+            </a>
+        </div>
+        
+        <div class="job">
+            <a href="jobs/li-4464324607.html">
+                <div>
+                    <div class="title">Senior Backend Engineer</div>
+                    <div class="metaSmall">Klar •  • fulltime</div>
+                    <div class="additional">mid-senior level • Financial Services</div>
+                </div>
+                <div class="badges">
+                    <div class="badge">Remote</div>
+                    
+                </div>
+            </a>
+        </div>
+        
+        <div class="job">
+            <a href="jobs/li-4451537039.html">
+                <div>
+                    <div class="title">DevOps &amp; Cloud Engineer (m/w/d) - Konstanz, Berlin oder remote</div>
+                    <div class="metaSmall">SEITENBAU GmbH •  • fulltime</div>
+                    <div class="additional">associate • IT Services and IT Consulting</div>
+                </div>
+                <div class="badges">
+                    <div class="badge">Remote</div>
+                    
+                </div>
+            </a>
+        </div>
+        
+        <div class="job">
+            <a href="jobs/li-4464939563.html">
+                <div>
+                    <div class="title">Senior Software Engineer - Backend (Hybrid)</div>
+                    <div class="metaSmall">Quik Hire Staffing •  • contract</div>
+                    <div class="additional">associate • Staffing and Recruiting</div>
+                </div>
+                <div class="badges">
+                    <div class="badge">Remote</div>
+                    
+                </div>
+            </a>
+        </div>
+        
+        <div class="job">
+            <a href="jobs/li-4463007524.html">
+                <div>
+                    <div class="title">Software &amp; AI Solutions Engineer (m/w/d)</div>
+                    <div class="metaSmall">19grams • Berlin, Germany • fulltime</div>
+                    <div class="additional">entry level • Food &amp; Beverages</div>
+                </div>
+                <div class="badges">
+                    <div class="badge">Remote</div>
+                    
+                </div>
+            </a>
+        </div>
+        
+        <div class="job">
+            <a href="jobs/li-4463013181.html">
+                <div>
+                    <div class="title">Backend-Entwickler Laravel (m/w/d) 4-Tage-Woche</div>
+                    <div class="metaSmall">Händlerbund •  • fulltime</div>
+                    <div class="additional">associate • Legal Services</div>
+                </div>
+                <div class="badges">
+                    <div class="badge">Remote</div>
+                    
+                </div>
+            </a>
+        </div>
+        
+        <div class="job">
+            <a href="jobs/li-4446056396.html">
+                <div>
+                    <div class="title">Full-Stack Software Engineer (F/M/D)</div>
+                    <div class="metaSmall">NavVis • Munich, Bavaria, Germany • fulltime</div>
+                    <div class="additional">mid-senior level • Technology, Information and Internet</div>
+                </div>
+                <div class="badges">
+                    
+                    <div class="badge">Relocation</div>
+                </div>
+            </a>
+        </div>
+        
+        <div class="job">
+            <a href="jobs/li-4462291027.html">
+                <div>
+                    <div class="title">Fullstack Engineer (f/m/d)</div>
+                    <div class="metaSmall">Monpay •  • fulltime</div>
+                    <div class="additional">entry level • Software Development</div>
+                </div>
+                <div class="badges">
+                    <div class="badge">Remote</div>
+                    
+                </div>
+            </a>
+        </div>
+        
+        <div class="job">
+            <a href="jobs/li-4462511256.html">
+                <div>
+                    <div class="title">Fullstack Web-Entwickler (m/w/d)</div>
+                    <div class="metaSmall">SHAPE [DACH] •  • fulltime</div>
+                    <div class="additional">associate • IT Services and IT Consulting</div>
+                </div>
+                <div class="badges">
+                    <div class="badge">Remote</div>
+                    
+                </div>
+            </a>
+        </div>
+        
+        <div class="job">
+            <a href="jobs/li-4464378271.html">
+                <div>
+                    <div class="title">Founding Engineer (m/f/d) (50% – 100%)</div>
+                    <div class="metaSmall">SteerSuite • Düsseldorf, North Rhine-Westphalia, Germany • parttime</div>
+                    <div class="additional">entry level • IT Services and IT Consulting</div>
+                </div>
+                <div class="badges">
+                    <div class="badge">Remote</div>
+                    
+                </div>
+            </a>
+        </div>
+        
+        <div class="job">
+            <a href="jobs/li-4464093710.html">
+                <div>
+                    <div class="title">Software Engineer - Fullstack (AI x Greentech) (m/f/d)</div>
+                    <div class="metaSmall">Reonic • Augsburg, Bavaria, Germany • fulltime</div>
+                    <div class="additional">associate • Software Development and Services for Renewable Energy</div>
+                </div>
+                <div class="badges">
+                    <div class="badge">Remote</div>
+                    
+                </div>
+            </a>
+        </div>
+        
+        <div class="job">
+            <a href="jobs/li-4464310971.html">
+                <div>
+                    <div class="title">AI Engineer (Forward-Deployed)</div>
+                    <div class="metaSmall">Hoshii • Munich, Bavaria, Germany • fulltime</div>
+                    <div class="additional">entry level • Software Development and Artificial Intelligence</div>
+                </div>
+                <div class="badges">
+                    <div class="badge">Remote</div>
+                    
+                </div>
+            </a>
+        </div>
+        
+        <div class="job">
+            <a href="jobs/li-4464641666.html">
+                <div>
+                    <div class="title">Software Developer (m/f/d)</div>
+                    <div class="metaSmall">Fujitsu • Berlin, Berlin, Germany • fulltime</div>
+                    <div class="additional">entry level • IT Services and IT Consulting</div>
+                </div>
+                <div class="badges">
+                    <div class="badge">Remote</div>
+                    <div class="badge">Relocation</div>
+                </div>
+            </a>
+        </div>
+        
+        <div class="job">
+            <a href="jobs/li-4455300806.html">
+                <div>
+                    <div class="title">Senior Java Backend Engineer (m/f/x)</div>
+                    <div class="metaSmall">Atolls • Berlin, Germany • fulltime</div>
+                    <div class="additional">mid-senior level • Technology, Information and Media</div>
+                </div>
+                <div class="badges">
+                    <div class="badge">Remote</div>
+                    
+                </div>
+            </a>
+        </div>
+        
+        <div class="job">
+            <a href="jobs/li-4464425974.html">
+                <div>
+                    <div class="title">Senior Software Engineer / DevOps AI (m/w/d)</div>
+                    <div class="metaSmall">mamgo | Talente 🔗 Jobs • Cologne, North Rhine-Westphalia, Germany • fulltime</div>
+                    <div class="additional">mid-senior level • Technology, Information and Internet</div>
+                </div>
+                <div class="badges">
+                    <div class="badge">Remote</div>
+                    
+                </div>
+            </a>
+        </div>
+        
+        <div class="job">
+            <a href="jobs/li-4464430142.html">
+                <div>
+                    <div class="title">Senior Software Engineer (AI Infrastructure)</div>
+                    <div class="metaSmall">Alignerr • Berlin, Berlin, Germany • contract</div>
+                    <div class="additional">mid-senior level • Technology, Information and Internet</div>
+                </div>
+                <div class="badges">
+                    <div class="badge">Remote</div>
+                    
+                </div>
+            </a>
+        </div>
+        
+    </section>
+
+    <nav class="pagination" id="pagination">
+        
+        
+
+        
+        <a href="list3.html">Prev</a>
+        
+
+        <a href="list1.html" >1</a>
+
+        
+
+        
+        
+
+        
+        
+        
+        <a href="list3.html">3</a>
+        
+        
+        
+        <span class="current">4</span>
+        
+        
+        
+        <a href="list5.html">5</a>
+        
+        
+        
+
+        
+        <span class="dots">…</span>
+        
+
+        
+        <a href="list68.html" >68</a>
+        
+
+        
+        <a href="list5.html">Next</a>
+        
+    </nav>
+
+    <footer>
+        <a href="https://github.com/milad-rasouli">Created by Milad Rasouli</a>
+    </footer>
+</div>
+
+<script>
+    (function() {
+        const el = document.getElementById('createdAt');
+        if(!el) return;
+        const ts = Number(el.textContent) * 1000;
+        el.textContent = new Date(ts).toLocaleString();
+    })();
+
+    (function() {
+        const input = document.getElementById('searchInput');
+        const info = document.getElementById('searchInfo');
+        const results = document.getElementById('searchResults');
+        const staticJobs = document.getElementById('staticJobs');
+        const pagination = document.getElementById('pagination');
+        if(!input || !results || !staticJobs) return;
+
+        let jobs = null;
+        let loading = false;
+
+        function escapeHTML(s) {
+            return String(s == null ? '' : s)
+                .replace(/&/g, '&amp;')
+                .replace(/</g, '&lt;')
+                .replace(/>/g, '&gt;')
+                .replace(/"/g, '&quot;');
+        }
+
+        function badges(job) {
+            let b = '';
+            if(job.remote) b += '<div class="badge">Remote</div>';
+            if(job.relocation) b += '<div class="badge">Relocation</div>';
+            return b;
+        }
+
+        function renderJob(job) {
+            return '<div class="job">' +
+                '<a href="jobs/' + encodeURIComponent(job.id) + '.html">' +
+                    '<div>' +
+                        '<div class="title">' + escapeHTML(job.title) + '</div>' +
+                        '<div class="metaSmall">' + escapeHTML(job.company) + ' • ' + escapeHTML(job.location) + ' • ' + escapeHTML(job.type) + '</div>' +
+                        '<div class="additional">' + escapeHTML(job.level) + ' • ' + escapeHTML(job.company_industry) + '</div>' +
+                    '</div>' +
+                    '<div class="badges">' + badges(job) + '</div>' +
+                '</a>' +
+            '</div>';
+        }
+
+        function showStatic() {
+            results.hidden = true;
+            results.innerHTML = '';
+            staticJobs.hidden = false;
+            if(pagination) pagination.hidden = false;
+            info.textContent = '';
+        }
+
+        function filterJobs(query) {
+            const q = query.toLowerCase();
+            return jobs.filter(function(job) {
+                return [job.title, job.company, job.location, job.level, job.type, job.company_industry]
+                    .some(function(field) {
+                        return String(field || '').toLowerCase().indexOf(q) !== -1;
+                    });
+            });
+        }
+
+        function runSearch() {
+            const query = input.value.trim();
+            if(!query) {
+                showStatic();
+                return;
+            }
+            staticJobs.hidden = true;
+            if(pagination) pagination.hidden = true;
+            if(!jobs) {
+                info.textContent = loading ? 'Loading…' : '';
+                return;
+            }
+            const matches = filterJobs(query);
+            results.hidden = false;
+            if(matches.length === 0) {
+                results.innerHTML = '';
+                info.textContent = 'No jobs found.';
+                return;
+            }
+            results.innerHTML = matches.map(renderJob).join('');
+            info.textContent = matches.length + ' result' + (matches.length === 1 ? '' : 's') + ' found.';
+        }
+
+        function loadJobs() {
+            if(jobs || loading) return;
+            loading = true;
+            info.textContent = 'Loading…';
+            fetch('jobs.json')
+                .then(function(r) { if(!r.ok) throw new Error('failed'); return r.json(); })
+                .then(function(data) {
+                    jobs = data;
+                    loading = false;
+                    runSearch();
+                })
+                .catch(function() {
+                    loading = false;
+                    info.textContent = 'Failed to load search index.';
+                });
+        }
+
+        let timer = null;
+        input.addEventListener('input', function() {
+            if(!jobs) loadJobs();
+            clearTimeout(timer);
+            timer = setTimeout(runSearch, 120);
+        });
+        input.addEventListener('focus', loadJobs);
+    })();
+</script>
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Senior Python Engineer (part-time, contract)</title>
+    <style>
+        body{font-family:Inter, Arial, Helvetica, sans-serif;background:#f7fafc;color:#111;margin:0;padding:20px}
+        .wrap{max-width:900px;margin:0 auto;background:#fff;padding:20px;border-radius:8px;box-shadow:0 8px 24px rgba(12,20,30,0.06)}
+        h1{margin:0 0 8px 0}
+        .meta{color:#6b7280;font-size:13px;margin-bottom:8px}
+        .apply{display:inline-block;background:#0ea5a6;color:#fff;padding:8px 12px;border-radius:6px;text-decoration:none}
+        .back{display:inline-block;margin-left:12px;color:#374151;text-decoration:none}
+        .section{margin-top:16px}
+        .apply-section {display: flex;align-items: center;gap: 12px;}
+        .apply-section .apply {margin-left: auto;}
+
+         
+        .desc {line-height:1.6;font-size:15px;color:#111;}
+        .desc h1,.desc h2,.desc h3 {margin-top:20px;margin-bottom:10px;}
+        .desc pre{background:#f8fafc;padding:12px;border-radius:6px;border:1px solid #eef2f7;overflow-x:auto}
+        .desc code{background:#f1f5f9;padding:2px 4px;border-radius:4px}
+        .desc ul{padding-left:20px;margin:8px 0}
+        .desc p{margin:10px 0}
+
+        footer{margin-top:18px;text-align:center;color:#94a3b8}
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <h1>Senior Python Engineer (part-time, contract)</h1>
+    <div class="meta">Ataccama • Prague, Czechia • contract</div>
+
+
+    <div class="section apply-section">
+        <a class="back" href="../list1.html">Back to Home</a>
+        <a class="apply" href="https://www.linkedin.com/jobs/view/4463042841" target="_blank" rel="noopener">Apply</a>
+    </div>
+
+    <div class="section">
+        <strong>Remote:</strong> Yes •
+        <strong>Relocation:</strong> No
+    </div>
+
+    <div class="section">
+        <h3>Description</h3>
+        <div class="desc"><p><strong>Ataccama</strong>
+is the agentic data trust company. Organizations worldwide rely on Ataccama ONE, the agentic data trust platform, to ensure data is accurate, accessible, and trusted for every decision and system. Powered by the ONE AI Agent, Ataccama ONE brings autonomy to data quality and governance, continuously monitoring, improving, and explaining the reliability of data across complex enterprise and multi-agent environments. At the core of the platform is Ataccama’s market-leading data quality, with modules built around it to unify data quality monitoring, catalog, lineage, observability, and reference data management, ensuring data is consistent and explainable. This quality-first foundation makes data the engine of trust, powering AI, analytics, and operations with confidence.</p>
+<p>Recognized as a
+<strong>Leader in the 2026 Gartner Magic Quadrant for Augmented Data Quality and positioned furthest in Completeness of Vision</strong>
+, Ataccama continues to set the standard for enterprise-grade data trust.</p>
+<p>Our people are located across the globe. They succeed by collaborating as a team and thrive in our company culture defined by these core values:</p>
+<p><strong>Challenging Fun</strong></p>
+<p><strong>ONE Team</strong></p>
+<p><strong>Customer Centric</strong></p>
+<p><strong>Candid and Caring</strong></p>
+<p><strong>Aim High</strong></p>
+<p><strong>Our Challenge</strong></p>
+<p>Ataccama serves Fortune 500 customers with demanding security and compliance requirements, which means our own security and compliance program has to run at a scale and speed that manual work simply can’t sustain. Our Security &amp; Compliance team has responded by building software: an internal platform that keeps risks, controls, and evidence in one place, drives owner attestations, and turns recurring compliance work into scheduled, tracked, and auditable processes.</p>
+<p>The platform is in daily use, and the next phase is the interesting part. Instead of asking people for evidence, we want to collect it directly from the systems that already hold it — and, where deterministic automation isn’t practical, have an AI agent prepare evidence for human review. That’s a genuine engineering problem: reliable integrations against a dozen different APIs, a scheduler you can trust, normalized evidence you can put in front of an auditor, and no shortcuts on security.</p>
+<p>We’re bringing in a senior engineer on a contract basis to own that build with us.</p>
+<p><strong>Your Challenge</strong></p>
+<ul>
+<li>Design and deliver production-grade evidence collectors that pull compliance evidence directly from our security, cloud, and identity tooling — configuration, scheduling, normalization, failure handling, and alerting included.</li>
+<li>Productize the collector framework so that adding the next integration is a well-trodden path rather than a new project.</li>
+<li>Take the remaining platform modules through to production cutover: role-based access from identity-provider claims, admin and audit-logging hardening, and enabling writes back to upstream systems.</li>
+<li>Build agentic evidence collection: an AI “compliance specialist” that interprets a control, designs and executes a review procedure over REST APIs and MCP servers, interacts with control owners in our collaboration tools, and hands its work to a mandatory human review gate.</li>
+<li>Keep the platform boringly reliable — database parity and migration safety in CI, observability, performance, and remediation of internal AppSec findings before anything reaches production.</li>
+<li>Work in the open with our Security &amp; Compliance team: small frequent PRs, tests with the code, ADRs for decisions worth remembering, and documentation that outlives the engagement.</li>
+</ul>
+<p><strong>Our Tech Stack</strong></p>
+<ul>
+<li>Backend: Python, FastAPI, SQLAlchemy + Alembic, APScheduler</li>
+<li>Data: PostgreSQL in deployment, SQLite locally and in CI</li>
+<li>Cloud &amp; delivery: Docker on AWS (ECS/ECR), AWS Secrets Manager, Terraform, GitHub + GitHub Actions</li>
+<li>Integrations: REST APIs across our security, cloud, identity, and collaboration tooling; OIDC SSO; MCP servers for agentic workflows</li>
+<li>AI-assisted development: the codebase is built with AI coding tools and we expect you to use them — with full ownership of what you merge</li>
+</ul>
+<p><strong>What we are looking for:</strong></p>
+<ul>
+<li>Senior backend experience with strong Python (FastAPI, SQLAlchemy/Alembic), or equivalent depth in a comparable stack and the appetite to work in ours.</li>
+<li>A track record of integrating third-party REST APIs in production: auth flows and token handling, pagination, rate limits, webhooks, retries, and the failure modes that only show up at 3 a.m.</li>
+<li>Working knowledge of AWS (ECS, Secrets Manager, IAM basics) and Docker; able to read and adjust Terraform.</li>
+<li>Strong testing habits and comfort in a documentation-heavy, review-driven workflow.</li>
+<li>A security mindset: least privilege, secret hygiene, and care when handling confidential data.</li>
+<li>Fluent English; Czech is welcome but not required.</li>
+</ul>
+<p><strong>Nice to have</strong></p>
+<ul>
+<li>Hands-on experience with SIEM/SOC or security tooling APIs.</li>
+<li>Exposure to GRC and compliance automation (SOC 2, ISO 27001) or products like Vanta or Drata.</li>
+<li>Experience building LLM-agent workflows with tool use, or with Jira, Slack, or Notion APIs.</li>
+<li>Experience with observability stacks (Grafana, Prometheus).</li>
+</ul>
+<p><strong>Engagement details</strong></p>
+<ul>
+<li>Contract (B2B/IČO), time &amp; materials, monthly invoicing</li>
+<li>Part-time, 0.5 FTE (approx. 10 man-days per month)</li>
+<li>ASAP through 31 December 2026, with extension into 2027 by mutual agreement</li>
+<li>Remote within the EU, possible to work also from our Prague office</li>
+</ul>
+<p><em>While we highly value cooperation with all our business partners, we don’t accept unsolicited resumes from any source other than directly from a candidate. We reserve the right not to pay any fee for sending an unsolicited offer containing the details or resume of a job candidate, even if the relevant candidate is employed by our company.</em></p>
+<p><em>Ataccama is proud to be an Equal Opportunity Employer. We know diversity fuels knowledge exchange, fosters innovation, and empowers us to grow and be better as a company and as humans. We seek to recruit, develop, and retain the most talented people from a diverse candidate pool. We are committed to fair and accessible employment practices. If you are contacted for a job opportunity, please let us know how we can best meet your needs and advise us of any accommodations required to ensure fair and equitable access throughout the recruitment and selection process.</em></p>
+<p><em>We may use artificial intelligence (AI) tools to support parts of the hiring process, such as reviewing applications, analyzing resumes, or assessing responses. These tools assist our recruitment team but do not replace human judgment. Final hiring decisions are ultimately made by humans. If you would like more information about how your data is processed, please contact us.</em></p>
+</div>
+    </div>
+
+    <footer>
+        <a href="https://github.com/milad-rasouli">Created by Milad Rasouli</a>
+    </footer>
+</div>
+
+<script>
+    (function(){
+        const el = document.getElementById('createdAt');
+        if(!el) return;
+        const ts = Number(el.textContent) * 1000;
+        const d = new Date(ts);
+        el.textContent = d.toLocaleString();
+    })();
+</script>
+</body>
+</html>

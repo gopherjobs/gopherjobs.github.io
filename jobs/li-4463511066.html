@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Software Engineer</title>
+    <style>
+        body{font-family:Inter, Arial, Helvetica, sans-serif;background:#f7fafc;color:#111;margin:0;padding:20px}
+        .wrap{max-width:900px;margin:0 auto;background:#fff;padding:20px;border-radius:8px;box-shadow:0 8px 24px rgba(12,20,30,0.06)}
+        h1{margin:0 0 8px 0}
+        .meta{color:#6b7280;font-size:13px;margin-bottom:8px}
+        .apply{display:inline-block;background:#0ea5a6;color:#fff;padding:8px 12px;border-radius:6px;text-decoration:none}
+        .back{display:inline-block;margin-left:12px;color:#374151;text-decoration:none}
+        .section{margin-top:16px}
+        .apply-section {display: flex;align-items: center;gap: 12px;}
+        .apply-section .apply {margin-left: auto;}
+
+         
+        .desc {line-height:1.6;font-size:15px;color:#111;}
+        .desc h1,.desc h2,.desc h3 {margin-top:20px;margin-bottom:10px;}
+        .desc pre{background:#f8fafc;padding:12px;border-radius:6px;border:1px solid #eef2f7;overflow-x:auto}
+        .desc code{background:#f1f5f9;padding:2px 4px;border-radius:4px}
+        .desc ul{padding-left:20px;margin:8px 0}
+        .desc p{margin:10px 0}
+
+        footer{margin-top:18px;text-align:center;color:#94a3b8}
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <h1>Software Engineer</h1>
+    <div class="meta">throxy (yc p25) • London, England, UK • fulltime</div>
+
+
+    <div class="section apply-section">
+        <a class="back" href="../list1.html">Back to Home</a>
+        <a class="apply" href="https://www.linkedin.com/jobs/view/4463511066" target="_blank" rel="noopener">Apply</a>
+    </div>
+
+    <div class="section">
+        <strong>Remote:</strong> No •
+        <strong>Relocation:</strong> Yes
+    </div>
+
+    <div class="section">
+        <h3>Description</h3>
+        <div class="desc"><p><strong>Software Engineer @ throxy</strong>
+<strong>About Throxy</strong>
+throxy is a small applied research lab working on the future of sales.</p>
+<p>We are a group of researchers, engineers, and technologists in London inventing at the edge of what's useful and possible. At throxy, we build agents that generate sales pipeline for our customers. Our customers don't care how it happens, they care that it does.</p>
+<p>We're a small, talent-dense team moving extremely fast: 8 engineers shipping to production daily, talking directly to customers, and owning problems end-to-end.</p>
+<p><strong>The Role</strong>
+You won't be handed tickets. You'll be handed a problem and trusted to scope it, sequence it, and ship it end-to-end: design the data model, ship the migrations, instrument production, watch the metric move.</p>
+<p><strong>What You'll Work On</strong></p>
+<ul>
+<li>Maestro, our in-house dialer: real-time calling infrastructure on an Elixir core, placing millions of calls a month, with inbound, callbacks, and voicemail detection on local models</li>
+<li>The data engine underneath: provider waterfalls, LLM qualification and evaluation pipelines, a self-healing lead dataset, and scoring that decides who gets called next</li>
+<li>The intelligence layer: post-call insights and call-outcome classification</li>
+<li>Replacing every off-the-shelf tool we've outgrown with our own</li>
+</ul>
+<p><strong>How It Works Here</strong></p>
+<ul>
+<li>Customers pay us for Meetings Booked, not for software.Being paid for the outcome deletes a whole class of problems: no engagement metrics, no A/B-tested button colors, no features promised by sales.</li>
+<li>No PMs. The roadmap comes from the funnel that feeds that KPI: pickup rate, time in conversation, data accuracy. You own a number, not a backlog</li>
+<li>Your users are an SDR floor making tens of thousands of dials a day on what you ship. Every dial is instrumented: a regression shows on a monitor in seconds, before anyone has to tell you. Their asks are triaged the same day, the urgent ones are in production before the evening</li>
+</ul>
+<p><strong>What We're Looking For</strong></p>
+<ul>
+<li>3+ years of production software engineering at a high-velocity company (we also hire at 6+ for senior scope)</li>
+<li>Deep TypeScript and modern web infra. We run Next.js, Bun, Postgres, ClickHouse, and OpenSearch on AWS, with Datadog over all of it</li>
+<li>You've built systems that had to hold up under real load</li>
+<li>You've shipped real LLM features: prompt design, evals, structured outputs, agentic workflows, and you know where they break</li>
+<li>Zero → one on ambiguous problems without a PM holding your hand</li>
+<li>Strong written communication: you can write a design doc that aligns a team</li>
+<li>Bias to action: you'd rather ship a working v1 today than a perfect v1 next month</li>
+<li>In person in London, 5 days a week (Piccadilly). UK-based or ready to relocate</li>
+</ul>
+<p><strong>Why throxy</strong></p>
+<ul>
+<li>Real ownership: 8 engineers, big surface area, your fingerprints will be everywhere</li>
+<li>Senior bar: everyone you work with will sharpen you</li>
+<li>AI-native from day one, not retrofitting AI onto a legacy product</li>
+<li>Speed: our interview loop completes in 72 hours, and the job moves the same way</li>
+<li>Hit the ground running: you will have ownership of a hard problem within the first week</li>
+</ul>
+</div>
+    </div>
+
+    <footer>
+        <a href="https://github.com/milad-rasouli">Created by Milad Rasouli</a>
+    </footer>
+</div>
+
+<script>
+    (function(){
+        const el = document.getElementById('createdAt');
+        if(!el) return;
+        const ts = Number(el.textContent) * 1000;
+        const d = new Date(ts);
+        el.textContent = d.toLocaleString();
+    })();
+</script>
+</body>
+</html>

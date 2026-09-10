@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Senior DevOps Engineer</title>
+    <style>
+        body{font-family:Inter, Arial, Helvetica, sans-serif;background:#f7fafc;color:#111;margin:0;padding:20px}
+        .wrap{max-width:900px;margin:0 auto;background:#fff;padding:20px;border-radius:8px;box-shadow:0 8px 24px rgba(12,20,30,0.06)}
+        h1{margin:0 0 8px 0}
+        .meta{color:#6b7280;font-size:13px;margin-bottom:8px}
+        .apply{display:inline-block;background:#0ea5a6;color:#fff;padding:8px 12px;border-radius:6px;text-decoration:none}
+        .back{display:inline-block;margin-left:12px;color:#374151;text-decoration:none}
+        .section{margin-top:16px}
+        .apply-section {display: flex;align-items: center;gap: 12px;}
+        .apply-section .apply {margin-left: auto;}
+
+         
+        .desc {line-height:1.6;font-size:15px;color:#111;}
+        .desc h1,.desc h2,.desc h3 {margin-top:20px;margin-bottom:10px;}
+        .desc pre{background:#f8fafc;padding:12px;border-radius:6px;border:1px solid #eef2f7;overflow-x:auto}
+        .desc code{background:#f1f5f9;padding:2px 4px;border-radius:4px}
+        .desc ul{padding-left:20px;margin:8px 0}
+        .desc p{margin:10px 0}
+
+        footer{margin-top:18px;text-align:center;color:#94a3b8}
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <h1>Senior DevOps Engineer</h1>
+    <div class="meta">Tokenomics - Coins Connect • Phaya Thai, Bangkok City, Thailand • fulltime</div>
+
+
+    <div class="section apply-section">
+        <a class="back" href="../list1.html">Back to Home</a>
+        <a class="apply" href="https://www.linkedin.com/jobs/view/4460232300" target="_blank" rel="noopener">Apply</a>
+    </div>
+
+    <div class="section">
+        <strong>Remote:</strong> Yes •
+        <strong>Relocation:</strong> No
+    </div>
+
+    <div class="section">
+        <h3>Description</h3>
+        <div class="desc"><p><strong>About the Company</strong></p>
+<p>Join Us in Shaping the Future of Digital Assets in Thailand!</p>
+<p>Be Part of a Licensed Startup Ready to Revolutionize the Industry</p>
+<ul>
+<li>Tokenomics Co., Ltd. is a fully licensed digital asset business operating under the regulatory supervision of the Securities and Exchange Commission (SEC) of Thailand. The company is currently preparing for its official operational launch and is looking for passionate, driven individuals to join us on this journey. As an early member of the team, you will have the unique opportunity to pioneer and build a forward-thinking organization from the ground up. If you are ready to be part of the new wave in Thailand's digital asset industry, we invite you to build the future together.</li>
+</ul>
+<p><strong>Roles &amp; Responsibilities</strong></p>
+<ul>
+<li>The Senior DevOps Engineer will be primarily responsible for designing, building, and maintaining Tokenomics' entire digital asset platform infrastructure on AWS using Terraform (IaC), GitHub Actions (CI), ArgoCD (CD), and HashiCorp Vault (Secret Management). You will work closely with the Tech Lead, Engineering team, and IT Governance team to ensure the system is stable, secure, production-scalable, and fully compliant with SEC regulatory requirements for digital asset businesses.</li>
+</ul>
+<p><strong>Infrastructure as Code - Terraform</strong></p>
+<ul>
+<li>Design and develop Infrastructure as Code using Terraform covering all AWS resources, including VPC, ECS/EKS, RDS, SQS, SNS, CloudFront, and Route 53.</li>
+<li>Define Terraform Module standards, Project Structure, and State Management (Remote State, State Locking) to enable efficient infrastructure development and maintenance.</li>
+<li>Ensure infrastructure code has adequate test coverage and undergoes a code review process before applying.</li>
+<li>Manage multiple environments (Development, Staging, Production) to maintain consistency and safely promote changes.</li>
+<li>Monitor AWS costs and optimize resource utilization for cost-efficiency without compromising system stability.</li>
+</ul>
+<p><strong>CI Pipeline - GitHub Actions</strong></p>
+<ul>
+<li>Design and maintain CI pipelines using GitHub Actions, covering Build, Unit Test, Integration Test, SAST, Dependency Scanning, and Docker Image Build.</li>
+<li>Establish Reusable Workflow and Composite Action standards for engineers to reuse consistently across all repositories.</li>
+<li>Manage GitHub Actions Runners (Self-hosted or GitHub-hosted) to ensure optimal performance and adherence to company security standards.</li>
+<li>Define Branch Protection Rules, Required Status Checks, and Review Policies for safe and auditable merge processes.</li>
+<li>Manage Container Registry (ECR), including Image Tagging Strategy, Vulnerability Scanning, and Lifecycle Policies.</li>
+</ul>
+<p><strong>CD Pipeline - ArgoCD</strong></p>
+<ul>
+<li>Design and maintain GitOps workflows using ArgoCD covering deployment of all microservices to Kubernetes Clusters on AWS EKS.</li>
+<li>Define Application Structure in ArgoCD, including App of Apps Pattern, Sync Policies, and Health Checks for each service.</li>
+<li>Manage Helm Charts and Kustomize Overlays across environments to align with Terraform-managed infrastructure.</li>
+<li>Oversee Rollout Strategies (Blue/Green, Canary) and Rollback Procedures to prevent deployment disruptions to users and trading systems.</li>
+<li>Configure ArgoCD RBAC and SSO Integration to enforce access control based on the Principle of Least Privilege.</li>
+</ul>
+<p><strong>Secret Management - HashiCorp Vault</strong></p>
+<ul>
+<li>Design and maintain High Availability HashiCorp Vault Clusters on AWS, featuring Auto Unseal via AWS KMS and Audit Logging.</li>
+<li>Define Secret Engines, Policies, and Auth Methods (Kubernetes Auth, AWS IAM Auth) for each service and environment.</li>
+<li>Perform routine secret rotations and configure Dynamic Secrets for Database Credentials, AWS Credentials, and third-party API Keys.</li>
+<li>Collaborate with the IT Governance team to ensure secret management aligns with SEC requirements and international standards such as ISO 27001.</li>
+<li>Create documentation and runbooks for Break-Glass procedures and emergency Vault recovery.</li>
+</ul>
+<p><strong>MongoDB Atlas - Operations</strong></p>
+<ul>
+<li>Manage MongoDB Atlas Clusters, including Cluster Sizing, Replica Set Configuration, Auto Scaling, and AWS VPC Network Peering.</li>
+<li>Maintain backup strategies, Point-in-Time Recovery, and conduct quarterly data recovery drills.</li>
+<li>Configure MongoDB Atlas Alerts, Performance Advisor, and real-time monitoring connected to the team's observability system.</li>
+<li>Manage Atlas Network Access, IP Whitelisting, and Private Endpoints to ensure maximum database access security.</li>
+<li>Coordinate with developers to review Index Strategies and Query Performance to prevent production performance issues.</li>
+</ul>
+<p><strong>Observability and Incident Response</strong></p>
+<ul>
+<li>Implement an end-to-end Observability system covering Metrics (CloudWatch, Prometheus), Logging (CloudWatch Logs, ELK Stack or equivalent), and Tracing (AWS X-Ray or OpenTelemetry).</li>
+<li>Design Alert Rules and On-call Runbooks for critical events such as system outages, service degradation, or high database latency.</li>
+<li>Act as Incident Commander during critical production incidents, collaborating with the Tech Lead and team to resolve issues and report outcomes.</li>
+<li>Prepare Post-mortem Reports following major incidents and systematically follow up on Root Cause Analysis (RCA), while supporting regulatory incident reporting to the SEC when required.</li>
+</ul>
+<p><strong>Security and Compliance</strong></p>
+<ul>
+<li>Maintain AWS Security Baseline, covering IAM Policies (Least Privilege), Security Groups, VPC Flow Logs, AWS Config, CloudTrail, and GuardDuty.</li>
+<li>Collaborate with the IT Governance team to ensure infrastructure complies with SEC IT regulations for digital asset operators.</li>
+<li>Support annual Vulnerability Assessments and Penetration Testing per regulatory cycles, as well as re-assessments during major system modifications.</li>
+<li>Support audit readiness by keeping access logs, technical documentation, and change logs accurate and up to date.</li>
+</ul>
+<p><strong>Team Development and Standards</strong></p>
+<ul>
+<li>Establish DevOps Best Practices, Runbooks, and Standard Operating Procedures (SOPs) for the team.</li>
+<li>Mentor Junior and Mid-level DevOps Engineers on AWS, Kubernetes, Terraform, and Security.</li>
+<li>Work with the Tech Lead to align the Infrastructure Roadmap with the Engineering Roadmap and regulatory deadlines.</li>
+<li>Evaluate and propose new tools or services to enhance platform stability or efficiency.</li>
+</ul>
+<p><strong>Qualifications</strong></p>
+<p><strong>Education and Experience</strong></p>
+<ul>
+<li>Bachelor’s degree or higher in Computer Science, Software Engineering, Computer Engineering, or a related field.</li>
+<li>Minimum 5 years of experience in DevOps, Platform Engineering, or Site Reliability Engineering.</li>
+<li>Prior experience in high-stability production environments such as FinTech, Digital Assets, Cryptocurrency Exchanges, or regulated financial industries is preferred.</li>
+</ul>
+<p><strong>Technical Expertise</strong></p>
+<ul>
+<li>Deep proficiency in AWS, covering Networking (VPC, Transit Gateway, PrivateLink), Compute (ECS, EKS, Lambda), Storage (S3, EFS), Messaging (SQS, SNS, EventBridge), and Security (IAM, KMS, Secrets Manager).</li>
+<li>Production-level experience with Terraform or other IaC tools (Pulumi, CDK), with the ability to code in TypeScript, Python, or Go.</li>
+<li>Advanced Kubernetes skills covering Cluster Management, Networking (Service Mesh, Ingress), Resource Management, RBAC, and Helm.</li>
+<li>Hands-on experience with GitHub Actions for complex CI pipelines, including Reusable Workflows and Self-hosted Runners.</li>
+<li>Hands-on experience with ArgoCD or other GitOps tools for microservice CD pipeline management.</li>
+<li>Practical experience with HashiCorp Vault, including setup, policy management, secret engines, and integration with Kubernetes/AWS.</li>
+<li>Production experience with MongoDB Atlas operations.</li>
+<li>Scripting proficiency in Bash, Python, or Go for operational automation.</li>
+<li>Basic understanding of Blockchain technology and digital asset trading platforms is an advantage.</li>
+</ul>
+<p><strong>Leadership &amp; Collaboration</strong></p>
+<ul>
+<li>Ability to collaborate effectively with Tech Leads, Engineering teams, and IT Governance teams by balancing developer infrastructure needs with regulatory requirements.</li>
+<li>Strong communication skills, with the ability to convey infrastructure challenges and solutions clearly to non-DevOps team members.</li>
+<li>Experience producing thorough, actionable documentation and runbooks.</li>
+<li>Prior experience collaborating with Compliance, Legal, or Regulatory stakeholders is an advantage.</li>
+</ul>
+<p><strong>Personal Attributes</strong></p>
+<ul>
+<li>Strong security mindset—prioritizing security in every infrastructure decision.</li>
+<li>High accountability for system reliability, willing to be on-call for emergency situations when needed.</li>
+<li>Passionate about automating repetitive tasks and continuously seeking process improvements.</li>
+<li>Keen interest in the digital asset and blockchain industry, actively keeping up with trends.</li>
+<li>Proficient Thai language skills (spoken and written), as internal communication and documentation are primarily in Thai.</li>
+<li>Intermediate English language proficiency—able to read technical documentation and communicate with international vendors.</li>
+</ul>
+<p><strong>Working Conditions</strong></p>
+<p><strong>Probation and Benefits</strong></p>
+<ul>
+<li>90-day probation period.</li>
+<li>Flexible Hybrid Work Arrangement (On-site 60% : Remote 40%).</li>
+<li>Health Insurance.</li>
+<li>Performance-based Bonus &amp; Equity Options (Details provided during the offer stage).</li>
+</ul>
+<p><strong>Office Location</strong></p>
+<ul>
+<li>The RICE Building: 1467/8 (14th Floor), Saphan Khwai Intersection, Phahonyothin Road, Bangkok.</li>
+<li>Close to BTS Green Line (Saphan Khwai Station)</li>
+</ul>
+</div>
+    </div>
+
+    <footer>
+        <a href="https://github.com/milad-rasouli">Created by Milad Rasouli</a>
+    </footer>
+</div>
+
+<script>
+    (function(){
+        const el = document.getElementById('createdAt');
+        if(!el) return;
+        const ts = Number(el.textContent) * 1000;
+        const d = new Date(ts);
+        el.textContent = d.toLocaleString();
+    })();
+</script>
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Senior Software Engineer</title>
+    <style>
+        body{font-family:Inter, Arial, Helvetica, sans-serif;background:#f7fafc;color:#111;margin:0;padding:20px}
+        .wrap{max-width:900px;margin:0 auto;background:#fff;padding:20px;border-radius:8px;box-shadow:0 8px 24px rgba(12,20,30,0.06)}
+        h1{margin:0 0 8px 0}
+        .meta{color:#6b7280;font-size:13px;margin-bottom:8px}
+        .apply{display:inline-block;background:#0ea5a6;color:#fff;padding:8px 12px;border-radius:6px;text-decoration:none}
+        .back{display:inline-block;margin-left:12px;color:#374151;text-decoration:none}
+        .section{margin-top:16px}
+        .apply-section {display: flex;align-items: center;gap: 12px;}
+        .apply-section .apply {margin-left: auto;}
+
+         
+        .desc {line-height:1.6;font-size:15px;color:#111;}
+        .desc h1,.desc h2,.desc h3 {margin-top:20px;margin-bottom:10px;}
+        .desc pre{background:#f8fafc;padding:12px;border-radius:6px;border:1px solid #eef2f7;overflow-x:auto}
+        .desc code{background:#f1f5f9;padding:2px 4px;border-radius:4px}
+        .desc ul{padding-left:20px;margin:8px 0}
+        .desc p{margin:10px 0}
+
+        footer{margin-top:18px;text-align:center;color:#94a3b8}
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <h1>Senior Software Engineer</h1>
+    <div class="meta">Bestarion: AI-driven Delivery Partner •  • fulltime</div>
+
+
+    <div class="section apply-section">
+        <a class="back" href="../list1.html">Back to Home</a>
+        <a class="apply" href="https://www.linkedin.com/jobs/view/4464424876" target="_blank" rel="noopener">Apply</a>
+    </div>
+
+    <div class="section">
+        <strong>Remote:</strong> Yes •
+        <strong>Relocation:</strong> No
+    </div>
+
+    <div class="section">
+        <h3>Description</h3>
+        <div class="desc"><p>You own the hard latency engineering.
+<strong>Sub-100ms</strong>
+is not a target for you — it's a prior. You</p>
+<p>have lived inside systems where the latency budget is a commercial constraint, not an</p>
+<p>engineering aspiration. You know what breaks at 10M events per day because you've watched</p>
+<p>it break.</p>
+<p>You report to the Founding CTO. You bring the production execution depth that the protocol</p>
+<p>requires in its first deployment. The Founding CTO designs the intelligence that produces the</p>
+<p>score. You make that intelligence fast, scalable, and cryptographically anchored.</p>
+<p>This is a senior engineering role with meaningful equity and significant influence on architectural</p>
+<p>decisions within your domain. You are joining a founding team at the earliest stage.</p>
+<p><strong>WHAT YOU OWN</strong></p>
+<p><strong>L0 — Connector Layer</strong></p>
+<p>How AUTHX plugs into partner stacks. OpenRTB 2.x bid stream integration. Endpoint</p>
+<p>placement between DSP and SSP. Webhook-based call sequence. Sub-100ms response</p>
+<p>requirement end-to-end. SDK connectors. Authentication, rate limits, error handling, retry</p>
+<p>logic under SSP auction constraints.</p>
+<p><strong>Real-Time Architecture</strong></p>
+<p>Redis cache for score lookup under 10ms. Hash verification under 5ms. Tier check under</p>
+<p>1ms. Edge deployment specification. The sub-100ms hot path is your primary engineering</p>
+<p>responsibility. You architect for RTB-style bid volume spikes during prime-time.</p>
+<p><strong>L4 — Attestation &amp; Fee Pipeline</strong></p>
+<p>Batch size, batching interval, L2 chain candidates (Polygon, Arbitrum, or equivalent based</p>
+<p>on gas economics at deployment), gas optimisation, Merkle proof retrieval for audits. The L4</p>
+<p>pipeline that makes the protocol's economics real.</p>
+<p>Critical architectural constraint: Fee is computed from tier, downstream of scoring. It is</p>
+<p>never an input to the score. The acyclic boundary (Score → Tier → Fee) is architectural and</p>
+<p>you enforce it. L4 proves the score — it does not contribute to the score.</p>
+<p><strong>L2 Inference Hardening</strong></p>
+<p>While the Founding CTO owns model selection and Fracture Index design, you own making</p>
+<p>that inference run under 35ms in production. ONNX runtime, edge caching of embeddings,</p>
+<p>quantization, hardware selection. The CTO designs the intelligence. You make it fast</p>
+<p>enough to ship.</p>
+<p><strong>Production Hardening</strong></p>
+<p>Taking the proven architecture from specification and reference implementation to 10M+</p>
+<p>QualificationEvents per day with zero-fault data integrity. RPO = 0. RTO ≤ 30 minutes.</p>
+<p>99.99% uptime per partner per month.</p>
+<p><strong>WHAT YOU ARE NOT RESPONSIBLE FOR</strong></p>
+<p>The AI layer. Entity Identity extraction, Fracture Index computation, semantic inference model</p>
+<p>design — these belong to the Founding CTO. You interface with the outputs of the AI layer</p>
+<p>(scores, tier assignments, embeddings) but you don't build the intelligence that produces them.</p>
+<p>DAB (Digital Autonomous Builder). The entity onboarding engine is the CTO's domain. You</p>
+<p>consume Entity Identity from the registry. You don't build the extraction pipeline that creates it.</p>
+<p><strong>BACKGROUND</strong></p>
+<p>10+ years in production infrastructure at companies that earn on transaction flow.</p>
+<p>Most likely backgrounds:</p>
+<p>• RTB / Adtech infrastructure — IAS, DoubleVerify, The Trade Desk, AppNexus/Xandr,</p>
+<p>Magnite</p>
+<p>• Payments infrastructure — Stripe, Adyen, Braintree, Plaid engineering teams</p>
+<p>• Distributed ledger infrastructure — L2 chains, exchange backends, custody systems</p>
+<p>• HFT-adjacent systems — exchange matching engines, market data infrastructure</p>
+<p>• Protocol-layer API companies — Twilio, SendGrid, Bandwidth infrastructure teams</p>
+<p>The rarity isn't any single skill. It's the combination of RTB-grade latency discipline AND</p>
+<p>cryptographic/L2 engineering in one person. That combination is what makes this hire</p>
+<p>critical-path.</p>
+<p>You have built systems under hard SLAs where failure has commercial consequences. You</p>
+<p>have designed for scale before it arrived. You understand that latency is a product requirement,</p>
+<p>not an engineering preference.</p>
+<p><strong>WHAT SUCCESS LOOKS LIKE</strong></p>
+<p>• L0-L4 hot path running under 100ms P95 in production</p>
+<p>• 10M+ QualificationEvents/day with zero data loss</p>
+<p>• Merkle batching live on L2 chain with gas &lt; $0.0001 per event</p>
+<p>• First partner sandbox operational within 90 days of start</p>
+<p>• Real-time architecture documented and reproducible</p>
+<p>• 99.99% uptime per partner, per month</p>
+<p><strong>What we offer</strong></p>
+<ul>
+<li><strong>Competitive compensation</strong>
+aligned with principal infrastructure and distributed systems talent in your region.</li>
+<li><strong>Direct collaboration with the Founding CTO</strong>
+, with full ownership of the architecture and technical direction.</li>
+<li><strong>Remote-first working environment</strong>
+, with flexibility for candidates who can maintain good overlap with the London timezone.</li>
+<li>The opportunity to build core infrastructure that processes
+<strong>10+ million events per day</strong>
+while maintaining a
+<strong>sub-100ms P95 latency budget</strong>
+.</li>
+</ul>
+<p>To ensure information security and fully comply with the Law on Personal Data Protection No. 91/2025/QH15, Bestarion is committed to protecting your candidate data. By submitting your application on this platform, you acknowledge our Privacy Policy: https://bestarion.com/privacy-policy/</p>
+<p>If your profile matches our requirements and you proceed to the interview stage, we will send an official email requesting your formal consent before further processing your data.</p>
+</div>
+    </div>
+
+    <footer>
+        <a href="https://github.com/milad-rasouli">Created by Milad Rasouli</a>
+    </footer>
+</div>
+
+<script>
+    (function(){
+        const el = document.getElementById('createdAt');
+        if(!el) return;
+        const ts = Number(el.textContent) * 1000;
+        const d = new Date(ts);
+        el.textContent = d.toLocaleString();
+    })();
+</script>
+</body>
+</html>
