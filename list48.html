@@ -1,0 +1,632 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Gopher Jobs</title>
+    <style>
+        body {
+            font-family: Inter, Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f7fafc;
+            color: #1a202c;
+            font-size: 16px;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 24px auto;
+            padding: 16px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 6px 18px rgba(10,20,30,0.06);
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 28px;
+            font-weight: 700;
+        }
+
+        .meta {
+            color: #6b7280;
+            font-size: 14px;
+        }
+
+        .search {
+            margin-top: 18px;
+            position: relative;
+        }
+
+        .search input {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 12px 14px;
+            font-size: 16px;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            outline: none;
+            background: #fff;
+            color: #1a202c;
+        }
+
+        .search input:focus {
+            border-color: #0ea5a6;
+            box-shadow: 0 0 0 3px rgba(14,165,166,0.12);
+        }
+
+        .searchInfo {
+            margin-top: 8px;
+            color: #6b7280;
+            font-size: 14px;
+            min-height: 18px;
+        }
+
+        .jobs { margin-top: 20px; }
+
+        .job {
+            padding: 14px;
+            border-bottom: 1px solid #eef2f7;
+        }
+
+        .job a {
+            display: flex;
+            justify-content: space-between;
+            gap: 12px;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .job .title {
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        .job .metaSmall {
+            color: #64748b;
+            font-size: 14px;
+        }
+
+        .additional {
+            margin-top: 4px;
+            font-size: 13px;
+            color: #4b5563;
+        }
+
+        .badges {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            align-items: flex-end;
+        }
+
+        .badge {
+            background: #eef2ff;
+            color: #1e40af;
+            padding: 4px 8px;
+            border-radius: 999px;
+            font-size: 12px;
+        }
+
+        [hidden] {
+            display: none !important;
+        }
+
+        nav.pagination {
+            display: flex;
+            gap: 6px;
+            justify-content: center;
+            margin-top: 22px;
+            flex-wrap: wrap;
+        }
+
+        nav.pagination a,
+        nav.pagination span {
+            padding: 8px 12px;
+            background: #e6eef8;
+            border-radius: 6px;
+            text-decoration: none;
+            color: #0f172a;
+            font-size: 14px;
+        }
+
+        nav.pagination .current {
+            background: #0ea5a6;
+            color: #fff;
+        }
+
+        nav.pagination .dots {
+            background: transparent;
+            color: #94a3b8;
+        }
+
+        footer {
+            margin-top: 20px;
+            text-align: center;
+            color: #94a3b8;
+            font-size: 14px;
+        }
+
+        @media (max-width: 600px) {
+            h1 { font-size: 22px; }
+            .job .title { font-size: 16px; }
+            .metaSmall, .additional { font-size: 13px; }
+        }
+    </style>
+</head>
+
+<body>
+<div class="container">
+    <header>
+        <div>
+            <h1>Gopher Jobs</h1>
+            <div class="meta">Updated: <span id="createdAt">1789439638</span></div>
+        </div>
+        <div class="meta">Page 48 / 55</div>
+    </header>
+
+    <div class="search">
+        <input id="searchInput" type="search" placeholder="Search jobs (title, company, location, level…)" autocomplete="off" />
+        <div class="searchInfo" id="searchInfo"></div>
+    </div>
+
+    <section class="jobs" id="searchResults" hidden></section>
+
+    <section class="jobs" id="staticJobs">
+        
+        <div class="job">
+            <a href="jobs/li-4416726248.html">
+                <div>
+                    <div class="title">Ops / SRE Support Engineer – VLabs - Manager</div>
+                    <div class="metaSmall">Vialto • Bengaluru, Karnataka, India • fulltime</div>
+                    <div class="additional">mid-senior level • Business Consulting and Services</div>
+                </div>
+                <div class="badges">
+                    <div class="badge">Remote</div>
+                    
+                </div>
+            </a>
+        </div>
+        
+        <div class="job">
+            <a href="jobs/li-4465412341.html">
+                <div>
+                    <div class="title">SDE 3 (Backend)</div>
+                    <div class="metaSmall">Pepper • Mumbai, Maharashtra, India • fulltime</div>
+                    <div class="additional">mid-senior level • Software Development</div>
+                </div>
+                <div class="badges">
+                    <div class="badge">Remote</div>
+                    
+                </div>
+            </a>
+        </div>
+        
+        <div class="job">
+            <a href="jobs/li-4464272638.html">
+                <div>
+                    <div class="title">Senior Software Engineer (Remote | $100–$150/hr)</div>
+                    <div class="metaSmall">Synthires • Bengaluru, Karnataka, India • contract</div>
+                    <div class="additional">mid-senior level • Software Development</div>
+                </div>
+                <div class="badges">
+                    <div class="badge">Remote</div>
+                    
+                </div>
+            </a>
+        </div>
+        
+        <div class="job">
+            <a href="jobs/li-4467419896.html">
+                <div>
+                    <div class="title">Senior Software Engineer — Agentic Coding</div>
+                    <div class="metaSmall">Alignerr • Bengaluru, Karnataka, India • fulltime</div>
+                    <div class="additional">mid-senior level • Technology, Information and Internet</div>
+                </div>
+                <div class="badges">
+                    <div class="badge">Remote</div>
+                    
+                </div>
+            </a>
+        </div>
+        
+        <div class="job">
+            <a href="jobs/li-4464837743.html">
+                <div>
+                    <div class="title">Senior Java Microservices &amp; DevOps Engineer</div>
+                    <div class="metaSmall">Dreampath Services •  • contract</div>
+                    <div class="additional">mid-senior level • Information Services and IT Services and IT Consulting</div>
+                </div>
+                <div class="badges">
+                    <div class="badge">Remote</div>
+                    
+                </div>
+            </a>
+        </div>
+        
+        <div class="job">
+            <a href="jobs/li-4457364157.html">
+                <div>
+                    <div class="title">Senior Software Development Engineer in Test - Database Automation</div>
+                    <div class="metaSmall">Fivetran • Bengaluru, Karnataka, India • fulltime</div>
+                    <div class="additional">mid-senior level • Software Development</div>
+                </div>
+                <div class="badges">
+                    <div class="badge">Remote</div>
+                    
+                </div>
+            </a>
+        </div>
+        
+        <div class="job">
+            <a href="jobs/li-4466491567.html">
+                <div>
+                    <div class="title">IN_Senior Associate_ ETL&#43;Python_GCC_Advisory_Bangalore</div>
+                    <div class="metaSmall">PwC India • Bengaluru, Karnataka, India • fulltime</div>
+                    <div class="additional">mid-senior level • Business Consulting and Services</div>
+                </div>
+                <div class="badges">
+                    
+                    <div class="badge">Relocation</div>
+                </div>
+            </a>
+        </div>
+        
+        <div class="job">
+            <a href="jobs/li-4438690061.html">
+                <div>
+                    <div class="title">Senior Staff AI Engineer</div>
+                    <div class="metaSmall">GE Vernova • Bengaluru, Karnataka, India • fulltime</div>
+                    <div class="additional">mid-senior level • Energy Technology</div>
+                </div>
+                <div class="badges">
+                    
+                    <div class="badge">Relocation</div>
+                </div>
+            </a>
+        </div>
+        
+        <div class="job">
+            <a href="jobs/li-4464277623.html">
+                <div>
+                    <div class="title">Senior Software Engineer (Remote | $100–$150/hr)</div>
+                    <div class="metaSmall">Synthires •  • contract</div>
+                    <div class="additional">mid-senior level • Software Development</div>
+                </div>
+                <div class="badges">
+                    <div class="badge">Remote</div>
+                    
+                </div>
+            </a>
+        </div>
+        
+        <div class="job">
+            <a href="jobs/li-4466449533.html">
+                <div>
+                    <div class="title">Golang Developer (Remote)</div>
+                    <div class="metaSmall">Hire Feed •  • fulltime</div>
+                    <div class="additional">associate • Software Development, IT Services and IT Consulting, and Technology, Information and Media</div>
+                </div>
+                <div class="badges">
+                    <div class="badge">Remote</div>
+                    
+                </div>
+            </a>
+        </div>
+        
+        <div class="job">
+            <a href="jobs/li-4466453162.html">
+                <div>
+                    <div class="title">Go Software Engineer (Remote)</div>
+                    <div class="metaSmall">Hired •  • fulltime</div>
+                    <div class="additional">associate • Software Development, Technology, Information and Media, and Information Services</div>
+                </div>
+                <div class="badges">
+                    <div class="badge">Remote</div>
+                    
+                </div>
+            </a>
+        </div>
+        
+        <div class="job">
+            <a href="jobs/li-4466441345.html">
+                <div>
+                    <div class="title">Software Engineer, Micro Platforms (Remote)</div>
+                    <div class="metaSmall">Hire Feed •  • fulltime</div>
+                    <div class="additional">associate • Software Development, Technology, Information and Media, and Information Services</div>
+                </div>
+                <div class="badges">
+                    <div class="badge">Remote</div>
+                    
+                </div>
+            </a>
+        </div>
+        
+        <div class="job">
+            <a href="jobs/li-4466455174.html">
+                <div>
+                    <div class="title">Software Engineer (Human Data Platforms)</div>
+                    <div class="metaSmall">Hired •  • fulltime</div>
+                    <div class="additional">associate • Software Development, Data Infrastructure and Analytics, and IT Services and IT Consulting</div>
+                </div>
+                <div class="badges">
+                    <div class="badge">Remote</div>
+                    
+                </div>
+            </a>
+        </div>
+        
+        <div class="job">
+            <a href="jobs/li-4466448275.html">
+                <div>
+                    <div class="title">Backend Software Engineer (Remote)</div>
+                    <div class="metaSmall">Quik Hire Staffing •  • fulltime</div>
+                    <div class="additional">associate • Software Development, Technology, Information and Media, and Data Infrastructure and Analytics</div>
+                </div>
+                <div class="badges">
+                    <div class="badge">Remote</div>
+                    
+                </div>
+            </a>
+        </div>
+        
+        <div class="job">
+            <a href="jobs/li-4463453121.html">
+                <div>
+                    <div class="title">Software Engineer</div>
+                    <div class="metaSmall">Meridian Review Group •  • contract</div>
+                    <div class="additional">entry level • Retail Books and Printed News and Technology, Information and Media</div>
+                </div>
+                <div class="badges">
+                    <div class="badge">Remote</div>
+                    
+                </div>
+            </a>
+        </div>
+        
+        <div class="job">
+            <a href="jobs/li-4389937377.html">
+                <div>
+                    <div class="title">AI Engineer (PhD Required)</div>
+                    <div class="metaSmall">Pixalate •  • fulltime</div>
+                    <div class="additional">mid-senior level • Technology, Information and Internet</div>
+                </div>
+                <div class="badges">
+                    <div class="badge">Remote</div>
+                    
+                </div>
+            </a>
+        </div>
+        
+        <div class="job">
+            <a href="jobs/li-4466443511.html">
+                <div>
+                    <div class="title">Software Engineer - E-Commerce (Remote)</div>
+                    <div class="metaSmall">Hire Feed •  • fulltime</div>
+                    <div class="additional">associate • Software Development, Technology, Information and Media, and Information Services</div>
+                </div>
+                <div class="badges">
+                    <div class="badge">Remote</div>
+                    
+                </div>
+            </a>
+        </div>
+        
+        <div class="job">
+            <a href="jobs/li-4466439474.html">
+                <div>
+                    <div class="title">Software Engineer – Backend (Remote)</div>
+                    <div class="metaSmall">Hire Feed •  • fulltime</div>
+                    <div class="additional">associate • Technology, Information and Media, Biotechnology Research, and Higher Education</div>
+                </div>
+                <div class="badges">
+                    <div class="badge">Remote</div>
+                    
+                </div>
+            </a>
+        </div>
+        
+        <div class="job">
+            <a href="jobs/li-4466448445.html">
+                <div>
+                    <div class="title">Software Engineer - FinTech (Remote)</div>
+                    <div class="metaSmall">Hire Feed •  • fulltime</div>
+                    <div class="additional">associate • Financial Services, Software Development, and Technology, Information and Media</div>
+                </div>
+                <div class="badges">
+                    <div class="badge">Remote</div>
+                    
+                </div>
+            </a>
+        </div>
+        
+        <div class="job">
+            <a href="jobs/li-4466457104.html">
+                <div>
+                    <div class="title">Backend Developer (Remote)</div>
+                    <div class="metaSmall">Hire Feed •  • fulltime</div>
+                    <div class="additional">associate • Software Development, Technology, Information and Media, and Information Services</div>
+                </div>
+                <div class="badges">
+                    <div class="badge">Remote</div>
+                    
+                </div>
+            </a>
+        </div>
+        
+    </section>
+
+    <nav class="pagination" id="pagination">
+        
+        
+
+        
+        <a href="list47.html">Prev</a>
+        
+
+        <a href="list1.html" >1</a>
+
+        
+        <span class="dots">…</span>
+        
+
+        
+        
+
+        
+        
+        
+        <a href="list47.html">47</a>
+        
+        
+        
+        <span class="current">48</span>
+        
+        
+        
+        <a href="list49.html">49</a>
+        
+        
+        
+
+        
+        <span class="dots">…</span>
+        
+
+        
+        <a href="list55.html" >55</a>
+        
+
+        
+        <a href="list49.html">Next</a>
+        
+    </nav>
+
+    <footer>
+        <a href="https://github.com/milad-rasouli">Created by Milad Rasouli</a>
+    </footer>
+</div>
+
+<script>
+    (function() {
+        const el = document.getElementById('createdAt');
+        if(!el) return;
+        const ts = Number(el.textContent) * 1000;
+        el.textContent = new Date(ts).toLocaleString();
+    })();
+
+    (function() {
+        const input = document.getElementById('searchInput');
+        const info = document.getElementById('searchInfo');
+        const results = document.getElementById('searchResults');
+        const staticJobs = document.getElementById('staticJobs');
+        const pagination = document.getElementById('pagination');
+        if(!input || !results || !staticJobs) return;
+
+        let jobs = null;
+        let loading = false;
+
+        function escapeHTML(s) {
+            return String(s == null ? '' : s)
+                .replace(/&/g, '&amp;')
+                .replace(/</g, '&lt;')
+                .replace(/>/g, '&gt;')
+                .replace(/"/g, '&quot;');
+        }
+
+        function badges(job) {
+            let b = '';
+            if(job.remote) b += '<div class="badge">Remote</div>';
+            if(job.relocation) b += '<div class="badge">Relocation</div>';
+            return b;
+        }
+
+        function renderJob(job) {
+            return '<div class="job">' +
+                '<a href="jobs/' + encodeURIComponent(job.id) + '.html">' +
+                    '<div>' +
+                        '<div class="title">' + escapeHTML(job.title) + '</div>' +
+                        '<div class="metaSmall">' + escapeHTML(job.company) + ' • ' + escapeHTML(job.location) + ' • ' + escapeHTML(job.type) + '</div>' +
+                        '<div class="additional">' + escapeHTML(job.level) + ' • ' + escapeHTML(job.company_industry) + '</div>' +
+                    '</div>' +
+                    '<div class="badges">' + badges(job) + '</div>' +
+                '</a>' +
+            '</div>';
+        }
+
+        function showStatic() {
+            results.hidden = true;
+            results.innerHTML = '';
+            staticJobs.hidden = false;
+            if(pagination) pagination.hidden = false;
+            info.textContent = '';
+        }
+
+        function filterJobs(query) {
+            const q = query.toLowerCase();
+            return jobs.filter(function(job) {
+                return [job.title, job.company, job.location, job.level, job.type, job.company_industry]
+                    .some(function(field) {
+                        return String(field || '').toLowerCase().indexOf(q) !== -1;
+                    });
+            });
+        }
+
+        function runSearch() {
+            const query = input.value.trim();
+            if(!query) {
+                showStatic();
+                return;
+            }
+            staticJobs.hidden = true;
+            if(pagination) pagination.hidden = true;
+            if(!jobs) {
+                info.textContent = loading ? 'Loading…' : '';
+                return;
+            }
+            const matches = filterJobs(query);
+            results.hidden = false;
+            if(matches.length === 0) {
+                results.innerHTML = '';
+                info.textContent = 'No jobs found.';
+                return;
+            }
+            results.innerHTML = matches.map(renderJob).join('');
+            info.textContent = matches.length + ' result' + (matches.length === 1 ? '' : 's') + ' found.';
+        }
+
+        function loadJobs() {
+            if(jobs || loading) return;
+            loading = true;
+            info.textContent = 'Loading…';
+            fetch('jobs.json')
+                .then(function(r) { if(!r.ok) throw new Error('failed'); return r.json(); })
+                .then(function(data) {
+                    jobs = data;
+                    loading = false;
+                    runSearch();
+                })
+                .catch(function() {
+                    loading = false;
+                    info.textContent = 'Failed to load search index.';
+                });
+        }
+
+        let timer = null;
+        input.addEventListener('input', function() {
+            if(!jobs) loadJobs();
+            clearTimeout(timer);
+            timer = setTimeout(runSearch, 120);
+        });
+        input.addEventListener('focus', loadJobs);
+    })();
+</script>
+</body>
+</html>

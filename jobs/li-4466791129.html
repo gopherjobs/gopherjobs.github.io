@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Senior DevOps (GCP)</title>
+    <style>
+        body{font-family:Inter, Arial, Helvetica, sans-serif;background:#f7fafc;color:#111;margin:0;padding:20px}
+        .wrap{max-width:900px;margin:0 auto;background:#fff;padding:20px;border-radius:8px;box-shadow:0 8px 24px rgba(12,20,30,0.06)}
+        h1{margin:0 0 8px 0}
+        .meta{color:#6b7280;font-size:13px;margin-bottom:8px}
+        .apply{display:inline-block;background:#0ea5a6;color:#fff;padding:8px 12px;border-radius:6px;text-decoration:none}
+        .back{display:inline-block;margin-left:12px;color:#374151;text-decoration:none}
+        .section{margin-top:16px}
+        .apply-section {display: flex;align-items: center;gap: 12px;}
+        .apply-section .apply {margin-left: auto;}
+
+         
+        .desc {line-height:1.6;font-size:15px;color:#111;}
+        .desc h1,.desc h2,.desc h3 {margin-top:20px;margin-bottom:10px;}
+        .desc pre{background:#f8fafc;padding:12px;border-radius:6px;border:1px solid #eef2f7;overflow-x:auto}
+        .desc code{background:#f1f5f9;padding:2px 4px;border-radius:4px}
+        .desc ul{padding-left:20px;margin:8px 0}
+        .desc p{margin:10px 0}
+
+        footer{margin-top:18px;text-align:center;color:#94a3b8}
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <h1>Senior DevOps (GCP)</h1>
+    <div class="meta">Soar • Cairo, Cairo, Egypt • fulltime</div>
+
+
+    <div class="section apply-section">
+        <a class="back" href="../list1.html">Back to Home</a>
+        <a class="apply" href="https://www.linkedin.com/jobs/view/4466791129" target="_blank" rel="noopener">Apply</a>
+    </div>
+
+    <div class="section">
+        <strong>Remote:</strong> Yes •
+        <strong>Relocation:</strong> No
+    </div>
+
+    <div class="section">
+        <h3>Description</h3>
+        <div class="desc"><p><strong>About The Role</strong>
+<strong>About The Role:</strong>
+Soar runs a growing portfolio of financial-services and enterprise products on Google Cloud, with a disaster-recovery footprint on Alibaba Cloud. The platform spans around ninety Cloud Run services and several GKE clusters, deployed from more than a hundred repositories, provisioned with Terraform, and operated alongside an AI DevOps agent that proposes infrastructure changes for humans to approve.</p>
+<p>We are hiring two senior engineers who are equally at home in DevOps, cloud architecture and SRE to own this platform end to end — deploy paths, infrastructure as code, Kubernetes, secrets and identity, reliability and disaster recovery — and to set the standard the rest of engineering follows.</p>
+<p><strong>Key Responsibilities:</strong></p>
+<ul>
+<li>Deploy paths: Converge our Cloud Run and GKE deployments onto one reviewed pattern — GitHub Actions with keyless Workload Identity Federation, additive configuration semantics, every change through a pull request — working repository by repository with the teams that own them.</li>
+<li>Infrastructure as code: Grow our Terraform estate (Google, Google-beta, MongoDB Atlas and Alibaba providers) from foundations — VPC, IAM, security, zero-trust access — through workloads to Kubernetes, with remote state, plan-in-PR, apply-on-merge and a drift policy people actually follow.</li>
+<li>Kubernetes: GKE operations end to end: node pools, Workload Identity, least-privilege RBAC, Helm charts, Istio / Gateway API ingress, backup and restore, zero-downtime upgrades.</li>
+<li>Secrets and identity: Drive the move from inline configuration to Secret Manager references; own service-account and IAM hygiene; make the audit trail the answer to &quot;who changed what, when, approved by whom&quot;.</li>
+<li>Reliability: Define SLOs for the services that matter, build alerting and dashboards (Cloud Monitoring, OpenTelemetry), run incident response, write blameless postmortems and turn each one into an engineering change.</li>
+<li>Disaster recovery: Keep the Alibaba Cloud DR footprint — ACK, VPC, KMS, OSS — provisioned by Terraform and proven by regular exercise.</li>
+<li>The AI DevOps agent: Our agent proposes IAM grants, restarts, configuration and Cloud Run changes; humans approve; the platform executes and records. You will shape what it may propose, review the pull requests it opens and harden its guardrails. You are the human in that loop.</li>
+</ul>
+<p><strong>Requirements</strong>
+Requirements:</p>
+<ul>
+<li>6+ years building and running production infrastructure, 3+ on Google Cloud at depth: GKE, Cloud Run, IAM, Secret Manager, VPC and networking, Artifact Registry, Cloud Build, Cloud Logging and Monitoring.</li>
+<li>Terraform in anger module design, state management, imports, refactors without destroys, provider upgrades.</li>
+<li>Kubernetes in production Helm, RBAC, network policy, an ingress or mesh layer (Istio or Gateway API), and troubleshooting from kubectl down to the node.</li>
+<li>CI/CD you have designed, not just used: GitHub Actions (reusable workflows, OIDC / WIF, environments with required reviewers) and Cloud Build.</li>
+<li>SRE practice: SLOs and error budgets, on-call, incident command, postmortems, capacity and cost.</li>
+<li>Security as a habit: least privilege, secrets never in code or logs, audit trails — and the judgement to say &quot;not without approval&quot;.</li>
+<li>Linux, networking and scripting: Bash and Python are daily tools.</li>
+<li>Written clarity: Our change process runs on pull requests and written decisions. You can state what you measured, what you changed and what you could not verify.</li>
+<li>Comfortable working remotely across time zones, with async communication as the default.</li>
+</ul>
+<p>Nice To Have:</p>
+<ul>
+<li>HashiCorp Terraform Associate (or higher) certification.</li>
+<li>Google Cloud Professional Cloud DevOps Engineer or Professional Cloud Architect certification.</li>
+<li>Alibaba Cloud (ACK, OSS, KMS, VPC) — our DR platform.</li>
+<li>MongoDB Atlas, PostgreSQL, Redis or Kafka operations.</li>
+<li>Zero-trust network access and OIDC identity providers.</li>
+<li>Regulated-environment experience: data residency, financial-services controls, audit readiness.</li>
+<li>Experience running or reviewing LLM-based automation in production.</li>
+</ul>
+</div>
+    </div>
+
+    <footer>
+        <a href="https://github.com/milad-rasouli">Created by Milad Rasouli</a>
+    </footer>
+</div>
+
+<script>
+    (function(){
+        const el = document.getElementById('createdAt');
+        if(!el) return;
+        const ts = Number(el.textContent) * 1000;
+        const d = new Date(ts);
+        el.textContent = d.toLocaleString();
+    })();
+</script>
+</body>
+</html>

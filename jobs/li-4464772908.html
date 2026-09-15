@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Senior Backend Engineer</title>
+    <style>
+        body{font-family:Inter, Arial, Helvetica, sans-serif;background:#f7fafc;color:#111;margin:0;padding:20px}
+        .wrap{max-width:900px;margin:0 auto;background:#fff;padding:20px;border-radius:8px;box-shadow:0 8px 24px rgba(12,20,30,0.06)}
+        h1{margin:0 0 8px 0}
+        .meta{color:#6b7280;font-size:13px;margin-bottom:8px}
+        .apply{display:inline-block;background:#0ea5a6;color:#fff;padding:8px 12px;border-radius:6px;text-decoration:none}
+        .back{display:inline-block;margin-left:12px;color:#374151;text-decoration:none}
+        .section{margin-top:16px}
+        .apply-section {display: flex;align-items: center;gap: 12px;}
+        .apply-section .apply {margin-left: auto;}
+
+         
+        .desc {line-height:1.6;font-size:15px;color:#111;}
+        .desc h1,.desc h2,.desc h3 {margin-top:20px;margin-bottom:10px;}
+        .desc pre{background:#f8fafc;padding:12px;border-radius:6px;border:1px solid #eef2f7;overflow-x:auto}
+        .desc code{background:#f1f5f9;padding:2px 4px;border-radius:4px}
+        .desc ul{padding-left:20px;margin:8px 0}
+        .desc p{margin:10px 0}
+
+        footer{margin-top:18px;text-align:center;color:#94a3b8}
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <h1>Senior Backend Engineer</h1>
+    <div class="meta">SporTech • Warsaw, Mazowieckie, Poland • contract</div>
+
+
+    <div class="section apply-section">
+        <a class="back" href="../list1.html">Back to Home</a>
+        <a class="apply" href="https://www.linkedin.com/jobs/view/4464772908" target="_blank" rel="noopener">Apply</a>
+    </div>
+
+    <div class="section">
+        <strong>Remote:</strong> Yes •
+        <strong>Relocation:</strong> No
+    </div>
+
+    <div class="section">
+        <h3>Description</h3>
+        <div class="desc"><p><strong>Senior Backend Engineer (Platform &amp; Distributed Systems)</strong></p>
+<p><strong>About the Company</strong></p>
+<p>Sportech is building the digital infrastructure layer for sports clubs, leagues, academies, and federations globally. The platform enables organizations to launch their own branded fan engagement ecosystem including memberships, livestream monetization, digital gifting, ticketing, prediction features, merchandise, and interactive experiences — all under a revenue-sharing model with zero upfront cost for partners.</p>
+<p><strong>Role</strong></p>
+<p>We are looking for a Senior Backend Engineer to design, scale, and maintain high-throughput, mission-critical distributed systems serving millions of concurrent users. In this role, you will lead the architecture of core platform domains—ranging from high-frequency real-time event streaming and financial ledgers to complex sports data ingestion pipelines and identity services.</p>
+<p><strong>Key Responsibilities</strong></p>
+<ul>
+<li>Scalable Architecture &amp; Design: Architect resilient, low-latency microservices in Go capable of handling peak burst traffic during high-profile live events.</li>
+<li>High-Throughput Streaming &amp; Real-Time Engines: Build and optimize end-to-end data ingestion pipelines, WebSocket/SSE engines, and event streams for real-time match processing, analytics, and instant state synchronization.</li>
+<li>Transactional Integrity &amp; Financial Systems: Design double-entry wallet/ledger architectures, token economies, and payment pipelines with strict zero-loss consistency, idempotency, and auditability.</li>
+<li>Data Layer Optimization: Own database modeling, partitioning strategies (sharding/range partitioning), query optimization, and connection lifecycle management in high-load PostgreSQL environments.</li>
+<li>Platform Security &amp; Compliance: Enforce enterprise-grade security standards across identity (OAuth 2.0/OIDC), PII protection, and compliance boundaries (PCI-DSS, SOC 2, KYC).</li>
+<li>System Reliability &amp; Observability: Implement comprehensive distributed tracing, metrics, and alerting to maintain 99.99% system availability under volatile loads.</li>
+<li>Technical Leadership: Lead system design reviews, drive engineering best practices, and mentor intermediate engineers across backend squads.</li>
+</ul>
+<p><strong>Qualifications &amp; Experience</strong></p>
+<ul>
+<li>Scale &amp; Distributed Systems: 5+ years of production experience designing and operating large-scale distributed systems handling high QPS and millions of active users.</li>
+<li>Go Expertise: Deep mastery of Go concurrency primitives (goroutines, worker pools, channels, sync packages), memory management, profiling (pprof), and production-grade connection drivers (e.g., pgx/v5).</li>
+<li>Advanced PostgreSQL: Proven track record with large-scale relational databases—advanced indexing, locking mechanisms, window functions, JSONB optimization, range partitioning, and live migration strategies with zero downtime.</li>
+<li>Real-Time &amp; Asynchronous Patterns: Extensive experience with message brokers/event streaming platforms (Kafka, RabbitMQ, Redis Streams) and real-time client protocols (WebSocket, SSE, gRPC).</li>
+<li>Security &amp; Auth: Strong foundation in decentralized identity patterns, token lifecycles, role-based access control (RBAC), and secure webhook architectures.</li>
+</ul>
+<p><strong>Preferred Experience</strong></p>
+<ul>
+<li>Experience engineering distributed double-entry ledgers, transactional wallets, or high-volume payment processing engines.</li>
+<li>Hands-on work with high-frequency sports data feeds and dynamic leaderboard calculation engines.</li>
+<li>Experience decoupling monolithic architectures into scalable event-driven services.</li>
+</ul>
+<p><strong>Benefits</strong></p>
+<ul>
+<li>Remote work flexibility.</li>
+<li>Competitive compensation.</li>
+<li>Professional growth opportunity.</li>
+</ul>
+</div>
+    </div>
+
+    <footer>
+        <a href="https://github.com/milad-rasouli">Created by Milad Rasouli</a>
+    </footer>
+</div>
+
+<script>
+    (function(){
+        const el = document.getElementById('createdAt');
+        if(!el) return;
+        const ts = Number(el.textContent) * 1000;
+        const d = new Date(ts);
+        el.textContent = d.toLocaleString();
+    })();
+</script>
+</body>
+</html>

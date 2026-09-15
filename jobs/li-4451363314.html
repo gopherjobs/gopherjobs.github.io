@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>(Senior) Platform Engineer - m/f/d</title>
+    <style>
+        body{font-family:Inter, Arial, Helvetica, sans-serif;background:#f7fafc;color:#111;margin:0;padding:20px}
+        .wrap{max-width:900px;margin:0 auto;background:#fff;padding:20px;border-radius:8px;box-shadow:0 8px 24px rgba(12,20,30,0.06)}
+        h1{margin:0 0 8px 0}
+        .meta{color:#6b7280;font-size:13px;margin-bottom:8px}
+        .apply{display:inline-block;background:#0ea5a6;color:#fff;padding:8px 12px;border-radius:6px;text-decoration:none}
+        .back{display:inline-block;margin-left:12px;color:#374151;text-decoration:none}
+        .section{margin-top:16px}
+        .apply-section {display: flex;align-items: center;gap: 12px;}
+        .apply-section .apply {margin-left: auto;}
+
+         
+        .desc {line-height:1.6;font-size:15px;color:#111;}
+        .desc h1,.desc h2,.desc h3 {margin-top:20px;margin-bottom:10px;}
+        .desc pre{background:#f8fafc;padding:12px;border-radius:6px;border:1px solid #eef2f7;overflow-x:auto}
+        .desc code{background:#f1f5f9;padding:2px 4px;border-radius:4px}
+        .desc ul{padding-left:20px;margin:8px 0}
+        .desc p{margin:10px 0}
+
+        footer{margin-top:18px;text-align:center;color:#94a3b8}
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <h1>(Senior) Platform Engineer - m/f/d</h1>
+    <div class="meta">Langdock • Berlin, Germany • fulltime</div>
+
+
+    <div class="section apply-section">
+        <a class="back" href="../list1.html">Back to Home</a>
+        <a class="apply" href="https://www.linkedin.com/jobs/view/4451363314" target="_blank" rel="noopener">Apply</a>
+    </div>
+
+    <div class="section">
+        <strong>Remote:</strong> No •
+        <strong>Relocation:</strong> Yes
+    </div>
+
+    <div class="section">
+        <h3>Description</h3>
+        <div class="desc"><p>Where Europe's enterprises adopt AI</p>
+<p>Langdock is the AI platform used by more than 10,000 companies to give employees secure access to the leading AI models, to build and share agents and to automate repetitive workflows. We have grown past $40M ARR while remaining a small team, and we care deeply about operating efficiently across the entire company.</p>
+<p>For many enterprises, Langdock is becoming the place where most of the net-new work is produced. As people and agents create more documents, analyses, decisions, and automations inside AI interfaces, the context and data behind that work accumulate within Langdock. This gives us the opportunity to earn a larger role in their technology stack by building a platform they choose to rely on.</p>
+<p>Our ambition is to build that platform for European enterprises while preserving their control over data, model providers, and deployment environments. We have made meaningful progress at the application layer, but much of the foundation beneath it still needs to be built.</p>
+<p>You can watch the Meet the engineering team video to get a feeling for how we work.</p>
+<p>The role</p>
+<p>Platform Engineers own the shared capabilities that Langdock's products are built on. They treat these capabilities as internal products: defining the interfaces other teams build against and remaining accountable for their reliability, evolution, and operation over time.</p>
+<p>The work is to turn complex capabilities such as model access, agent execution, authorization, queues, integrations, document processing, and sandboxed compute into stable, reusable building blocks. Each capability needs a clear contract and must be able to evolve without forcing coordinated changes across the rest of the product.</p>
+<p>You own a service from design through long-term operation. That includes defining its API and failure behavior, planning migrations, implementing and deploying it, making it observable, and responding when it fails in production. When a service requires a new underlying mechanism, you work with Systems Engineers while remaining accountable for the service boundary and lifecycle.</p>
+<p>What you might work on</p>
+<p><strong>Current Platform Work Includes</strong></p>
+<ul>
+<li>A durable agent runtime. The current engine runs model and tool loops for Chat, Workflows, automations, and subagents, but active execution is still owned by one process. We are separating the runtime from product-specific state and designing durable runs that can wait for approvals or external events, recover after a process dies, and continue without repeating committed tool calls. This also includes deterministic context reconstruction, compaction, and prompt-cache efficiency.</li>
+<li>The Model Gateway. We are building one inference boundary for every Langdock product, with a model-agnostic API over managed and customer-provided models. The work includes provider adapters, routing across accounts and regions, rate limits, bounded fallback, streaming safety, usage tracking, and a control plane.</li>
+<li>Shared services with explicit contracts. We are moving selected capabilities out of a TypeScript monolith into independently operated services with Protobuf and gRPC contracts inside one Bazel monorepo. Our authorization service, written in Go with embedded SpiceDB, is one example: the migration uses an outbox, shadow comparisons on production traffic, and consistency tokens before it becomes authoritative.</li>
+<li>The integration and tool platform. Langdock already connects to external services through REST APIs, Model Context Protocol (MCP), and agent-to-agent (A2A) communication. The platform work is to make authentication, token refresh, rate limits, approvals, outbound network safety, and tool execution consistent across these paths.</li>
+<li>Code execution as a shared service. Langdock already runs untrusted JavaScript, Bash, and Python through separate execution environments. Platform work includes defining a consistent execution API, lifecycle, permission model, resource budgets, and operational boundary, while partnering with Systems Engineers on the underlying isolation and scheduling mechanisms.</li>
+<li>Production confidence for shared systems. Platform changes need evidence before rollout. Current work includes a reusable load-testing system for HTTP, gRPC, and streaming workloads; structured logging without user content or personally identifiable information (PII); and online database changes for PostgreSQL tables measured in hundreds of gigabytes or terabytes.</li>
+</ul>
+<p>You will start in one area based on your experience and the team's priorities, then own its interface and operation in production.</p>
+<p>Tech stack</p>
+<ul>
+<li>TypeScript and a growing set of Go services in one Bazel monorepo</li>
+<li>Next.js, React, and Tailwind on the front end</li>
+<li>Node.js services and workers on the back end</li>
+<li>PostgreSQL with Prisma; Redis with BullMQ</li>
+<li>Protobuf and gRPC for service contracts</li>
+<li>Kubernetes across GCP, AWS, Azure, and on-premises deployments</li>
+<li>Terraform and Terragrunt for infrastructure orchestration</li>
+<li>Datadog and Sentry for observability</li>
+</ul>
+<p>You should be familiar with most of this. We trust you to pick up the rest quickly.</p>
+<p>How we work</p>
+<ul>
+<li>We operate with high trust and autonomy in squads of 3 to 4 engineers. A squad owns its roadmap, prioritization, technical decisions, and operation in production. Engineers are expected to find the context they need, ask for input when it improves the outcome, and move work forward without waiting for every next step to be assigned.</li>
+<li>We align asynchronously before scheduling a meeting. Product requirement documents (PRDs) define the user problem, intended outcome, and constraints. Design documents make architectural boundaries, tradeoffs, failure modes, migrations, and rollouts explicit. People read and challenge the thinking asynchronously; once the context is shared, a short in-office discussion or whiteboard session usually resolves the remaining questions quickly.</li>
+<li>We optimize for leverage. Engineers choose the AI tools that work for them, supported by clear ticket context, focused branches, automated tests, and AI review before human review. We also invest in observability, migration tooling, automated recovery, and runbooks so recurring product maintenance does not depend on someone remembering a manual step.</li>
+<li>The engineer who ships a change owns it in production. If something breaks, you lead the fix.</li>
+</ul>
+<p>What we are looking for</p>
+<ul>
+<li>You have several years of experience, typically 3 to 6, building and operating backend systems under real load. You are strong in TypeScript and Node.js and comfortable with Kubernetes, Terraform, networking, databases, and queues. Experience with Go is useful; willingness to work in it matters more.</li>
+<li>You have strong platform design judgment and approach foundational work with diligence. You can define stable service boundaries and APIs while accounting for data integrity, tenant isolation, backward compatibility, partial failure, and safe rollout.</li>
+<li>Given an underspecified systems problem, you identify the most important invariant, decide where to go deep, and defend what you deliberately leave out. You investigate unfamiliar components and failure modes until you understand the underlying mechanism.</li>
+<li>You treat deployment as the start of ownership. You make systems observable, respond when they fail, and turn incidents into lasting improvements while moving with calm urgency and maintaining a high standard.</li>
+<li>You use AI tools to multiply your output while remaining responsible for the architecture and every change that ships. You share context, ask for input, disagree directly and respectfully, and help other engineers succeed.</li>
+</ul>
+<p>This is an experienced individual-contributor role. You should be able to independently investigate an unfamiliar problem, design a solution, ship it, and operate it in production. We generally expect this judgment to come from at least three to six years of full-time experience working on production systems.</p>
+<p>Working here</p>
+<p>This is an in-office role at Greifswalder Strasse 212 in Berlin. We work together in person because it helps us build trust, develop shared context, and make decisions quickly.</p>
+<p>Most engineers start around 8:30. We usually eat lunch together, and dinner is available for people who stay later. Running and gym are part of the routine for many of us.</p>
+<p>You need an existing right to work in Germany. We do not currently sponsor visas.</p>
+<p><strong>Compensation</strong>
+The salary range for this role is €90,000–€140,000 gross per year. All roles include equity.</p>
+<p>We will figure out the right level together based on your experience and scope. Levels are about the work you own, not your title or years of experience. Salaries are tied to levels, not negotiation.</p>
+</div>
+    </div>
+
+    <footer>
+        <a href="https://github.com/milad-rasouli">Created by Milad Rasouli</a>
+    </footer>
+</div>
+
+<script>
+    (function(){
+        const el = document.getElementById('createdAt');
+        if(!el) return;
+        const ts = Number(el.textContent) * 1000;
+        const d = new Date(ts);
+        el.textContent = d.toLocaleString();
+    })();
+</script>
+</body>
+</html>
