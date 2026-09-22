@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Staff Software Developer, Essentials (Calgary)</title>
+    <style>
+        body{font-family:Inter, Arial, Helvetica, sans-serif;background:#f7fafc;color:#111;margin:0;padding:20px}
+        .wrap{max-width:900px;margin:0 auto;background:#fff;padding:20px;border-radius:8px;box-shadow:0 8px 24px rgba(12,20,30,0.06)}
+        h1{margin:0 0 8px 0}
+        .meta{color:#6b7280;font-size:13px;margin-bottom:8px}
+        .apply{display:inline-block;background:#0ea5a6;color:#fff;padding:8px 12px;border-radius:6px;text-decoration:none}
+        .back{display:inline-block;margin-left:12px;color:#374151;text-decoration:none}
+        .section{margin-top:16px}
+        .apply-section {display: flex;align-items: center;gap: 12px;}
+        .apply-section .apply {margin-left: auto;}
+
+         
+        .desc {line-height:1.6;font-size:15px;color:#111;}
+        .desc h1,.desc h2,.desc h3 {margin-top:20px;margin-bottom:10px;}
+        .desc pre{background:#f8fafc;padding:12px;border-radius:6px;border:1px solid #eef2f7;overflow-x:auto}
+        .desc code{background:#f1f5f9;padding:2px 4px;border-radius:4px}
+        .desc ul{padding-left:20px;margin:8px 0}
+        .desc p{margin:10px 0}
+
+        footer{margin-top:18px;text-align:center;color:#94a3b8}
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <h1>Staff Software Developer, Essentials (Calgary)</h1>
+    <div class="meta">Syndio • Calgary, Alberta, Canada • fulltime</div>
+
+
+    <div class="section apply-section">
+        <a class="back" href="../list1.html">Back to Home</a>
+        <a class="apply" href="https://www.linkedin.com/jobs/view/4470209235" target="_blank" rel="noopener">Apply</a>
+    </div>
+
+    <div class="section">
+        <strong>Remote:</strong> Yes •
+        <strong>Relocation:</strong> Yes
+    </div>
+
+    <div class="section">
+        <h3>Description</h3>
+        <div class="desc"><p>Do you want to empower organizations to build smarter compensation strategies while ensuring fair pay for all employees?</p>
+<p>Syndio is the leading pay governance and compensation intelligence platform. We help organizations make better pay decisions at every stage of the compensation lifecycle, from leveling and offers to promotions and merit. Our platform gives HR, compensation, and finance leaders the data and decision support they need to govern pay fairly, compliantly, and with confidence. We partner with many of the world’s most recognized and respected enterprises, helping them implement leading-edge compensation solutions with expert guidance and analyzing pay for over 10 million employees across the world.</p>
+<p>Join us in our mission to help companies make smarter pay decisions they can trust!</p>
+<p><strong>About The Role</strong>
+Essentials is our pay equity product, and its analyses are relied on for high-stakes decisions. Delivering that means running complex statistical work across datasets that routinely reach hundreds of thousands of records, fast enough that a customer can iterate on a real question instead of waiting overnight for a job to finish.</p>
+<p>This role is for the engineer who makes that computation fast, scalable, and trustworthy. You'll work on the workflows that move large datasets through ingestion, validation, modeling, and reporting: making them performant, making them observable, making them resilient when a single customer's dataset is an order of magnitude larger than anyone planned for. The architecture is genuinely complex, and you'll be one of the people who makes it more tractable rather than less.</p>
+<p>The second half of this role is agentic. We are investing heavily in AI agents across the company, and Essentials is one of the highest-leverage places to apply them. You'll build the tooling that lets our agents carry out Essentials workflows — the harnesses, the guardrails, the context, and the evaluation that make an agent's output something we can stand behind, building on the AI capabilities our AI team provides.</p>
+<p>This is a Staff role, sitting one level below Principal, and it carries the scope and expectations that implies.
+<strong>Success is measured two ways: how much larger and more complex a dataset we can handle without degrading, and how much of the Essentials workflow our agents can carry reliably.</strong>
+What You'll Own</p>
+<p>High-Performance Data Workflows</p>
+<ul>
+<li>Build and optimize workflows that run complex mathematical and statistical calculations over datasets of hundreds of thousands of records — and design them so the next order of magnitude doesn't require a rewrite.</li>
+<li>Own performance end to end: query plans and indexing in Postgres, batching and parallelism, memory behavior, caching strategy with Redis, and the difference between an algorithm that's clever and one that's actually fast on real customer data.</li>
+<li>Make correctness verifiable. These results carry real consequences for our customers — performance work that quietly changes an output is worse than no performance work at all.</li>
+</ul>
+<p>Orchestration &amp; Scale</p>
+<ul>
+<li>Work with the technologies that make large workflows dependable: message and queueing systems, workflow orchestration, job scheduling, retries, idempotency, and backpressure.</li>
+<li>Design for partial failure. Long-running multi-stage pipelines fail in the middle; the interesting engineering is in what happens next.</li>
+<li>Build the observability that makes a slow or wrong run diagnosable — timing, lineage, and intermediate state you can actually inspect.</li>
+</ul>
+<p>Agentic Tooling for Essentials</p>
+<ul>
+<li>Build the tooling that lets our agents execute Essentials workflows: data validation and remediation, analysis setup, exception triage, report generation, and the long tail of work that currently requires a human to babysit it.</li>
+<li>Design the harnesses that make agent output trustworthy in a domain where being confidently wrong is unacceptable — evaluation sets, verification steps, constrained tool surfaces, and clear human review points.</li>
+<li>Give agents the context they need to be productive across a large codebase: documentation, schemas, conventions, and project state that stay current.</li>
+<li>Continuously sharpen your own agentic development workflow, and turn what works into practices the rest of the team adopts.</li>
+</ul>
+<p>Raising the Bar on the Essentials Team</p>
+<ul>
+<li>Partner with the Engineering Manager and technical leaders to set standards for testing, performance, and agentic practice — and hold the line on them.</li>
+<li>Improve the testing story for a complex service-based architecture: integration and end-to-end coverage that gives engineers and agents fast, honest feedback.</li>
+<li>Mentor through the work — design review, pairing, and code review that leaves the team stronger.</li>
+</ul>
+<p>What We're Looking For</p>
+<ul>
+<li>Staff-level engineer. A high-output individual contributor who raises the output of everyone around you with 8+ years of professional hands-on experience.</li>
+<li>Deep experience in complex, distributed, service-based systems — you're comfortable reasoning about failure modes, data consistency, and latency across service boundaries, not just within one service.</li>
+<li>Proven performance and scale work. You've made something big go fast: profiled it, found the real bottleneck, and fixed it without breaking correctness. Experience with large-dataset computation, numerical or statistical workloads, or heavy data pipelines is exactly what we're after.</li>
+<li>Orchestration experience. You've built workflows on message systems, queues, or workflow orchestration tooling, and you know why those abstractions exist.</li>
+<li>Strong across our stack. Python, Go, Node/JavaScript, TypeScript, React, Postgres, and NoSQL stores such as Firebase. You don't need all of them on day one, but you should be genuinely strong in several and unafraid of the rest. Familiarity with caching layers like Redis and the tradeoffs they bring.</li>
+<li>Testing as a first-class skill. Strong end-to-end and integration testing of service-based architectures, with hands-on experience in an e2e framework (Playwright, Cypress, or similar) and a point of view on how to test systems where the interesting bugs live between the services.</li>
+<li>A strong agentic development practice. You use coding agents daily, you tune how you use them, and you build the harnesses that make them reliable — tight test loops, strong CI/CD gates, spec-to-code workflows, and ways of working that produce high-quality output rather than plausible-looking output.</li>
+<li>High autonomy. You can take an ambiguous, high-stakes problem and drive it to a shipped result without being managed through it.</li>
+<li>Cross-team collaboration. You work well across teams and with non-technical leaders, and you can translate technical constraints into business language without dumbing it down.</li>
+<li>Best-practice leadership. You partner with technical leaders to establish standards across the team, and then live by them publicly.</li>
+</ul>
+<p>Nice to Have</p>
+<ul>
+<li>Hands-on experience building with AI systems — LLM applications, agent frameworks, retrieval, evaluation harnesses, or model-backed pipelines in production. This is a strong asset for this role.</li>
+<li>Background in statistics, data science, or quantitative analysis — regression modeling in particular.</li>
+<li>Experience in a domain where correctness is non-negotiable and a wrong number carries real consequences.</li>
+<li>Experience working in a large, complex codebase and making it more navigable.</li>
+</ul>
+<p><strong>About You</strong></p>
+<ul>
+<li>You like building products people depend on, and you care about the experience of whoever's on the other end — not just whether the pipeline ran.</li>
+<li>You've worked with sensitive data and treat security, privacy, and compliance as part of your job rather than someone else's.</li>
+<li>You've seen customer onboarding up close and know the ways cross-system data flows go wrong in practice.</li>
+<li>You're comfortable in unfamiliar territory — reading a third-party API's docs, tracing a bad record back through a pipeline, and working out what actually happened.</li>
+<li>You want a say in where the platform goes over the long term, and you're eager to grow into that as you learn the domain.</li>
+<li>You are a strong communicator, collaborating effectively with both technical and non-technical teams across levels and functions.</li>
+<li>You assume positive intent, are humble and eager, expect the best from yourself, value partnership over perfection, and provide grace and understanding in stressful situations</li>
+<li>You value a remote work environment and know that it requires greater intentionality on your part to build and maintain strong working relationships</li>
+<li>You are based in Calgary and legally authorized to work in Alberta without need for additional visa support now or in the future.</li>
+</ul>
+<p><strong>Why You'll Love It Here</strong></p>
+<ul>
+<li>💰 Competitive Compensation. For this role our salary is targeted at $180,000 - $200,000 CAD per year. Final offer amounts are determined by factors such as experience and expertise</li>
+<li>🏆 Syndio Equity. So you can share in Syndio’s success</li>
+<li>🏝 20 days annually. We encourage our team to recharge when they need to, plus paid sick &amp; safe time, compassion leave, and voting leave</li>
+<li>🩺 Additional Private Medical coverage</li>
+<li>📍 Remote-First (within commuting distance of Calgary)</li>
+</ul>
+<p><strong>Role progression</strong></p>
+<ul>
+<li>In the first month: Ramp on the Essentials codebase, the ingestion → validation → modeling → reporting pipeline, the stack (Python, Go, TypeScript, Postgres, Redis), and the team's agentic development workflow — and, in parallel, form an independent read of where the computation and pipeline are most fragile as datasets grow. You'll contribute at that level rather than through starter tickets. By the end of the month you'll have shipped a meaningful change to a live workflow and shared a written assessment with your manager: the top performance and correctness risks, and where agents can realistically take load.</li>
+<li>By the third month: Own a significant slice of the performance and scalability problem end to end — profiling, finding the real bottleneck, and fixing it (Postgres query plans and indexing, batching and parallelism, caching) without changing what the analysis returns — while troubleshooting failures across service boundaries and designing for partial failure in long-running runs. You'll begin setting technical direction: raising the testing and observability bar, mentoring through review, and standing up the first agent harness with real evaluation gates and human-review points for one Essentials workflow. By this point you'll have delivered a measurable scale or reliability win on a real customer-scale dataset and have an agent reliably carrying part of a workflow.</li>
+<li>Around six months in: Own the architecture that lets the next order of magnitude of data run without a rewrite, and set — not just follow — the team's standards for testing, performance, and agentic practice. You'll drive a high-impact initiative across the AI, Essentials, and Customer Success teams, expand how much of the Essentials workflow agents can carry behind trustworthy eval gates, and mentor other engineers so the whole team's output rises. By six months you're the person the team relies on for how Essentials scales and how agent output is held accountable — measured, as the role defines success, by how much larger and more complex a dataset the team can handle without degrading and how much of the workflow agents carry reliably.</li>
+</ul>
+<p><strong>The Interview Overview</strong>
+Below you'll find an outline of the interview plan for our
+<strong>Staff Software Developer, Essentials</strong>
+position. Please note that this is what we expect the process to look like; we may ask you for supplemental information or require an additional step before making a final decision.</p>
+<ul>
+<li>30 min phone call with a member of our Talent Team</li>
+<li>45-60 min Zoom deep dive with the Hiring Manager</li>
+<li>60 min Technical Discussion</li>
+<li>Take-home assignment</li>
+<li>60 min technical interview with a senior engineer to walk through your solution</li>
+<li>60 min architecture and design discussion</li>
+<li>30-min final interview Product Executive</li>
+</ul>
+<p>At Syndio, we're building a diverse team that values candor, curiosity, and community. If you share these values and are interested in joining us, we'd love to talk with you even if you don't 100% meet the &quot;about you&quot; listed here. We don't expect anyone to have all the answers, as long as you're willing to learn and grow with us.</p>
+<p>Syndio is an Equal Opportunity Employer. We are building an inclusive and collaborative workplace as we grow, and we welcome team members regardless of gender/identity, sexual orientation, race or cultural background, religion, physical disability and age.</p>
+</div>
+    </div>
+
+    <footer>
+        <a href="https://github.com/milad-rasouli">Created by Milad Rasouli</a>
+    </footer>
+</div>
+
+<script>
+    (function(){
+        const el = document.getElementById('createdAt');
+        if(!el) return;
+        const ts = Number(el.textContent) * 1000;
+        const d = new Date(ts);
+        el.textContent = d.toLocaleString();
+    })();
+</script>
+</body>
+</html>

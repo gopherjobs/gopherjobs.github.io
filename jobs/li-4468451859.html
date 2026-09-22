@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Infrastructure Engineer</title>
+    <style>
+        body{font-family:Inter, Arial, Helvetica, sans-serif;background:#f7fafc;color:#111;margin:0;padding:20px}
+        .wrap{max-width:900px;margin:0 auto;background:#fff;padding:20px;border-radius:8px;box-shadow:0 8px 24px rgba(12,20,30,0.06)}
+        h1{margin:0 0 8px 0}
+        .meta{color:#6b7280;font-size:13px;margin-bottom:8px}
+        .apply{display:inline-block;background:#0ea5a6;color:#fff;padding:8px 12px;border-radius:6px;text-decoration:none}
+        .back{display:inline-block;margin-left:12px;color:#374151;text-decoration:none}
+        .section{margin-top:16px}
+        .apply-section {display: flex;align-items: center;gap: 12px;}
+        .apply-section .apply {margin-left: auto;}
+
+         
+        .desc {line-height:1.6;font-size:15px;color:#111;}
+        .desc h1,.desc h2,.desc h3 {margin-top:20px;margin-bottom:10px;}
+        .desc pre{background:#f8fafc;padding:12px;border-radius:6px;border:1px solid #eef2f7;overflow-x:auto}
+        .desc code{background:#f1f5f9;padding:2px 4px;border-radius:4px}
+        .desc ul{padding-left:20px;margin:8px 0}
+        .desc p{margin:10px 0}
+
+        footer{margin-top:18px;text-align:center;color:#94a3b8}
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <h1>Infrastructure Engineer</h1>
+    <div class="meta">OpenRelay (YC S26) •  • fulltime</div>
+
+
+    <div class="section apply-section">
+        <a class="back" href="../list1.html">Back to Home</a>
+        <a class="apply" href="https://www.linkedin.com/jobs/view/4468451859" target="_blank" rel="noopener">Apply</a>
+    </div>
+
+    <div class="section">
+        <strong>Remote:</strong> Yes •
+        <strong>Relocation:</strong> No
+    </div>
+
+    <div class="section">
+        <h3>Description</h3>
+        <div class="desc"><p><strong>Why OpenRelay</strong></p>
+<p>OpenRelay is GPU compute and LLM inference for people who ship. Customers rent GPU machines and call inference APIs; providers plug their hardware into our network and get paid for it. We run a distributed fleet on real hardware, not a reseller skin over someone else's cloud. Small team, high bar, and room for A-players to own things that are live in production.</p>
+<p><strong>No degree required, show us what you have run</strong></p>
+<p>We care about what you can do, not diplomas. The profile we want most is simple: you have built infrastructure and kept it alive. Not a tutorial cluster, real machines with real workloads, where a mistake takes something down and you are the one who brings it back. Show us the systems you have run, what broke, and what you did about it.</p>
+<p><strong>Core tech</strong></p>
+<ul>
+<li>Terraform, AWS (ECS Fargate, DynamoDB, S3, VPC networking)</li>
+<li>Nomad on bare-metal GPU hosts (QEMU/KVM, VFIO GPU passthrough)</li>
+<li>Go (control plane, gateways, node agents)</li>
+<li>Linux deep enough to argue with: kernel parameters, systemd, networking, drivers</li>
+<li>Overlay networking (Nebula, WireGuard, Tailscale), mTLS PKI</li>
+<li>VictoriaMetrics + Grafana, GitHub Actions</li>
+<li>Claude Code and agentic tooling, daily</li>
+</ul>
+<p><strong>What you will own</strong></p>
+<ul>
+<li>The Terraform that defines both AWS environments, and the discipline of applying it: plan, review, beta, then prod</li>
+<li>The provider fleet: enrollment, node identity (mTLS certificates), health reconciliation, and the lifecycle of VMs scheduled onto bare-metal GPU hosts through Nomad</li>
+<li>The ugly, real parts of GPU hosts: VFIO passthrough, IOMMU groups, kernel flags, why this exact box will not release its GPU</li>
+<li>The network paths: customer traffic through our gateways, the control overlay between nodes and the control plane, and the debugging when a path silently degrades</li>
+<li>Monitoring and the alerts a human actually acts on: dashboards, runbooks, and the discipline of making the next incident boring</li>
+<li>Ops tooling for a fleet you cannot always SSH into: safe remote execution, self-updating agents, automation that fails loudly</li>
+</ul>
+<p><strong>Skills and qualifications</strong></p>
+<ul>
+<li>2+ years running production infrastructure, professional or a serious homelab/fleet you can show</li>
+<li>Terraform or equivalent infra-as-code on a real cloud account</li>
+<li>Advanced Linux: you have debugged a boot problem, a driver problem, and a network problem, and can tell the stories</li>
+<li>Comfortable reading and writing Go, or strong in one systems language and willing</li>
+<li>Docker and at least one orchestrator (Nomad, Kubernetes, or equivalent)</li>
+<li>Able to own a system end to end: design, rollout, monitoring, incident response</li>
+<li>Working English, written and spoken</li>
+</ul>
+<p>Nice to have: GPU or bare-metal experience, QEMU/KVM or VFIO, PKI/mTLS, Nebula/WireGuard/Tailscale, DynamoDB, on-call experience at a small company.</p>
+<p><strong>The video</strong></p>
+<p>Required, five minutes or less, in English. Two parts: your face on camera introducing yourself, and a screen recording walking through the best infrastructure you have built or run and the hardest problem it gave you. Casual is fine, content matters more than polish.</p>
+<p><strong>What to expect</strong></p>
+<ul>
+<li>Fast-moving U.S. startup building GPU compute and inference infrastructure</li>
+<li>High autonomy, high expectations, fair and human culture</li>
+<li>Direct influence on product decisions</li>
+<li>Fully remote, anywhere in Argentina</li>
+<li>Competitive pay, strong mentorship and growth</li>
+</ul>
+<p><strong>How to apply</strong></p>
+<p>Apply on our site, not here: https://openrelay.inc/careers/infrastructure-engineer-argentina . The form takes a few minutes and asks for a short demo video, five minutes or less, in English. The video is required. There is an example on the page showing exactly what we are looking for.</p>
+</div>
+    </div>
+
+    <footer>
+        <a href="https://github.com/milad-rasouli">Created by Milad Rasouli</a>
+    </footer>
+</div>
+
+<script>
+    (function(){
+        const el = document.getElementById('createdAt');
+        if(!el) return;
+        const ts = Number(el.textContent) * 1000;
+        const d = new Date(ts);
+        el.textContent = d.toLocaleString();
+    })();
+</script>
+</body>
+</html>

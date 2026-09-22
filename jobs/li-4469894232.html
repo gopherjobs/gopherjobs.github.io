@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Senior Backend Engineer</title>
+    <style>
+        body{font-family:Inter, Arial, Helvetica, sans-serif;background:#f7fafc;color:#111;margin:0;padding:20px}
+        .wrap{max-width:900px;margin:0 auto;background:#fff;padding:20px;border-radius:8px;box-shadow:0 8px 24px rgba(12,20,30,0.06)}
+        h1{margin:0 0 8px 0}
+        .meta{color:#6b7280;font-size:13px;margin-bottom:8px}
+        .apply{display:inline-block;background:#0ea5a6;color:#fff;padding:8px 12px;border-radius:6px;text-decoration:none}
+        .back{display:inline-block;margin-left:12px;color:#374151;text-decoration:none}
+        .section{margin-top:16px}
+        .apply-section {display: flex;align-items: center;gap: 12px;}
+        .apply-section .apply {margin-left: auto;}
+
+         
+        .desc {line-height:1.6;font-size:15px;color:#111;}
+        .desc h1,.desc h2,.desc h3 {margin-top:20px;margin-bottom:10px;}
+        .desc pre{background:#f8fafc;padding:12px;border-radius:6px;border:1px solid #eef2f7;overflow-x:auto}
+        .desc code{background:#f1f5f9;padding:2px 4px;border-radius:4px}
+        .desc ul{padding-left:20px;margin:8px 0}
+        .desc p{margin:10px 0}
+
+        footer{margin-top:18px;text-align:center;color:#94a3b8}
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <h1>Senior Backend Engineer</h1>
+    <div class="meta">Vend • Oslo, Oslo, Norway • fulltime</div>
+
+
+    <div class="section apply-section">
+        <a class="back" href="../list1.html">Back to Home</a>
+        <a class="apply" href="https://www.linkedin.com/jobs/view/4469894232" target="_blank" rel="noopener">Apply</a>
+    </div>
+
+    <div class="section">
+        <strong>Remote:</strong> Yes •
+        <strong>Relocation:</strong> No
+    </div>
+
+    <div class="section">
+        <h3>Description</h3>
+        <div class="desc"><p><strong>Company Description</strong></p>
+<p>Vend is a family of well-known Nordic digital marketplaces — FINN, Blocket, Tori, DBA, Bilbasen, Bytbil and Oikotie — operating under one shared organization. Millions of people across the Nordics use our marketplaces to find a job, a home, a way to move, or a fresh start, with more than 300 million visits every month.</p>
+<p>The Discovery team builds the search and recommendations behind all of them. We're a core platform team: our customers are the product teams in Mobility, Recommerce, Jobs and Real Estate, and through them, everyone using our marketplaces. When search is down, the marketplaces stop working — which is a real responsibility, and also why the work matters.</p>
+<p><strong>Role Description</strong></p>
+<p>As a Senior Backend Engineer in the Discovery team, you'll build and evolve the search services behind Vend's marketplaces: indexing pipelines, query handling, and the APIs the verticals consume. Most of our code is Kotlin.</p>
+<p>A large part of the work is hybrid search — combining lexical and semantic retrieval — which is where we think the platform's future is and where plenty is still unsolved. You'll also develop the recommendation systems used across all verticals, from candidate generation to serving, and work directly with the data scientists on the team to turn their experiments into production systems.</p>
+<p>We're rebuilding our search setup into a flexible platform where individual marketplace teams can shape their own results, tune their own weights and bring their own data models. That means clean APIs, good abstractions, and deciding what to expose versus what to abstract away. It also means keeping it all running at Nordic marketplace scale, where slow search is broken search.</p>
+<p>The team leans heavily on AI tools like Claude Code, and we're still working out what that means for how we build software.</p>
+<p>This is a full-time hybrid role based in either our Oslo or Stockholm office, with the flexibility to work up to 3 days per week remotely.</p>
+<p><strong>Qualifications</strong></p>
+<ul>
+<li>Strong on the JVM. Most of our code is Kotlin, but we care more about your ability to build solid backend services than which JVM language you've been writing most recently.</li>
+<li>Experience building and operating high-throughput production backend services, including API design, concurrency, performance and debugging.</li>
+<li>Enjoyment of complex, open-ended problems. Relevance is never really &quot;done&quot;, and ranking is full of trade-offs where there's rarely a single right answer.</li>
+<li>Ability to work well with data scientists — turning an experiment into a production system, and understanding enough about embeddings, evaluation and model behaviour to have useful technical discussions.</li>
+<li>Platform thinking: you care about the API you expose, the abstraction other teams work with, and what happens when four verticals need four slightly different things.</li>
+<li>Experience with search, relevance, ranking or recommendation systems is a strong advantage, as is familiarity with Elasticsearch, Solr, or vector search. Not a requirement.</li>
+<li>Comfort with cloud infrastructure, containerization and CI/CD, and with the monitoring and observability needed to run services at scale.</li>
+<li>Use of AI tools with intent — bring your opinions, curiosity and willingness to experiment.</li>
+<li>Clear communication in English across a Nordic organization.</li>
+</ul>
+</div>
+    </div>
+
+    <footer>
+        <a href="https://github.com/milad-rasouli">Created by Milad Rasouli</a>
+    </footer>
+</div>
+
+<script>
+    (function(){
+        const el = document.getElementById('createdAt');
+        if(!el) return;
+        const ts = Number(el.textContent) * 1000;
+        const d = new Date(ts);
+        el.textContent = d.toLocaleString();
+    })();
+</script>
+</body>
+</html>

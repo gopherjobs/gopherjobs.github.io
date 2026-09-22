@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Web Developer</title>
+    <style>
+        body{font-family:Inter, Arial, Helvetica, sans-serif;background:#f7fafc;color:#111;margin:0;padding:20px}
+        .wrap{max-width:900px;margin:0 auto;background:#fff;padding:20px;border-radius:8px;box-shadow:0 8px 24px rgba(12,20,30,0.06)}
+        h1{margin:0 0 8px 0}
+        .meta{color:#6b7280;font-size:13px;margin-bottom:8px}
+        .apply{display:inline-block;background:#0ea5a6;color:#fff;padding:8px 12px;border-radius:6px;text-decoration:none}
+        .back{display:inline-block;margin-left:12px;color:#374151;text-decoration:none}
+        .section{margin-top:16px}
+        .apply-section {display: flex;align-items: center;gap: 12px;}
+        .apply-section .apply {margin-left: auto;}
+
+         
+        .desc {line-height:1.6;font-size:15px;color:#111;}
+        .desc h1,.desc h2,.desc h3 {margin-top:20px;margin-bottom:10px;}
+        .desc pre{background:#f8fafc;padding:12px;border-radius:6px;border:1px solid #eef2f7;overflow-x:auto}
+        .desc code{background:#f1f5f9;padding:2px 4px;border-radius:4px}
+        .desc ul{padding-left:20px;margin:8px 0}
+        .desc p{margin:10px 0}
+
+        footer{margin-top:18px;text-align:center;color:#94a3b8}
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <h1>Web Developer</h1>
+    <div class="meta">develop •  • fulltime</div>
+
+
+    <div class="section apply-section">
+        <a class="back" href="../list1.html">Back to Home</a>
+        <a class="apply" href="https://www.linkedin.com/jobs/view/4467378319" target="_blank" rel="noopener">Apply</a>
+    </div>
+
+    <div class="section">
+        <strong>Remote:</strong> Yes •
+        <strong>Relocation:</strong> No
+    </div>
+
+    <div class="section">
+        <h3>Description</h3>
+        <div class="desc"><p><strong>Senior Web Engineer | Product Security | Remote first, 1-2 times per month in London | Salary up to £95,000</strong></p>
+<p>I’m working with a high-growth technology business looking for a Senior Web Engineer to join the team. This is a highly technical role combining both Web Engineering and Security, for this role they are comfortable within finding a really strong Mobile Engineer who has some exposure to security, application protection, authentication, biometrics etc.</p>
+<p><strong>What you'll be doing:</strong></p>
+<ul>
+<li>Build and evolve security-focused technologies that strengthen the resilience of browser-based products and applications.</li>
+<li>Engineer defensive controls designed to safeguard software executing in untrusted client environments.</li>
+<li>Develop mechanisms that detect and respond to unauthorised modification, inspection, manipulation, and automated interaction.</li>
+<li>Create performance-critical browser components using native and compiled-to-web technologies, including Rust, C++, AssemblyScript, and WebAssembly.</li>
+<li>Explore the internals of modern browsers and execution environments to understand how applications behave under both legitimate and adversarial conditions.</li>
+<li>Identify weaknesses across client-side application architectures and turn security research into deployable engineering solutions.</li>
+<li>Investigate new approaches used to analyse, manipulate, instrument, or circumvent browser-delivered software, and develop appropriate countermeasures.</li>
+<li>Work alongside software engineers, security specialists, offensive security teams, and product stakeholders to ensure defensive requirements are incorporated from initial design through production.</li>
+<li>Lead technical investigations into complex security issues, establishing underlying causes and engineering preventative solutions rather than short-term fixes.</li>
+<li>Influence architectural decisions around application security, resilience, performance, and client-side trust boundaries.</li>
+<li>Share specialist knowledge across the engineering organisation, helping teams adopt stronger approaches to secure software design and implementation.</li>
+</ul>
+<p><strong>What they're looking for:</strong></p>
+<ul>
+<li>5+ years of professional web development experience.</li>
+<li>JavaScript/Typescript or C++ Or Rust</li>
+<li>Some Experience with App Security, cryptography, secure communications and authentication.</li>
+</ul>
+<p><strong>Nice to have:</strong></p>
+<ul>
+<li>JavaScript obfuscation and de-obfuscation</li>
+<li>WebAssembly (WASM) binary analysis</li>
+<li>Static and dynamic code analysis</li>
+<li>Anti-debugging, anti-tamper, and software protection techniques</li>
+<li>Runtime integrity verification and secure code signing</li>
+<li>Secure SDLC practices</li>
+<li>Browser engine internals, including V8, SpiderMonkey, JavaScriptCore, or Chromium</li>
+<li>WebGPU, WebRTC, or WebCodecs</li>
+<li>Binary instrumentation and compiler toolchains</li>
+<li>SDK and developer platform development</li>
+<li>Mobile browser security</li>
+<li>Biometrics, identity verification, or fraud prevention technologies</li>
+<li>Open-source security contributions or published security research</li>
+</ul>
+<p><strong>What's on offer:</strong></p>
+<ul>
+<li>Up to £95,000</li>
+<li>Equity/share options</li>
+<li>Up to 10% bonus</li>
+<li>Remote Working- 1-2 a month in London</li>
+<li>Private healthcare and wellbeing benefits</li>
+<li>Pension and life assurance</li>
+<li>Professional development and training</li>
+<li>Enhanced annual leave and flexible benefits</li>
+</ul>
+<p>If you're a Web engineer that has an interest in the world of Cyber Security then please click apply now!</p>
+</div>
+    </div>
+
+    <footer>
+        <a href="https://github.com/milad-rasouli">Created by Milad Rasouli</a>
+    </footer>
+</div>
+
+<script>
+    (function(){
+        const el = document.getElementById('createdAt');
+        if(!el) return;
+        const ts = Number(el.textContent) * 1000;
+        const d = new Date(ts);
+        el.textContent = d.toLocaleString();
+    })();
+</script>
+</body>
+</html>

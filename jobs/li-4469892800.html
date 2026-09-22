@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Staff Backend Engineer, Platform</title>
+    <style>
+        body{font-family:Inter, Arial, Helvetica, sans-serif;background:#f7fafc;color:#111;margin:0;padding:20px}
+        .wrap{max-width:900px;margin:0 auto;background:#fff;padding:20px;border-radius:8px;box-shadow:0 8px 24px rgba(12,20,30,0.06)}
+        h1{margin:0 0 8px 0}
+        .meta{color:#6b7280;font-size:13px;margin-bottom:8px}
+        .apply{display:inline-block;background:#0ea5a6;color:#fff;padding:8px 12px;border-radius:6px;text-decoration:none}
+        .back{display:inline-block;margin-left:12px;color:#374151;text-decoration:none}
+        .section{margin-top:16px}
+        .apply-section {display: flex;align-items: center;gap: 12px;}
+        .apply-section .apply {margin-left: auto;}
+
+         
+        .desc {line-height:1.6;font-size:15px;color:#111;}
+        .desc h1,.desc h2,.desc h3 {margin-top:20px;margin-bottom:10px;}
+        .desc pre{background:#f8fafc;padding:12px;border-radius:6px;border:1px solid #eef2f7;overflow-x:auto}
+        .desc code{background:#f1f5f9;padding:2px 4px;border-radius:4px}
+        .desc ul{padding-left:20px;margin:8px 0}
+        .desc p{margin:10px 0}
+
+        footer{margin-top:18px;text-align:center;color:#94a3b8}
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <h1>Staff Backend Engineer, Platform</h1>
+    <div class="meta">Zeit AI (YC S24) • London, England, UK • fulltime</div>
+
+
+    <div class="section apply-section">
+        <a class="back" href="../list1.html">Back to Home</a>
+        <a class="apply" href="https://www.linkedin.com/jobs/view/4469892800" target="_blank" rel="noopener">Apply</a>
+    </div>
+
+    <div class="section">
+        <strong>Remote:</strong> No •
+        <strong>Relocation:</strong> Yes
+    </div>
+
+    <div class="section">
+        <h3>Description</h3>
+        <div class="desc"><p><strong>Opportunity</strong></p>
+<ul>
+<li>ZeitMind is an autonomous data engineer for mid-market businesses. Agents and people work the same company data: ingest, pipeline, clean, analyse, build operational apps</li>
+<li>we are growing fast and will be onboarding multiple enterprise customers a week. The backend isn't ready yet, your impact will decide the speed at which we can grow</li>
+<li>load growth is compounding: more customers, multiple users per customer, many agent interactions per user and multiple agent artifacts (data pipelines, schedules, analyses) coming out of the interactions</li>
+<li>you own the platform</li>
+</ul>
+<p><strong>What You'll Do</strong></p>
+<ul>
+<li>scale a multi-tenant Postgres under unpredictable load: query and I/O optimisation, read/write separation, horizontal scaling</li>
+<li>make agent-driven workloads survivable: one user can spin up 30 table syncs, some running hours, while others query large sources</li>
+<li>manage the sandbox layer: Docker containers where agents run queries and reverse-engineer files, with compute and memory budgets</li>
+<li>own connectivity into customer networks: SOCKS5 over WebSockets, authentication, routing</li>
+<li>scope the architecture and build it</li>
+</ul>
+<p><strong>What We're Looking For</strong></p>
+<ul>
+<li>staff or principal level, still hands-on, writing production code</li>
+<li>built and scaled multi-tenant data platforms in a B2B startup or platform company before</li>
+<li>deep Postgres or database knowledge: query plans, locking, I/O, caching, replication, sharding</li>
+<li>understands startup pace and ownership without specs</li>
+<li>pragmatic over ideal, wants to build foundations right without overengineering</li>
+<li>strong TypeScript</li>
+<li>English C1, German a plus</li>
+</ul>
+<p><strong>Nice to have</strong></p>
+<ul>
+<li>experience at a data platform or warehouse company (Snowflake, Databricks, Cloudflare or similar)</li>
+<li>networking depth: proxies, VPN, routing</li>
+</ul>
+<p><strong>Location</strong></p>
+<ul>
+<li>preferred: Munich, on-site. We support relocation within Europe</li>
+<li>already in London? We can make that work. We have people here and are opening a small office, and we'd expect regular Munich travel. In-person culture is important to us</li>
+</ul>
+<p><strong>Tech stack</strong></p>
+<ul>
+<li>TypeScript end to end. Bun, tRPC, Postgres, Supabase. React frontend (Mantine, TanStack Query). Docker, job/process management, VPN/routing, agentic frameworks</li>
+</ul>
+<p>Compensation Range: €95K - €270K</p>
+</div>
+    </div>
+
+    <footer>
+        <a href="https://github.com/milad-rasouli">Created by Milad Rasouli</a>
+    </footer>
+</div>
+
+<script>
+    (function(){
+        const el = document.getElementById('createdAt');
+        if(!el) return;
+        const ts = Number(el.textContent) * 1000;
+        const d = new Date(ts);
+        el.textContent = d.toLocaleString();
+    })();
+</script>
+</body>
+</html>
