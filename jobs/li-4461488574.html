@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Staff Engineer - Payments &amp; Commerce Platform</title>
+    <style>
+        body{font-family:Inter, Arial, Helvetica, sans-serif;background:#f7fafc;color:#111;margin:0;padding:20px}
+        .wrap{max-width:900px;margin:0 auto;background:#fff;padding:20px;border-radius:8px;box-shadow:0 8px 24px rgba(12,20,30,0.06)}
+        h1{margin:0 0 8px 0}
+        .meta{color:#6b7280;font-size:13px;margin-bottom:8px}
+        .apply{display:inline-block;background:#0ea5a6;color:#fff;padding:8px 12px;border-radius:6px;text-decoration:none}
+        .back{display:inline-block;margin-left:12px;color:#374151;text-decoration:none}
+        .section{margin-top:16px}
+        .apply-section {display: flex;align-items: center;gap: 12px;}
+        .apply-section .apply {margin-left: auto;}
+
+         
+        .desc {line-height:1.6;font-size:15px;color:#111;}
+        .desc h1,.desc h2,.desc h3 {margin-top:20px;margin-bottom:10px;}
+        .desc pre{background:#f8fafc;padding:12px;border-radius:6px;border:1px solid #eef2f7;overflow-x:auto}
+        .desc code{background:#f1f5f9;padding:2px 4px;border-radius:4px}
+        .desc ul{padding-left:20px;margin:8px 0}
+        .desc p{margin:10px 0}
+
+        footer{margin-top:18px;text-align:center;color:#94a3b8}
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <h1>Staff Engineer - Payments &amp; Commerce Platform</h1>
+    <div class="meta">HighLevel •  • fulltime</div>
+
+
+    <div class="section apply-section">
+        <a class="back" href="../list1.html">Back to Home</a>
+        <a class="apply" href="https://www.linkedin.com/jobs/view/4461488574" target="_blank" rel="noopener">Apply</a>
+    </div>
+
+    <div class="section">
+        <strong>Remote:</strong> Yes •
+        <strong>Relocation:</strong> No
+    </div>
+
+    <div class="section">
+        <h3>Description</h3>
+        <div class="desc"><p><strong>About HighLevel:</strong>
+HighLevel is an AI-powered business operating system that gives agencies, entrepreneurs and SMBs the infrastructure to build, automate and scale. Today, HighLevel supports SMBs across 150+ countries, fueling community-driven growth rooted in real customer outcomes.</p>
+<p>To date, businesses operating on HighLevel have generated over $7 billion in ecosystem value, demonstrating the impact of shared infrastructure at scale. By centralizing conversations, automation and intelligence into one system, we help businesses move faster, reduce complexity and execute efficiently.</p>
+<p>Behind the platform, HighLevel powers more than 4 billion API hits and 2.5 billion message events daily. With 250 terabytes of distributed data, 250+ microservices and over 1 million domain names supported, our architecture is built for performance, resilience and long-term scalability.</p>
+<p><strong>Our People</strong>
+With over 2,000 team members across 10+ countries, HighLevel operates as a global, remote-first organization built for speed and ownership. We value initiative, clarity and execution, creating space for ambitious people to build systems that support millions of businesses worldwide. Here, innovation thrives, ideas are celebrated and people come first, no matter where they call home.</p>
+<p><strong>Our Impact</strong>
+Every month, HighLevel enables more than 1.5 billion messages, 200 million leads and 20 million conversations for the more than 1 million businesses we support. Behind those numbers are real people building independence, expanding opportunity and creating measurable impact. We’re proud to be a part of that.</p>
+<p>Learn more about us on our YouTube Channel or Blog Posts .</p>
+<p><strong>About the Role:</strong>
+We’re building a global commerce platform to power $1T+ in annual transactions for millions of SMEs. We want our Principal Enggs to be the technical force‑multiplier who sets the domain modelling, architecture, raises the reliability bar, and multiplies team effectiveness. You’ll steward our core commerce models—subscriptions, payments , Catalog, Pricing, Inventory, fulfillment, reconciliation , tax —and the services around them, ensuring correctness by design, auditability, and delightful performance at scale. This is an IC role with org‑level influence (no direct reports), focused on designing systems, shaping standards, and growing engineers.</p>
+<p>Tech Stack:</p>
+<p>Backend: Go, ConnectRPC</p>
+<p>Databases: MongoDB, Firestore, ClickHouse</p>
+<p>Cloud: GCP (GKE), Pub/Sub, Redis, OpenTelemetry</p>
+<p><strong>What You’ll Do:</strong></p>
+<ul>
+<li>Architect and ship multi‑tenant, planet‑scale services (checkout, subscriptions, payments orchestration, invoicing, tax hooks) with clear domain boundaries (DDD) and hard SLOs</li>
+<li>Be the custodian of API &amp; schema design: own protobuf/ConnectRPC conventions, versioning policy, deprecation playbooks, and Buf breaking‑change checks—so our contracts stand the test of time</li>
+<li>Guarantee resilience &amp; availability of core payment paths: timeouts, retries with jitter, circuit breakers, idempotency keys, outbox/Saga patterns, hedged requests, and graceful degradation</li>
+<li>Ensure complete auditability: append‑only double‑entry ledger, immutable event streams, trace‑linked entities (OTel trace/span IDs), tamper‑evident trails, and reconciliations that tie out to the cent</li>
+<li>Own error boundaries end‑to‑end: enumerate failure domains (PSP, network, data, concurrency, quota, browser, device); design uniform error contracts; implement compensations/backfills and automated replay</li>
+<li>Keep track of every deployed thing: services, workers, triggers, cron, subscriptions—own the service catalog and scorecards (owners, SLOs, runbooks, PDBs, HPA/VPA, budgets, quotas, timeouts)</li>
+<li>Configuration &amp; limits stewardship: enforce sane defaults across GKE, Pub/Sub, Redis, Firestore/Mongo, ClickHouse—connection pools, ack deadlines, batch sizes, TTLs, memory/FD limits, and GCP quotas</li>
+<li>Observability as a product: pervasive OpenTelemetry, RED/USE metrics, exemplars, trace sampling, SLO dashboards, and alerting that wakes humans only for user‑impacting issues</li>
+<li>Production excellence: canary/blue‑green rollouts, automated rollbacks, chaos drills, DR playbooks (RPO/RTO), multi‑region failover strategies, and incident command on rotation</li>
+<li>Security &amp; compliance by design: PCI scope minimization, tokenization/vaulting, secrets/KMS hygiene, data retention/archival, and privacy controls—embed checks in CI/CD</li>
+<li>Developer acceleration: pave golden paths (service templates, ADR/RFC process, linting/formatting, contract tests, ephemeral envs, load/perf harnesses) to make the right thing the easy thing</li>
+</ul>
+<p><strong>What You’ll Lead:</strong></p>
+<ul>
+<li>Core domain evolution: orchestration → ledger → reconciliation flows with crisp invariants and consistency guarantees (read‑your‑writes where needed, eventual where appropriate)</li>
+<li>Reliability strategy: SLIs/SLOs, error budgets, capacity planning, cost/FinOps guardrails, multi‑region posture, and DR exercises</li>
+<li>API &amp; data governance: canonical models, schema lifecycle (compatibility matrix, migrations), data lifecycle (retention, archival, compliance)</li>
+<li>Practice leadership for HighLevel: design reviews, postmortems, technical strategy, coding standards, and mentorship across teams—raise the bar for the org</li>
+<li>Hiring &amp; team growth: help us hire, scale, and train the right team; shape interview loops, rubrics, onboarding, and ongoing learning (brown bags, reviews, pair design)</li>
+<li>Cross‑functional partnership: collaborate with Product/Marketing/Support to translate platform capabilities and constraints into roadmaps, GTM narratives, and reliable customer outcomes</li>
+<li>Risk &amp; roadmap: maintain a technical risk register, make build‑vs‑buy calls, and propose simplifications or deprecations that meaningfully reduce complexity and MTTR</li>
+</ul>
+<p><strong>Minimum Qualifications:</strong></p>
+<ul>
+<li>10+ years building and operating backend systems (at least 5+ years in Go), with 2–3+ years acting as a Staff/Principal‑level IC or Tech Lead for critical paths</li>
+<li>Deep proficiency with protobuf + ConnectRPC/gRPC and API lifecycle management (versioning, compatibility, contract testing, Buf)</li>
+<li>Distributed systems fundamentals: idempotency, exactly‑once‑ish via dedupe/outbox, ordering, consensus basics, backpressure, concurrency control</li>
+<li>Event‑driven architectures on GCP (Pub/Sub), plus Redis for fast paths; strong schema design in MongoDB/Firestore and analytics/reporting patterns on ClickHouse</li>
+<li>Kubernetes/GKE operations at scale: autoscaling (HPA/VPA), PDBs, resource limits/requests, multi‑region topologies, CI/CD, canary/blue‑green</li>
+<li>Reliability engineering: SLIs/SLOs, error budgets, capacity &amp; load testing, incident management, DR/BCP</li>
+<li>Security &amp; compliance: secrets/KMS best practices, PCI basics (scope reduction, key rotation), and data governance (retention/archival)</li>
+<li>Testing discipline: unit, integration, contract, property‑based, performance; test data management and deterministic environments</li>
+<li>Frontend collaboration: solid understanding of Vue.js + TanStack Query to shape clean API surfaces and performance budgets across the boundary</li>
+<li>Exceptional technical writing &amp; communication: design docs, ADRs/RFCs, postmortems, and stakeholder updates</li>
+</ul>
+<p><strong>Nice to Have:</strong></p>
+<ul>
+<li>Hands‑on integrations with major PSPs/local rails (e.g., UPI, wallets, BNPL, cards/3DS2) and reconciliation at scale</li>
+<li>Experience with active‑active or multi‑region designs; chaos engineering; traffic management</li>
+<li>Observability leadership with OpenTelemetry at org scale (tail‑based sampling, exemplars)</li>
+<li>FinOps experience: cost baselining, quotas, budget alarms, and workload right‑sizing</li>
+<li>Familiarity with regulatory frameworks (PCI DSS, SOC 2/ISO 27001) and privacy laws relevant to our markets</li>
+</ul>
+<p><strong>EEO Statement:</strong>
+The company is an Equal Opportunity Employer. As an employer subject to affirmative action regulations, we invite you to voluntarily provide the following demographic information. This information is used solely for compliance with government recordkeeping, reporting, and other legal requirements. Providing this information is voluntary and refusal to do so will not affect your application status. This data will be kept separate from your application and will not be used in the hiring decision.</p>
+<p>We encourage you to review our Privacy Policy before submitting your application</p>
+<p>We may use artificial intelligence (AI) tools to support parts of the hiring process, such as reviewing applications, analyzing resumes, or assessing responses and identifying potential inconsistencies or verification signals in application materials based on available information. These tools assist our recruitment team but do not replace human judgment. Final hiring decisions are ultimately made by humans. If you would like more information about how your data is processed, please contact us.</p>
+</div>
+    </div>
+
+    <footer>
+        <a href="https://github.com/milad-rasouli">Created by Milad Rasouli</a>
+    </footer>
+</div>
+
+<script>
+    (function(){
+        const el = document.getElementById('createdAt');
+        if(!el) return;
+        const ts = Number(el.textContent) * 1000;
+        const d = new Date(ts);
+        el.textContent = d.toLocaleString();
+    })();
+</script>
+</body>
+</html>

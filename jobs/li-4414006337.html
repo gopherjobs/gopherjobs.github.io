@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Senior Software Engineer, Platform (based in Dublin OR Madrid)</title>
+    <style>
+        body{font-family:Inter, Arial, Helvetica, sans-serif;background:#f7fafc;color:#111;margin:0;padding:20px}
+        .wrap{max-width:900px;margin:0 auto;background:#fff;padding:20px;border-radius:8px;box-shadow:0 8px 24px rgba(12,20,30,0.06)}
+        h1{margin:0 0 8px 0}
+        .meta{color:#6b7280;font-size:13px;margin-bottom:8px}
+        .apply{display:inline-block;background:#0ea5a6;color:#fff;padding:8px 12px;border-radius:6px;text-decoration:none}
+        .back{display:inline-block;margin-left:12px;color:#374151;text-decoration:none}
+        .section{margin-top:16px}
+        .apply-section {display: flex;align-items: center;gap: 12px;}
+        .apply-section .apply {margin-left: auto;}
+
+         
+        .desc {line-height:1.6;font-size:15px;color:#111;}
+        .desc h1,.desc h2,.desc h3 {margin-top:20px;margin-bottom:10px;}
+        .desc pre{background:#f8fafc;padding:12px;border-radius:6px;border:1px solid #eef2f7;overflow-x:auto}
+        .desc code{background:#f1f5f9;padding:2px 4px;border-radius:4px}
+        .desc ul{padding-left:20px;margin:8px 0}
+        .desc p{margin:10px 0}
+
+        footer{margin-top:18px;text-align:center;color:#94a3b8}
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <h1>Senior Software Engineer, Platform (based in Dublin OR Madrid)</h1>
+    <div class="meta">Fresco • Dublin, County Dublin, Ireland • fulltime</div>
+
+
+    <div class="section apply-section">
+        <a class="back" href="../list1.html">Back to Home</a>
+        <a class="apply" href="https://www.linkedin.com/jobs/view/4414006337" target="_blank" rel="noopener">Apply</a>
+    </div>
+
+    <div class="section">
+        <strong>Remote:</strong> Yes •
+        <strong>Relocation:</strong> No
+    </div>
+
+    <div class="section">
+        <h3>Description</h3>
+        <div class="desc"><p><strong>About Fresco</strong>
+Fresco is a smart kitchen platform trusted by leading appliance brands around the world to build and scale connected cooking experiences. Our platform helps brands launch faster, deliver better experiences for home cooks, and accelerate their digital transformation.</p>
+<p>Our mission is to empower anyone to cook delicious food.</p>
+<p>Powered by KitchenOS and the Fresco AI Cooking Companion, Fresco connects appliances across brands, supports rapid onboarding, and scales globally in more than 15 languages. We work with partners including Panasonic, Middleby, Kenwood, Instant Pot Brands, Bosch, GE Appliances, Arda and LG, and operate as a global team with offices in Dublin and Madrid.</p>
+<p><strong>About The Role</strong>
+Fresco is looking for a senior engineer to help drive the design and evolution of KitchenOS, our multi-sided smart kitchen platform. This is a deep-IC, design-first role: working alongside a strong platform team, you'll help shape how ~20 event-driven microservices fit together, make the architecture calls that keep them fast and cheap to run, and raise the abstractions the whole team builds on.</p>
+<p>Strong AWS and fluent Python are essential, but the thing that sets this role apart is a system-design mindset: you think in services, events, and trade-offs, not individual functions.</p>
+<p>You'll report to the Engineering Manager for Platform &amp; Firmware and work cross-functionally to design, build, and ship end-to-end platform capabilities.</p>
+<p>Your Responsibilities</p>
+<ul>
+<li>Shape the architecture of ~20 Lambda-based Python microservices (Python 3.14, aws-lambda-powertools) spanning device control, cooking sessions, media, recipes, and auth.</li>
+<li>Design domain event patterns across services with EventBridge, SQS, and SNS, choosing delivery semantics and sync vs async fan-out deliberately, and challenging designs that don't earn their keep.</li>
+<li>Own schema and API design, and improve the shared abstractions the whole team depends on (API Gateway, VPC, cache, DynamoDB tables). Drive direction through design docs and cross-team code review.</li>
+<li>Stay close to your services after they ship. Ownership is shared across the team, so like everyone here you'll take part in the on-call rotation for what you build, supported by self-service deployment and alerting.</li>
+<li>Design for cost. Fold efficiency into architecture decisions: right-size memory/timeout, avoid noisy events, fat payloads and chatty calls, and catch cost regressions early via Cost Explorer and Datadog.</li>
+<li>Grow the team's skills through mentoring, knowledge-sharing sessions, and other technical initiatives.</li>
+</ul>
+<p>Your Skills</p>
+<ul>
+<li>Typically 5+ years designing and building backend systems at scale, with significant time on AWS, spanning services, events, and architecture trade-offs, not just individual functions. We care more about the depth of what you've designed than the exact year count.</li>
+<li>Strong infrastructure-as-code ownership. We use AWS CDK (writing constructs, not copy-pasting templates); deep Terraform experience transfers well and is equally welcome.</li>
+<li>Fluent in Python with strict typing (Pydantic v2, pyrefly).</li>
+<li>Comfortable across DynamoDB, Valkey (Redis), PostgreSQL (SQLModel/Alembic), and Elasticsearch.</li>
+<li>Strong AI engineering practice: AI tooling is a core part of your workflow, and you can bring the team along on adoption.</li>
+<li>Can read IoT/embedded protocol code (CBOR, KSUID, CRC) without panicking.</li>
+<li>Fluent in English; a clear communicator with both technical peers and less-technical stakeholders.</li>
+</ul>
+<p>How You’ll Work</p>
+<ul>
+<li>Senior IC: deep technical ownership and influence through code, design, and review, not people management.</li>
+<li>Make deliberate architecture trade-offs (event delivery semantics, on-demand vs provisioned, cold-start vs reserved concurrency, sync vs async fan-out) and challenge infrastructure that isn't earning its keep.</li>
+<li>Own infrastructure as code (CDK or Terraform + deployment pipelines) and observability (Datadog APM, Lambda tracing, structured logging, alarms) for what you build.</li>
+<li>Share the on-call rotation; everyone owns what they ship.</li>
+<li>Engineering hygiene: strict typing, unit tests, Python tooling via uv, ruff, pyrefly, and Poe.</li>
+</ul>
+<p>Nice to Have</p>
+<ul>
+<li>Multi-tenant SaaS platform experience</li>
+<li>LLM integration (prompt pipelines, structured extraction)</li>
+<li>Appliance/IoT protocol knowledge</li>
+</ul>
+<p>What's it like working at Fresco?</p>
+<p>We get a lot done by prioritizing well and being effective instead of busy. We care deeply about our customers and the product experiences we provide. We treat each other with respect, speak our minds, and always listen to each other—regardless of function or seniority. We are authentic, humble, and most importantly, trust each other to do a great job.</p>
+<p>We offer competitive, market driven salaries, equity, a hybrid or remote working model, and much more.</p>
+<p>Like with any good meal, a career at Fresco is both rich and rewarding, with many opportunities and room for growth. If you’re ready to serve up your best work at Fresco, get in touch!</p>
+<p>What will you get?</p>
+<ul>
+<li>The chance to work at a hyper-growth, venture-backed startup in a budding industry</li>
+<li>The ability to feel true purpose in your work and generate success on a global platform</li>
+<li>Competitive, market driven compensation</li>
+<li>Meaningful share options as part of our Employee Share Option Scheme</li>
+<li>A flexible, hybrid model to suit your needs</li>
+</ul>
+<p>Just like the ingredients in our kitchen, we believe that diversity of ideas is what makes the workplace great. Fresco is proud to be an equal opportunities employer, and we are committed to building a diverse and inclusive workplace. We welcome and encourage applications from candidates from a range of national, ethnic, or cultural groups. This job description works as a guide for the caliber of person we need, but we also understand that skills are transferable. If you are an exceptional candidate with mismatching experience, please apply and explain why you would be a great fit for Fresco.</p>
+<p><em>Just like the ingredients in our kitchen, we believe that diversity of ideas is what makes the workplace great. Fresco is proud to be an equal opportunities employer, and we are committed to building a diverse and inclusive workplace. We welcome and encourage applications from candidates from a range of national, ethnic, or cultural groups. This job description works as a guide for the caliber of person we need, but we also understand that skills are transferable. If you are an exceptional candidate with mismatching experience, please apply and explain why you would be a great fit for Fresco.</em></p>
+</div>
+    </div>
+
+    <footer>
+        <a href="https://github.com/milad-rasouli">Created by Milad Rasouli</a>
+    </footer>
+</div>
+
+<script>
+    (function(){
+        const el = document.getElementById('createdAt');
+        if(!el) return;
+        const ts = Number(el.textContent) * 1000;
+        const d = new Date(ts);
+        el.textContent = d.toLocaleString();
+    })();
+</script>
+</body>
+</html>

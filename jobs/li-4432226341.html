@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Automation Compliance Engineer Intern, IT Compliance (Fall 2026/ Spring 2027)</title>
+    <style>
+        body{font-family:Inter, Arial, Helvetica, sans-serif;background:#f7fafc;color:#111;margin:0;padding:20px}
+        .wrap{max-width:900px;margin:0 auto;background:#fff;padding:20px;border-radius:8px;box-shadow:0 8px 24px rgba(12,20,30,0.06)}
+        h1{margin:0 0 8px 0}
+        .meta{color:#6b7280;font-size:13px;margin-bottom:8px}
+        .apply{display:inline-block;background:#0ea5a6;color:#fff;padding:8px 12px;border-radius:6px;text-decoration:none}
+        .back{display:inline-block;margin-left:12px;color:#374151;text-decoration:none}
+        .section{margin-top:16px}
+        .apply-section {display: flex;align-items: center;gap: 12px;}
+        .apply-section .apply {margin-left: auto;}
+
+         
+        .desc {line-height:1.6;font-size:15px;color:#111;}
+        .desc h1,.desc h2,.desc h3 {margin-top:20px;margin-bottom:10px;}
+        .desc pre{background:#f8fafc;padding:12px;border-radius:6px;border:1px solid #eef2f7;overflow-x:auto}
+        .desc code{background:#f1f5f9;padding:2px 4px;border-radius:4px}
+        .desc ul{padding-left:20px;margin:8px 0}
+        .desc p{margin:10px 0}
+
+        footer{margin-top:18px;text-align:center;color:#94a3b8}
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <h1>Automation Compliance Engineer Intern, IT Compliance (Fall 2026/ Spring 2027)</h1>
+    <div class="meta">Shopee • Singapore, Singapore • internship</div>
+
+
+    <div class="section apply-section">
+        <a class="back" href="../list1.html">Back to Home</a>
+        <a class="apply" href="https://www.linkedin.com/jobs/view/4432226341" target="_blank" rel="noopener">Apply</a>
+    </div>
+
+    <div class="section">
+        <strong>Remote:</strong> No •
+        <strong>Relocation:</strong> Yes
+    </div>
+
+    <div class="section">
+        <h3>Description</h3>
+        <div class="desc"><p><strong>About The Team</strong>
+Shopee will be prioritizing applicants who have a
+<strong>current right to work in Singapore</strong>
+, and
+<strong>do not require Shopee sponsorship of a visa</strong>
+.</p>
+<p>Kindly note that you can only be considered in
+<strong>one recruitment process at a time</strong>
+within Sea Group and will be
+<strong>considered for jobs in the order that you have applied</strong>
+.</p>
+<p>The IT Compliance team acts as the organization’s &quot;IT doctors,&quot; partnering with business teams to deliver technological solutions that enhance Shopee’s user experience. A key focus is ensuring our product solutions meet regulatory standards by obtaining necessary certifications, achieved through close collaboration with internal and external stakeholders. This process not only ensures compliance but also provides the team with a deep understanding of regional business landscapes and cross-functional collaboration, enabling us to drive long-term, impactful solutions as the organization grows.</p>
+<p><strong>Job Description</strong></p>
+<ul>
+<li>Design and implement workflow‑based control automation for Regulatory Standards (e.g., ISO, PCI) and SOX 404 ITGCs, using:</li>
+</ul>
+<ul>
+<li>Explicit start–action–evidence–end flows.</li>
+<li>Triggers from tickets, change‑management systems, HR events, or IAM changes.</li>
+<li>Delivered via tools such as n8n, Camunda, Azure Logic Apps, or custom MCP‑style servers.</li>
+</ul>
+<ul>
+<li>Build and operate MCP‑style or MCP‑compatible servers that expose:</li>
+</ul>
+<ul>
+<li>Tools: RESTful endpoints for “trigger evidence collection”, “run access review”, “validate change ticket”, etc..</li>
+<li>Resources: Standardized data sources (logs, IAM, ticket data) formatted for AI agents or workflow engines.</li>
+<li>Auth patterns: API keys, bearer tokens, OAuth2, or OIDC‑style flows that can be consumed by agents or external tools.</li>
+</ul>
+<ul>
+<li>Engineer API‑first automation:</li>
+</ul>
+<ul>
+<li>Write scripts and connectors (Python, Node.js, Bash, etc.) that call, compose, and orchestrate APIs from:</li>
+</ul>
+<ul>
+<li>IAM, IdP, PAM, HRIS, ticketing, cloud IAM, and logging platforms, etc.</li>
+<li>GRC platforms (e.g., ServiceNow, 6clicks, or similar) via REST APIs.</li>
+</ul>
+<ul>
+<li>Implement:</li>
+</ul>
+<ul>
+<li>Authentication and authorization (API keys, Bearer, OAuth2, JWT, Basic, MTLS).</li>
+<li>Pagination, retry with backoff, rate‑limiting, and safe error handling.</li>
+<li>Idempotency and safe state transitions for audit‑critical operations.</li>
+</ul>
+<ul>
+<li>Translate ISO 27001 controls and SOX 404 ITGCs into automated workflows:</li>
+</ul>
+<ul>
+<li>Example pattern:</li>
+</ul>
+<ul>
+<li>Trigger: new user join or role change in IAM.</li>
+<li>Action: call APIs to validate entitlements, cross‑check against SoD, and emit evidence to a GRC tool.</li>
+<li>Outcome: workflow‑generated record for ISO 27001 access control and SOX logical‑access control.</li>
+</ul>
+<ul>
+<li>Maintain one source of truth for control logic (code / config) and use workflow IDs as control‑evidence bindings.</li>
+</ul>
+<ul>
+<li>Design AI‑agent‑ready interfaces:</li>
+</ul>
+<ul>
+<li>Expose structured, MCP‑style endpoints or OpenAPI specs so that LLM agents or workflow tools can call concrete tools (e.g., “get latest access review for System X”, “run change‑ticket‑completeness check”).</li>
+<li>Handle dynamic policy enforcement: short‑lived tokens, context‑aware access, and audit logging for each AI or agent call.</li>
+</ul>
+<ul>
+<li>Integrate with data platforms and SIEM/logging:</li>
+</ul>
+<ul>
+<li>Use logs, change tickets, and identity events as workflow inputs.</li>
+<li>Build automated tests for control effectiveness (e.g., “if a production change is not approved, fire an alert and record as control failure”) linked to ISO / SOX control IDs.</li>
+</ul>
+<ul>
+<li>Maintain audit‑ready workflow artifacts:</li>
+</ul>
+<ul>
+<li>Log all workflow steps, including timestamps, input, user/agent context, and outputs.</li>
+<li>Ensure workflow outputs are machinable (JSON, structured logs) and can be replayed or reasoned over by auditors or AI agents.</li>
+</ul>
+<p><strong>Requirements</strong></p>
+<ul>
+<li>Students currently pursuing Bachelor's degree in computer science, computer engineering or related disciplines.</li>
+<li>Strong understanding of authorization and authentication:</li>
+</ul>
+<ul>
+<li>API keys, Bearer tokens, OAuth2 (client, JWT, PKCE), Basic Auth, MTLS, and OIDC‑style flows.</li>
+<li>Hands‑on experience implementing these in Python, Node.js, or Go (or similar).</li>
+</ul>
+<ul>
+<li>Deep practical experience with:</li>
+</ul>
+<ul>
+<li>RESTful APIs: understanding of HTTP methods, status codes, pagination, rate‑limiting, and idempotency.</li>
+<li>API clients: writing or using libraries that handle auth, retries, and error handling for large datasets.</li>
+</ul>
+<ul>
+<li>Experience building or integrating with:</li>
+</ul>
+<ul>
+<li>Workflow / orchestration tools (n8n, Airflow, Logic Apps, Camunda, etc.) or MCP‑style servers / Model Context Protocol‑compatible tooling.</li>
+<li>GRC platforms via APIs (e.g., ServiceNow, 6clicks, or similar).</li>
+</ul>
+<ul>
+<li>Familiarity with:</li>
+</ul>
+<ul>
+<li>ISO 27001 (especially Annex A controls related to access management, change control, and operations).</li>
+<li>SOX 404 ITGCs (logical access, change management, computer operations, data integrity).</li>
+</ul>
+<ul>
+<li>Full-time interns preferred</li>
+<li>Part-time interns who can commit at least 3 working days a week are also welcome to apply</li>
+</ul>
+<p><strong>Preferred Qualifications</strong></p>
+<ul>
+<li>OpenAPI / Swagger to MCP‑style tool generation (e.g., converting production APIs into MCP servers or AI‑agent tools).</li>
+<li>Experience with MCP servers or similar control‑plane architectures that expose tools, resources, and prompts for AI agents.</li>
+<li>Background in security automation, CI/CD, or DevSecOps (number of tools: n8n, Terraform, Ansible, Docker, logging pipelines).</li>
+<li>Prior involvement in SOX 404 audits and ISO 27001 certification projects, with a focus on how to automate evidence collection rather than manual spreadsheets.</li>
+</ul>
+</div>
+    </div>
+
+    <footer>
+        <a href="https://github.com/milad-rasouli">Created by Milad Rasouli</a>
+    </footer>
+</div>
+
+<script>
+    (function(){
+        const el = document.getElementById('createdAt');
+        if(!el) return;
+        const ts = Number(el.textContent) * 1000;
+        const d = new Date(ts);
+        el.textContent = d.toLocaleString();
+    })();
+</script>
+</body>
+</html>
