@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Software Engineer - OESIS Framework</title>
+    <style>
+        body{font-family:Inter, Arial, Helvetica, sans-serif;background:#f7fafc;color:#111;margin:0;padding:20px}
+        .wrap{max-width:900px;margin:0 auto;background:#fff;padding:20px;border-radius:8px;box-shadow:0 8px 24px rgba(12,20,30,0.06)}
+        h1{margin:0 0 8px 0}
+        .meta{color:#6b7280;font-size:13px;margin-bottom:8px}
+        .apply{display:inline-block;background:#0ea5a6;color:#fff;padding:8px 12px;border-radius:6px;text-decoration:none}
+        .back{display:inline-block;margin-left:12px;color:#374151;text-decoration:none}
+        .section{margin-top:16px}
+        .apply-section {display: flex;align-items: center;gap: 12px;}
+        .apply-section .apply {margin-left: auto;}
+
+         
+        .desc {line-height:1.6;font-size:15px;color:#111;}
+        .desc h1,.desc h2,.desc h3 {margin-top:20px;margin-bottom:10px;}
+        .desc pre{background:#f8fafc;padding:12px;border-radius:6px;border:1px solid #eef2f7;overflow-x:auto}
+        .desc code{background:#f1f5f9;padding:2px 4px;border-radius:4px}
+        .desc ul{padding-left:20px;margin:8px 0}
+        .desc p{margin:10px 0}
+
+        footer{margin-top:18px;text-align:center;color:#94a3b8}
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <h1>Software Engineer - OESIS Framework</h1>
+    <div class="meta">OPSWAT • Ho Chi Minh City, Vietnam • fulltime</div>
+
+
+    <div class="section apply-section">
+        <a class="back" href="../list1.html">Back to Home</a>
+        <a class="apply" href="https://www.linkedin.com/jobs/view/4466471516" target="_blank" rel="noopener">Apply</a>
+    </div>
+
+    <div class="section">
+        <strong>Remote:</strong> Yes •
+        <strong>Relocation:</strong> No
+    </div>
+
+    <div class="section">
+        <h3>Description</h3>
+        <div class="desc"><p>OPSWAT, a global leader in IT, OT, and ICS critical infrastructure cybersecurity, delivers an end-to-end platform that gives public and private sector organizations and enterprises the critical advantage needed to protect their complex networks, secure their devices, and ensure compliance. Over the last 20 years our commitment to innovative technology has earned the trust of more than 1,700 organizations, governments, and institutions globally, solidifying our role in protecting the world’s critical infrastructure and securing our way of life.</p>
+<p><strong>About The Position</strong>
+At OPSWAT, we're building cutting-edge solutions that protect the world's critical infrastructure. You will play a pivotal role in shaping the future of our OESIS Framework platform with cloud solution integrations.</p>
+<p>This role owns how the SDK authenticates into each customer's own tenant across Endpoint Device Management platforms without OPSWAT ever holding the customer's raw credentials. That passthrough model, plus secure multi-tenant token and credential storage, is the core of the job.</p>
+<p>It is a software engineer role with an identity specialization: you will be writing and shipping the auth layer of an embedded SDK, not administering an IAM deployment.</p>
+<p>What you will be doing</p>
+<ul>
+<li>Design and implement OAuth2/OIDC flows per platform. For example the CrowdStrike API client-credentials flow, Microsoft Entra ID (Azure AD) app-registration and Graph API auth flows, and JAMF Pro OAuth2/bearer or client-credentials flows</li>
+<li>Implement SAML 2.0-based federation for enterprise SSO passthrough scenarios where a customer's identity provider is the source of truth</li>
+<li>Build secure, multi-tenant credential and token storage with rotation, integrating with secrets managers such as HashiCorp Vault, Azure Key Vault or AWS Secrets Manager</li>
+<li>Design the passthrough auth architecture so the embedded SDK authenticates to the customer's own device management tenant directly, without OPSWAT storing or proxying raw customer credentials</li>
+<li>Implement token refresh, expiry handling and re-authentication logic that integrates cleanly with the Data Engineer's long-running query pipelines</li>
+<li>Define least-privilege scoping per platform and support certificate-based auth and mutual TLS where the vendor API allows it</li>
+<li>Support customer onboarding: app-registration and consent flows for remote enrollment (Entra ID), API client setup (CrowdStrike), and API role and privilege configuration (JAMF Pro)</li>
+</ul>
+<p>What we need from you</p>
+<ul>
+<li>Strong experience in Go, Rust as programming languages</li>
+<li>3+ years in identity and access engineering with hands-on OAuth2 and/or OIDC, SAML 2.0, and ideally SCIM</li>
+<li>Experience implementing OAuth2 client-credentials flows against third-party enterprise APIs such as CrowdStrike Falcon or JAMF Pro, or comparable</li>
+<li>Strong grasp of token lifecycle management: refresh tokens, expiry, revocation, scope and claim design</li>
+<li>Experience with secrets management and secure credential storage in multi-tenant SaaS environments</li>
+<li>Familiarity with certificate-based authentication: mTLS and client certificates</li>
+<li>Security-first mindset, with working knowledge of common auth vulnerabilities: token leakage, replay attacks, scope creep</li>
+<li>Solid general software engineering ability, you own production code in this layer, not configuration alone</li>
+<li>Professional working proficiency in written and spoken English</li>
+</ul>
+<p>It would be nice if you had</p>
+<ul>
+<li>Prior experience building passthrough or delegated auth architectures for OEM/SDK products embedded in third-party platform</li>
+<li>Direct experience with Microsoft Entra ID (Azure AD) app registrations and Graph API authentication flows</li>
+<li>Background in enterprise IAM tooling (Okta, Ping Identity, Entra ID) or CIAM</li>
+<li>Familiarity with Zero Trust Network Access (ZTNA) and device posture or compliance</li>
+<li>Security certifications such as CISSP or OSCP</li>
+<li>Cybersecurity domain knowledge alongside software development experience</li>
+<li>Familiarity with regulatory compliance frameworks such as PCI-DSS, SOX or HIPAA</li>
+</ul>
+<p>Why join us?</p>
+<p>At OPSWAT, we believe in empowering our people to do their best work. We encourage you to watch the video of our company's more than 20 years of experience securing critical infrastructure. You'll be part of a mission-driven OESIS Framework team that values innovation, collaboration and continuous development. Together, we're building SDK technology that makes a difference.</p>
+<p>OPSWAT is an equal opportunity employer. We celebrate diversity and are committed to providing an environment where equal employment opportunities are extended to all employees and applicants, free of discrimination and harassment of any type. All employment decisions are based on individual qualifications, job requirements, and business needs without regard to race, color, religion, age, sex, national origin, disability status, genetics, protected veteran status, sexual orientation, gender identity or expression, or any other category protected by federal, state, or local laws.</p>
+<p>Recruiting Agencies: we do not accept unsolicited resumes from third party agencies for any of our open positions. To submit resumes for our jobs, there must be a recruiting contract approved by our legal team and endorsed by both parties. We are currently not accepting additional 3rd party agencies at this time.</p>
+</div>
+    </div>
+
+    <footer>
+        <a href="https://github.com/milad-rasouli">Created by Milad Rasouli</a>
+    </footer>
+</div>
+
+<script>
+    (function(){
+        const el = document.getElementById('createdAt');
+        if(!el) return;
+        const ts = Number(el.textContent) * 1000;
+        const d = new Date(ts);
+        el.textContent = d.toLocaleString();
+    })();
+</script>
+</body>
+</html>

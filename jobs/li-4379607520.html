@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Senior AI Engineer</title>
+    <style>
+        body{font-family:Inter, Arial, Helvetica, sans-serif;background:#f7fafc;color:#111;margin:0;padding:20px}
+        .wrap{max-width:900px;margin:0 auto;background:#fff;padding:20px;border-radius:8px;box-shadow:0 8px 24px rgba(12,20,30,0.06)}
+        h1{margin:0 0 8px 0}
+        .meta{color:#6b7280;font-size:13px;margin-bottom:8px}
+        .apply{display:inline-block;background:#0ea5a6;color:#fff;padding:8px 12px;border-radius:6px;text-decoration:none}
+        .back{display:inline-block;margin-left:12px;color:#374151;text-decoration:none}
+        .section{margin-top:16px}
+        .apply-section {display: flex;align-items: center;gap: 12px;}
+        .apply-section .apply {margin-left: auto;}
+
+         
+        .desc {line-height:1.6;font-size:15px;color:#111;}
+        .desc h1,.desc h2,.desc h3 {margin-top:20px;margin-bottom:10px;}
+        .desc pre{background:#f8fafc;padding:12px;border-radius:6px;border:1px solid #eef2f7;overflow-x:auto}
+        .desc code{background:#f1f5f9;padding:2px 4px;border-radius:4px}
+        .desc ul{padding-left:20px;margin:8px 0}
+        .desc p{margin:10px 0}
+
+        footer{margin-top:18px;text-align:center;color:#94a3b8}
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <h1>Senior AI Engineer</h1>
+    <div class="meta">Arcana • Bengaluru, Karnataka, India • fulltime</div>
+
+
+    <div class="section apply-section">
+        <a class="back" href="../list1.html">Back to Home</a>
+        <a class="apply" href="https://www.linkedin.com/jobs/view/4379607520" target="_blank" rel="noopener">Apply</a>
+    </div>
+
+    <div class="section">
+        <strong>Remote:</strong> Yes •
+        <strong>Relocation:</strong> No
+    </div>
+
+    <div class="section">
+        <h3>Description</h3>
+        <div class="desc"><p><strong>Title:</strong>
+Senior AI Engineer — Inference &amp; Agent Systems</p>
+<p><strong>Location:</strong></p>
+<ul>
+<li>BLR/Remote India</li>
+</ul>
+<p><strong>What We're Building</strong></p>
+<p>Arcana is building AI agents that synthesize information across heterogeneous sources and deliver structured, reasoned answers in real time. The product only works if the agents are fast, reliable, and correct, not approximately correct.</p>
+<p>Our stack: Go + Temporal for orchestration, a Plan-Execute-Synthesize agent architecture, and an evaluation harness we use to measure every regression. The problems are hard. The latency bar is aggressive. The accuracy requirements are unforgiving.</p>
+<p><strong>The Work</strong></p>
+<p><strong>Inference Optimization</strong></p>
+<ul>
+<li>
+<p>Drive TTFT below 400ms for multi-step agent pipelines</p>
+</li>
+<li>
+<p>Streaming optimization: first token to user while sub-agents are still running</p>
+</li>
+<li>
+<p>KV cache strategy, prompt compression, dynamic context window management</p>
+</li>
+<li>
+<p>Multi-provider routing: model selection by latency, cost, and task type across OpenAI, Anthropic, Gemini, and open-weight models</p>
+</li>
+</ul>
+<p><strong>Agent Architecture</strong></p>
+<ul>
+<li>
+<p>Design and implement Plan-Execute-Synthesize pipelines that run sub-agents in parallel DAGs, not sequential chains</p>
+</li>
+<li>
+<p>Build reliable orchestration on top of Temporal: retries, timeouts, partial failure recovery, idempotency</p>
+</li>
+<li>
+<p>Structured output enforcement: JSON schema validation, retry loops on malformed LLM output, graceful degradation</p>
+</li>
+<li>
+<p>Tool call design: schema design that LLMs actually follow reliably across providers</p>
+</li>
+</ul>
+<p><strong>Evaluation &amp; Harness</strong></p>
+<ul>
+<li>
+<p>Own the eval framework end to end: ground truth datasets, automated scoring pipelines, regression detection on every PR</p>
+</li>
+<li>
+<p>LLM-as-judge pipelines for qualitative output assessment</p>
+</li>
+<li>
+<p>Latency regression testing - p50/p95/p99 tracked across every deployment</p>
+</li>
+<li>
+<p>Adversarial test case design: ambiguous queries, missing data, conflicting sources, malformed tool responses</p>
+</li>
+</ul>
+<p><strong>Infrastructure</strong></p>
+<ul>
+<li>
+<p>Model serving and cold start optimization</p>
+</li>
+<li>
+<p>Async worker architecture for parallel sub-agent execution</p>
+</li>
+<li>
+<p>Observability: trace every token, every tool call, every synthesis step</p>
+</li>
+</ul>
+<p><strong>What We're Looking For</strong></p>
+<p>You've built something that runs in production at a meaningful scale and you understand why it's fast (or why it isn't).</p>
+<p><strong>Strong signal</strong>
+:</p>
+<ul>
+<li>
+<p>You've worked on inference pipelines where TTFT was the primary metric and you moved it meaningfully</p>
+</li>
+<li>
+<p>You've built multi-step agent systems and you know where they break not from reading papers but from watching them fail in production</p>
+</li>
+<li>
+<p>You've written eval harnesses from scratch and you have opinions about what makes a ground truth dataset actually useful</p>
+</li>
+<li>
+<p>You've debugged LLM non-determinism in production and built systems resilient to it</p>
+</li>
+<li>
+<p>You've worked with streaming LLM responses and built infrastructure around partial output handling</p>
+</li>
+</ul>
+<p><strong>Weaker signal (but not disqualifying):</strong></p>
+<ul>
+<li>
+<p>You've fine-tuned models but haven't shipped inference systems</p>
+</li>
+<li>
+<p>You've used LangChain/LlamaIndex but haven't built the layer underneath</p>
+</li>
+<li>
+<p>Strong ML research background without systems exposure</p>
+</li>
+</ul>
+<p><strong>Stack familiarity</strong>
+(we care more about depth than match): Go, Python, Temporal, Kafka, PostgreSQL, Docker</p>
+<p><strong>Why This Role</strong></p>
+<p>The problems here don't have blog posts about them yet. Parallel agent DAG execution under hard latency budgets, streaming synthesis across partial sub-agent results, eval harnesses for non-deterministic multi-step systems: these are genuinely unsolved at production quality. Small team. High ownership. Every engineer's decisions ship to production.</p>
+<p><strong>Who We Want to Hear From</strong></p>
+<p>You've shipped inference systems at:</p>
+<ul>
+<li>
+<p>A real-time AI product (search, coding assistant, chat at scale)</p>
+</li>
+<li>
+<p>A model serving infrastructure company</p>
+</li>
+<li>
+<p>An agent platform (any domain)</p>
+</li>
+</ul>
+<p>Or you've built eval/harness infrastructure that a team of 10+ engineers actually trusted to catch regressions.</p>
+<p><strong>Apply</strong></p>
+<p>Send to: [careers@arcana.io]</p>
+<ol>
+<li>
+<p>One system you built where latency was the primary constraint what you measured, what you changed, what moved</p>
+</li>
+<li>
+<p>Link to anything public (code, writing, talks)</p>
+</li>
+<li>
+<p>No cover letter required</p>
+</li>
+</ol>
+<p>We respond to every application.</p>
+</div>
+    </div>
+
+    <footer>
+        <a href="https://github.com/milad-rasouli">Created by Milad Rasouli</a>
+    </footer>
+</div>
+
+<script>
+    (function(){
+        const el = document.getElementById('createdAt');
+        if(!el) return;
+        const ts = Number(el.textContent) * 1000;
+        const d = new Date(ts);
+        el.textContent = d.toLocaleString();
+    })();
+</script>
+</body>
+</html>

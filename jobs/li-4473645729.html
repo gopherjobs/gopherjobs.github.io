@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Senior Platform Engineer (Founding Infra &amp; Data) (m/f/d)</title>
+    <style>
+        body{font-family:Inter, Arial, Helvetica, sans-serif;background:#f7fafc;color:#111;margin:0;padding:20px}
+        .wrap{max-width:900px;margin:0 auto;background:#fff;padding:20px;border-radius:8px;box-shadow:0 8px 24px rgba(12,20,30,0.06)}
+        h1{margin:0 0 8px 0}
+        .meta{color:#6b7280;font-size:13px;margin-bottom:8px}
+        .apply{display:inline-block;background:#0ea5a6;color:#fff;padding:8px 12px;border-radius:6px;text-decoration:none}
+        .back{display:inline-block;margin-left:12px;color:#374151;text-decoration:none}
+        .section{margin-top:16px}
+        .apply-section {display: flex;align-items: center;gap: 12px;}
+        .apply-section .apply {margin-left: auto;}
+
+         
+        .desc {line-height:1.6;font-size:15px;color:#111;}
+        .desc h1,.desc h2,.desc h3 {margin-top:20px;margin-bottom:10px;}
+        .desc pre{background:#f8fafc;padding:12px;border-radius:6px;border:1px solid #eef2f7;overflow-x:auto}
+        .desc code{background:#f1f5f9;padding:2px 4px;border-radius:4px}
+        .desc ul{padding-left:20px;margin:8px 0}
+        .desc p{margin:10px 0}
+
+        footer{margin-top:18px;text-align:center;color:#94a3b8}
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <h1>Senior Platform Engineer (Founding Infra &amp; Data) (m/f/d)</h1>
+    <div class="meta">Mako365 • Mannheim, Baden-Württemberg, Germany • fulltime</div>
+
+
+    <div class="section apply-section">
+        <a class="back" href="../list1.html">Back to Home</a>
+        <a class="apply" href="https://www.linkedin.com/jobs/view/4473645729" target="_blank" rel="noopener">Apply</a>
+    </div>
+
+    <div class="section">
+        <strong>Remote:</strong> Yes •
+        <strong>Relocation:</strong> No
+    </div>
+
+    <div class="section">
+        <h3>Description</h3>
+        <div class="desc"><p><strong>This is who we are</strong><br>
+Mako GmbH is a young company in the new energy economy. Our team supports (basic) energy supply companies, metering point operators, and energy service providers in optimizing their internal processes – through consulting, technology, and our own SaaS platform. With our innovative software solution, we have created an efficient, future‑oriented, and perfectly tailored tool to meet the challenges of the energy transition, especially for metering point operators and energy service providers.</p>
+<p><strong>The Mission</strong></p>
+<p>We are a team of 15 engineers scaling a K8s-based SaaS for enterprise clients. We’ve reached the stage where our feature velocity is being throttled by distributed systems complexity. We are looking for a Founding Platform Engineer to own our infrastructure, specifically focused on solving performance bottlenecks in our XtraDB/MySQL data layer and our JobRunr/Quartz orchestration.</p>
+<p><strong>Aufgaben</strong></p>
+<p><strong>What You’ll Solve Day One</strong></p>
+<ul>
+<li>
+<p><strong>Connection &amp; Proxy Tuning:</strong>
+Fine-tune the &quot;Handshake&quot; between
+<strong>HikariCP</strong>
+,
+<strong>ProxySQL</strong>
+, and
+<strong>XtraDB</strong>
+. You’ll optimize multiplexing, query routing, and connection pooling to eliminate latency spikes.</p>
+</li>
+<li>
+<p><strong>Database Contention:</strong>
+Solve the locking issues inherent in our DB-backed job queues (
+<strong>JobRunr/Quartz</strong>
+). You’ll identify and resolve row-level contention and long-running transactions that block our XtraDB buffer pool.</p>
+</li>
+<li>
+<p><strong>Hibernate Optimization:</strong>
+Partner with our backend teams to ensure
+<strong>Hibernate</strong>
+isn't generating &quot;noisy&quot; SQL or holding onto connections longer than necessary during background processing.</p>
+</li>
+<li>
+<p><strong>K8s &amp; Orchestration:</strong>
+Manage our cluster to ensure high availability. You'll harden our pod termination logic and resource scheduling to ensure that background workers don't impact API stability.</p>
+</li>
+<li>
+<p><strong>Scale Strategy:</strong>
+Help us define the roadmap for when we move beyond DB-backed queues to high-throughput messaging (e.g., NATS, RabbitMQ, or Redis).</p>
+</li>
+</ul>
+<p><strong>Qualifikation</strong></p>
+<p><strong>Your Technical Toolbelt</strong></p>
+<ul>
+<li>
+<p><strong>ProxySQL &amp; XtraDB Expert:</strong>
+You know how to configure mysql_query_rules and hostgroups. You understand XtraDB/InnoDB locking models and how to interpret PERCONA_RECAP or slow query logs.</p>
+</li>
+<li>
+<p><strong>JVM Performance:</strong>
+You understand the
+<strong>HikariCP</strong>
+lifecycle and how
+<strong>Hibernate/JPA</strong>
+manages transactions. You can spot a connection leak or an unoptimized persistence context from a mile away.</p>
+</li>
+<li>
+<p><strong>K8s Native:</strong>
+You live in kubectl. You understand how to map K8s service discovery to ProxySQL backends and how to handle graceful shutdowns in a containerized environment.</p>
+</li>
+<li>
+<p><strong>Infrastructure as Code:</strong>
+Proficient in for example
+<strong>Helm</strong>
+to keep our infra versioned and &quot;boring.&quot;</p>
+</li>
+<li>
+<p><strong>Observability:</strong>
+You use Prometheus/Grafana to track the &quot;Golden Signals&quot; of both our application and our database proxy.</p>
+</li>
+</ul>
+<p><strong>Benefits</strong></p>
+<p><strong>What we provide</strong></p>
+<p>At our company, team spirit and a relaxed working atmosphere come first. Unfold your potential, contribute to exciting projects, and experience collaboration at eye level.</p>
+<ul>
+<li>
+<p>You can expect a permanent full-time or part-time position in an open and appreciative environment.</p>
+</li>
+<li>
+<p>To help you balance work and everyday life, we offer flexible working models combining remote work and office presence.</p>
+</li>
+<li>
+<p>For your work-life balance, you will receive 30 vacation days per year.</p>
+</li>
+<li>
+<p>We support you from day one with comprehensive onboarding and a regular range of training opportunities.</p>
+</li>
+<li>
+<p>To get you started, we provide you with a company laptop, a monitor for your home office, as well as a headset and mouse.</p>
+</li>
+<li>
+<p>In our ergonomic office space in Mannheim, you can enjoy fresh fruit, coffee, and free beverages.</p>
+</li>
+<li>
+<p>You are our priority: a company bike (JobRad), a Deutschlandticket subsidy, corporate benefits discounts, monthly vouchers, and referral bonuses are all part of our standard offering.</p>
+</li>
+</ul>
+<p>You don’t meet all the criteria but still feel like you’d be a great fit for us?</p>
+<p>We look forward to receiving your application, including your CV, a short cover letter, and your (work) references. Please also feel free to include your earliest possible start date and salary expectations.</p>
+<p>Diversity matters to us**:** We particularly welcome applications from women, non-binary individuals, and people with diverse backgrounds. What counts for us is your talent—regardless of gender, origin, or career path.</p>
+<p>Do you have any questions? Feel free to reach out to us anytime.</p>
+<p>Type of position: Full-time, Part-time, Permanent employment</p>
+</div>
+    </div>
+
+    <footer>
+        <a href="https://github.com/milad-rasouli">Created by Milad Rasouli</a>
+    </footer>
+</div>
+
+<script>
+    (function(){
+        const el = document.getElementById('createdAt');
+        if(!el) return;
+        const ts = Number(el.textContent) * 1000;
+        const d = new Date(ts);
+        el.textContent = d.toLocaleString();
+    })();
+</script>
+</body>
+</html>

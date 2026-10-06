@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Applied AI Engineer</title>
+    <style>
+        body{font-family:Inter, Arial, Helvetica, sans-serif;background:#f7fafc;color:#111;margin:0;padding:20px}
+        .wrap{max-width:900px;margin:0 auto;background:#fff;padding:20px;border-radius:8px;box-shadow:0 8px 24px rgba(12,20,30,0.06)}
+        h1{margin:0 0 8px 0}
+        .meta{color:#6b7280;font-size:13px;margin-bottom:8px}
+        .apply{display:inline-block;background:#0ea5a6;color:#fff;padding:8px 12px;border-radius:6px;text-decoration:none}
+        .back{display:inline-block;margin-left:12px;color:#374151;text-decoration:none}
+        .section{margin-top:16px}
+        .apply-section {display: flex;align-items: center;gap: 12px;}
+        .apply-section .apply {margin-left: auto;}
+
+         
+        .desc {line-height:1.6;font-size:15px;color:#111;}
+        .desc h1,.desc h2,.desc h3 {margin-top:20px;margin-bottom:10px;}
+        .desc pre{background:#f8fafc;padding:12px;border-radius:6px;border:1px solid #eef2f7;overflow-x:auto}
+        .desc code{background:#f1f5f9;padding:2px 4px;border-radius:4px}
+        .desc ul{padding-left:20px;margin:8px 0}
+        .desc p{margin:10px 0}
+
+        footer{margin-top:18px;text-align:center;color:#94a3b8}
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <h1>Applied AI Engineer</h1>
+    <div class="meta">Block Labs •  • fulltime</div>
+
+
+    <div class="section apply-section">
+        <a class="back" href="../list1.html">Back to Home</a>
+        <a class="apply" href="https://www.linkedin.com/jobs/view/4456256249" target="_blank" rel="noopener">Apply</a>
+    </div>
+
+    <div class="section">
+        <strong>Remote:</strong> Yes •
+        <strong>Relocation:</strong> No
+    </div>
+
+    <div class="section">
+        <h3>Description</h3>
+        <div class="desc"><p><strong>About Block Labs</strong>
+Block Labs is a premier technology studio operating at the bleeding edge of
+<strong>Web3, Artificial Intelligence, and iGaming</strong>
+. We don't just ship features; we engineer high-scale, production-grade platforms that power the next generation of digital products.</p>
+<p>We are a collective of senior engineers, product strategists, and builders who refuse to compromise on architecture. Whether we are designing autonomous multi-agent AI systems, building decentralized financial infrastructure, or architecting high-frequency iGaming platforms, our standard is excellence.</p>
+<p>We move fast, but we build for the long term. If you are looking to work alongside a team that values deep technical expertise, thoughtful system design, and product ownership, Block Labs is where you belong.</p>
+<p><strong><strong>The Role</strong></strong>
+We are investing in governed AI agents that work directly with our customers and internal teams. Data &amp; Intelligence now sits at the centre of several products we are developing, and the platform we have built is ready to carry more advanced intelligence: real-time decisioning, predictive modelling, and governed AI agents.</p>
+<p>This role reflects that shift. Our decision engine is governed by a formal decision register: over 100 decisions across 15 platform modules, spanning real-time risk gates, reward and engagement orchestration, payment routing, treasury alerting, and responsible gambling interventions. Humans set objectives, budgets and approval gates; AI and ML models author, score, simulate and optimise within them; the engine executes deterministically inside approved boundaries and logs everything. As an AI Engineer on the Intelligence team, you are the product engineer of the data and agent platform. You build production agents that answer real business questions and, as they earn autonomy, act with real customers and real money: grounded, auditable, secured against adversarial input, and gated by human approval where the stakes demand it. And you build the intelligence underneath and around them: the models and analyses that power decisions, and the dashboards where the business sees and steers everything, on a platform where a wrong decision can move money and every decision must be reconstructable.</p>
+<p><strong><strong>Key Responsibilities:</strong></strong>
+Your first deliverable is a production SQL BI analyst agent: a Slack-native agent that answers business questions with governed SQL over the analytical warehouse, with validated queries, sanity-checked results, and cited evidence behind every number. From there, the role balances four crafts in roughly equal measure: AI agents, machine learning, data science, and the dashboards and surfaces that expose them.</p>
+<p><strong>AI Agents</strong></p>
+<ul>
+<li>Build and own analyst agents end to end: Slack-native agents that translate natural-language business questions into governed SQL over the analytical warehouse, answer executive P&amp;L questions, post daily health briefings, and explain metric movements with data-backed root cause analysis; guarded by SQL and schema validation, result sanity checks, and cross-checks of daily metrics against canonical reporting views.</li>
+<li>Extend into customer-facing agents: intent triage and routing, retrieval-grounded (RAG) responses over versioned knowledge bases with strict abort-and-escalate fallbacks, multi-turn conversational state machines, localized brand voice, and escalation logic; integrated with our helpdesk and CRM platforms (webhook ingestion, session lifecycle management, intent metadata tagging, automated escalation tickets with pre-packaged tool context).</li>
+<li>Build the risk-stratified tool layer between agents and back-office APIs: read-only context-gathering tools, information-first validation before any action, multi-turn confirmation workflows, and a per-tool switch that moves low-risk mutations from lead approval to fully autonomous execution as evidence accumulates. Harden agents against adversarial input: prompt injection screening, confidence-threshold freezes on sensitive intents, silent security escalation paths, and defences against tool misuse and data exfiltration.</li>
+<li>Build agents up the autonomy ladder using LangGraph, the Anthropic Agent SDK / Model Context Protocol (MCP), or equivalent orchestration frameworks. Engineer the closed feedback loop (corrections capture, proven-query and semantic memory), decision audit logging, and evaluation harnesses, including regression suites proving new tools or intents introduce zero degradation to existing paths.</li>
+</ul>
+<p><strong>Machine Learning</strong></p>
+<ul>
+<li>Build and productionise the models behind the platform's decision signals: churn, lifetime value, and bonus-sensitivity models for engagement; composite player risk scores across identity, payment, gameplay, bonus, and network signals; collusion, bot-play, and multi-accounting detection; and anomaly detection for treasury and payments.</li>
+<li>Ship models as governed signals, not notebooks: versioned, SLA'd contracts with the decision engine and your agents, with freshness, drift, and calibration monitoring and automated retraining paths, served across real-time (Kafka/MSK), near-real-time, and batch (ClickHouse) tiers.</li>
+</ul>
+<p><strong>Data Science</strong></p>
+<ul>
+<li>Own multi-vector withdrawal risk scoring: per-vector scores with cited rationale and confidence, evidence-aware aggregation, and automatic re-scoring when late evidence lands.</li>
+<li>Codify business rules with domain owners and keep policy auditable: translate policy into deterministic, configurable rules; simulate and backtest every rule or threshold change against historical data before activation; design holdouts and control groups to measure true uplift; and run the deep-dive analyses that feed both your agents and the executive team.</li>
+</ul>
+<p><strong>Dashboards &amp; Surfaces</strong></p>
+<ul>
+<li>Build the supervisor and approval surfaces for your agents: review queues with one-click action proposal cards for high-risk mutations, searchable session replay exposing prompts, model outputs, reasoning chains, and tool calls, and a structured grading module whose output feeds evaluation and fine-tuning datasets.</li>
+<li>Design and ship the dashboards through which the business consumes your work: decision audit views, agent performance dashboards (correction rate, failure rate, decision volume by rule and vector), risk review queues, and KPI views built with the BI team, moving dashboarding toward AI-assisted anomaly detection and explanation.</li>
+</ul>
+<p><strong><strong>About You:</strong></strong></p>
+<ul>
+<li>4+ years of experience in software, data science, or machine learning engineering, including 1+ years building LLM-powered agents in production: tool use and function calling, structured outputs, retrieval and memory, and multi-step orchestration with frameworks such as LangGraph or the Anthropic Agent SDK.</li>
+<li>You have shipped a production RAG system and can talk concretely about grounding, chunking and retrieval quality, hallucination control, and when to refuse to answer.</li>
+<li>You treat customer-facing agents as an attack surface: you can explain how you would defend against prompt injection, tool-call abuse, and data leakage through model outputs.</li>
+<li>Production ML lifecycle ownership: feature engineering, training, serving, monitoring, and retraining. Fraud, risk, or abuse detection experience is a strong signal: imbalanced classes, adversarial users, and cost-asymmetric decisions.</li>
+<li>Statistical rigour: experiment design, holdouts and control groups, uplift measurement, and score calibration; you can defend a threshold choice to a compliance officer as comfortably as to an engineer.</li>
+<li>Evaluation discipline for non-deterministic systems: you have built evaluation harnesses and regression suites and caught quality drift before your users did.</li>
+<li>Strong Python for production services, comfort in TypeScript for the review and approval surfaces you will ship, and strong SQL skills on columnar analytical databases (ClickHouse preferred).</li>
+<li>Able to take your own work to a stakeholder-ready surface: review queues, approval interfaces, dashboards, and lightweight internal apps, using a front-end framework or tools such as Streamlit. You do not wait for another team to make your work visible.</li>
+<li>Experience designing systems where model outputs feed deterministic execution, keeping that boundary clean (models score, suggest, and draft; governed logic decides), with LLM observability and tracing (Langfuse, LangSmith, or similar) and ownership of what you ship, including when it breaks.</li>
+</ul>
+<p><strong><strong>Nice to Have</strong></strong></p>
+<ul>
+<li>Experience in iGaming or other high-trust, transaction-intensive environments where security, fraud prevention, auditability, traceability, data integrity, and robust operational controls are core engineering requirements.</li>
+<li>Helpdesk or CS-platform integration experience (Intercom, Zendesk, or similar): webhooks, conversation APIs, agent-assist, or full automation.</li>
+<li>Exposure to blockchain or crypto-native transaction flows, including on-chain data, wallet clustering, or stablecoin settlement.</li>
+<li>Experience with constrained optimisation, bandits, or reinforcement learning applied within hard business constraints (budgets, caps, exclusion lists).</li>
+<li>Experience with rule engines or decision-management systems, and Slack app development.</li>
+<li>Event-driven and streaming experience: Kafka or MSK consumers, idempotent processing, and failure handling.</li>
+</ul>
+<p><strong><strong>How We Work</strong></strong></p>
+<ul>
+<li>Fully remote with asynchronous-first communication. EU timezone overlap is preferred.</li>
+<li>Small, high-autonomy Intelligence team within the Data function. You report to the Head of Data and coordinate with the AI, BI, and Infrastructure Teams and, for customer-facing agents, with the Head of CS and the product squads whose platforms your agents serve.</li>
+<li>Architecture decisions are documented and debated. You will participate in design reviews and own your domain decisions.</li>
+<li>Autonomy is earned by evidence. Models and agents start in propose-only, human-gated mode and graduate one level at a time, backed by simulation and outcome data.</li>
+<li>We build for multi-tenant scale from day one. What you ship for one operator must absorb the next without additional engineering effort.</li>
+</ul>
+<p><strong>What kind of culture can I expect?</strong>
+Mature, mission-driven, and low-ego. We value clarity over noise, outcomes over theatrics, and pace without chaos. If you’re one of the smartest minds in your craft and want to build with other experts, you’ll feel at home here.</p>
+</div>
+    </div>
+
+    <footer>
+        <a href="https://github.com/milad-rasouli">Created by Milad Rasouli</a>
+    </footer>
+</div>
+
+<script>
+    (function(){
+        const el = document.getElementById('createdAt');
+        if(!el) return;
+        const ts = Number(el.textContent) * 1000;
+        const d = new Date(ts);
+        el.textContent = d.toLocaleString();
+    })();
+</script>
+</body>
+</html>
