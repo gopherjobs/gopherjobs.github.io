@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Staff Engineer, Imunify360 (remote work)</title>
+    <style>
+        body{font-family:Inter, Arial, Helvetica, sans-serif;background:#f7fafc;color:#111;margin:0;padding:20px}
+        .wrap{max-width:900px;margin:0 auto;background:#fff;padding:20px;border-radius:8px;box-shadow:0 8px 24px rgba(12,20,30,0.06)}
+        h1{margin:0 0 8px 0}
+        .meta{color:#6b7280;font-size:13px;margin-bottom:8px}
+        .apply{display:inline-block;background:#0ea5a6;color:#fff;padding:8px 12px;border-radius:6px;text-decoration:none}
+        .back{display:inline-block;margin-left:12px;color:#374151;text-decoration:none}
+        .section{margin-top:16px}
+        .apply-section {display: flex;align-items: center;gap: 12px;}
+        .apply-section .apply {margin-left: auto;}
+
+         
+        .desc {line-height:1.6;font-size:15px;color:#111;}
+        .desc h1,.desc h2,.desc h3 {margin-top:20px;margin-bottom:10px;}
+        .desc pre{background:#f8fafc;padding:12px;border-radius:6px;border:1px solid #eef2f7;overflow-x:auto}
+        .desc code{background:#f1f5f9;padding:2px 4px;border-radius:4px}
+        .desc ul{padding-left:20px;margin:8px 0}
+        .desc p{margin:10px 0}
+
+        footer{margin-top:18px;text-align:center;color:#94a3b8}
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <h1>Staff Engineer, Imunify360 (remote work)</h1>
+    <div class="meta">CloudLinux • Prague, Prague, Czech Republic • fulltime</div>
+
+
+    <div class="section apply-section">
+        <a class="back" href="../list1.html">Back to Home</a>
+        <a class="apply" href="https://www.linkedin.com/jobs/view/4478276074" target="_blank" rel="noopener">Apply</a>
+    </div>
+
+    <div class="section">
+        <strong>Remote:</strong> Yes •
+        <strong>Relocation:</strong> No
+    </div>
+
+    <div class="section">
+        <h3>Description</h3>
+        <div class="desc"><p><strong>CloudLinux</strong>
+is a global remote-first company. We are driven by our principles: do the right thing, employees first, we are remote first, and we deliver high-volume, low-cost Linux infrastructure and security products that help companies to increase the efficiency of their operations. Every person on our team supports each other and does what we can to ensure we all are successful.</p>
+<p>Check out our website for more information: cloudlinux.com</p>
+<p>We are currently hiring
+<strong>Staff Engineers</strong>
+for various projects within the
+<strong>Imunify360 product.</strong>
+Imunify360 is CloudLinux's multi-layer security suite for Linux web servers: antivirus and malware cleanup, WAF, IDS/IPS, Proactive Defense, patch management (KernelCare/Patchman), and IP/domain reputation. It runs on hundreds of thousands of shared, VPS and dedicated hosting servers, under cPanel, Plesk, DirectAdmin and standalone.</p>
+<p>The engineering org is 60+ engineers in squads covering backend, core, server agent, malware research, WAF/WebShield, and Patchman. Core services are Python; agents and performance-critical paths are Go and Rust. We run on Hetzner and our own bare metal.</p>
+<p>Check out our website for more information: https://imunify360.com/</p>
+<p><strong>Role Mission &amp; Scope</strong>
+Most complex technical challenges in Imunify360 go beyond individual squads. A single detection change can impact the scanner, agent, UI, reputation backend, and release process. While squad leads own delivery within their teams, the Staff Engineer ensures technical alignment across the product.</p>
+<p>As a Staff Engineer, you'll be a
+<strong>hands-on technical leader working across the entire product</strong>
+, focusing on the most critical and high-impact challenges as priorities evolve. You'll drive technical decisions, improve architecture, establish engineering standards, and help teams build sustainable solutions.</p>
+<p>This is an
+<strong>individual contributor role</strong>
+, without direct people management responsibilities. You'll remain actively involved in development, spending approximately
+<strong>30-50% of your time writing production code</strong>
+, rather than focusing solely on architectural design.</p>
+<p>While deep expertise in a particular area is valued, this role requires the flexibility to work across different components, collaborate with multiple squads, and tackle challenges wherever your expertise can make the greatest impact.</p>
+<p><strong>What You Will Own</strong>
+<strong>Architecture and technical direction</strong></p>
+<ul>
+<li>Own the end-to-end architecture of Imunify360 as a product: agent ↔ server ↔ cloud backends, data flows, and the contracts between them</li>
+<li>Write and drive ADRs and RFCs for cross-squad changes. Run the Wed/Fri architecture sync together with the Technical Director</li>
+<li>Keep a living tech-debt and risk register (security / compliance / uptime) with owners and dates, and get the top items funded on the roadmap</li>
+</ul>
+<p><strong>Hard cross-cutting problems (examples of what lands on your desk)</strong></p>
+<ul>
+<li>Agent resource footprint on dense shared hosts: CPU, memory and I/O budgets for scanning, file monitoring (inotify/fanotify) and WAF, measured on real kernels, not benchmarks from elsewhere</li>
+<li>Detection pipeline quality: false positive / false negative rates, signature and ML model rollout with staged gates and rollback</li>
+<li>Upgrade and release safety across a large, heterogeneous fleet (CentOS/AlmaLinux/CloudLinux/Ubuntu, multiple control panels, old kernels)</li>
+<li>Backend scale and cost of reputation, ThreatIntel and telemetry services</li>
+<li>Migrating hot paths from Python to Go/Rust where the data shows it pays off, and saying no where it doesn't</li>
+</ul>
+<p><strong>Engineering standards</strong></p>
+<ul>
+<li>Set the bar for design reviews, code review, testing strategy, observability (Prometheus/Grafana/Sentry) and secure SDLC (OWASP ASVS, CIS Benchmarks as relevant)</li>
+<li>Lead or co-lead SEV1/SEV2 incidents when the cause is unclear or cross-squad; make sure the blameless post-mortem ships within 24 h and its actions get closed</li>
+<li>Drive the AI-augmented SDLC in practice: show what good agentic coding looks like (prompt specificity, context provision, review quality, tool boundaries) on real changes, not slides</li>
+</ul>
+<p><strong>People multiplier (no direct reports)</strong></p>
+<ul>
+<li>Mentor senior engineers and squad leads toward staff-level scope</li>
+<li>Act as the technical bar-raiser in hiring loops for senior and lead roles</li>
+<li>Be the engineering voice in product and sales discussions: estimates, feasibility, and no dated customer commitment without a written squad-lead estimate</li>
+</ul>
+<p><strong>Key Milestones</strong></p>
+<ul>
+<li>30 days: Shipped at least one non-trivial change to production. Can explain the full request path from agent to backend. Has a personal list of top 10 technical risks</li>
+<li>90 days: Owns one cross-squad initiative with an approved ADR, a measured baseline, and a staged rollout plan. Published risk register reviewed in arch sync</li>
+<li>6 months: That initiative is in production with before/after metrics. At least one engineering standard (e.g. release gating, agent perf budget, design review template) is adopted by 3+ squads</li>
+<li>12 months: Recognized by squad leads as the default escalation point for cross-cutting technical decisions. At least one senior engineer grown into broader scope with your mentorship</li>
+</ul>
+<p><strong>Requirements</strong>
+<strong>Must have</strong></p>
+<ul>
+<li>10+ years building and operating production software, with 3+ years in a Staff/Principal/Tech Lead scope spanning several teams</li>
+<li>Strong production experience in Python and at least one of Go or Rust</li>
+<li>Deep Linux internals : processes, filesystems, networking, kernel interfaces (inotify/fanotify, eBPF or similar), packaging (RPM/DEB), systemd</li>
+<li>Track record of designing and running distributed systems at scale: async backends, queues, databases, caching, failure modes</li>
+<li>You have owned systems that run on customer machines (agents, daemons, on-prem software) and know what upgrade safety, backward compatibility and resource budgets mean there</li>
+<li>Security mindset: threat modeling, secure coding, handling of untrusted input (files, HTTP traffic, user content)</li>
+<li>Writes clear, short technical documents and drives decisions in async, remote teams across time zones</li>
+<li>Uses AI coding tools (Cursor, Claude, MCP-based tooling) daily and can judge their output critically</li>
+</ul>
+<p><strong>Nice to have</strong></p>
+<ul>
+<li>Experience in server security: AV/malware detection, WAF (ModSecurity/Coraza), IDS/IPS, rootkit detection, CVE/patch management</li>
+<li>Experience with WordPress and Node.JS web application hosting at scale</li>
+<li>ML in production for classification/detection, including evaluation and safe model rollout</li>
+<li>Observability at scale: Prometheus, Grafana, Sentry, ClickHouse or similar</li>
+<li>CI/CD ownership: GitLab CI, Jenkins, build systems for multi-distro packaging</li>
+<li>Open-source contributions in security or systems tooling</li>
+</ul>
+<p><strong>Benefits</strong>
+<strong>What's in it for you?</strong></p>
+<ul>
+<li>Stay hands-on technically while owning complex, high-impact engineering work</li>
+<li>Work on challenging Linux, automation, and cybersecurity problems across mature and newer products</li>
+<li>Influence technical direction and make meaningful architectural decisions</li>
+<li>Work independently with a high level of ownership and autonomy</li>
+<li>Fully remote work with flexible working hours</li>
+<li>24 paid vacation days, 10 national holidays, and unlimited sick leave</li>
+<li>Private medical insurance compensation</li>
+<li>Co-working and gym/sports reimbursement</li>
+<li>Education budget</li>
+<li>Opportunity to receive a reward for innovative ideas that the company can patent</li>
+</ul>
+<p><em>By applying for this position, you consent to the processing of your personal data as described in our Privacy Policy (</em>
+<em>https://cloudlinux.com/candidate-privacy-notice</em>
+<em>), which provides detailed information on how we maintain and handle your data.</em></p>
+</div>
+    </div>
+
+    <footer>
+        <a href="https://github.com/milad-rasouli">Created by Milad Rasouli</a>
+    </footer>
+</div>
+
+<script>
+    (function(){
+        const el = document.getElementById('createdAt');
+        if(!el) return;
+        const ts = Number(el.textContent) * 1000;
+        const d = new Date(ts);
+        el.textContent = d.toLocaleString();
+    })();
+</script>
+</body>
+</html>

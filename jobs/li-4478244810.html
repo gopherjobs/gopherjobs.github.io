@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>AI Automation Engineer</title>
+    <style>
+        body{font-family:Inter, Arial, Helvetica, sans-serif;background:#f7fafc;color:#111;margin:0;padding:20px}
+        .wrap{max-width:900px;margin:0 auto;background:#fff;padding:20px;border-radius:8px;box-shadow:0 8px 24px rgba(12,20,30,0.06)}
+        h1{margin:0 0 8px 0}
+        .meta{color:#6b7280;font-size:13px;margin-bottom:8px}
+        .apply{display:inline-block;background:#0ea5a6;color:#fff;padding:8px 12px;border-radius:6px;text-decoration:none}
+        .back{display:inline-block;margin-left:12px;color:#374151;text-decoration:none}
+        .section{margin-top:16px}
+        .apply-section {display: flex;align-items: center;gap: 12px;}
+        .apply-section .apply {margin-left: auto;}
+
+         
+        .desc {line-height:1.6;font-size:15px;color:#111;}
+        .desc h1,.desc h2,.desc h3 {margin-top:20px;margin-bottom:10px;}
+        .desc pre{background:#f8fafc;padding:12px;border-radius:6px;border:1px solid #eef2f7;overflow-x:auto}
+        .desc code{background:#f1f5f9;padding:2px 4px;border-radius:4px}
+        .desc ul{padding-left:20px;margin:8px 0}
+        .desc p{margin:10px 0}
+
+        footer{margin-top:18px;text-align:center;color:#94a3b8}
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <h1>AI Automation Engineer</h1>
+    <div class="meta">RDC Partner •  • fulltime</div>
+
+
+    <div class="section apply-section">
+        <a class="back" href="../list1.html">Back to Home</a>
+        <a class="apply" href="https://www.linkedin.com/jobs/view/4478244810" target="_blank" rel="noopener">Apply</a>
+    </div>
+
+    <div class="section">
+        <strong>Remote:</strong> Yes •
+        <strong>Relocation:</strong> No
+    </div>
+
+    <div class="section">
+        <h3>Description</h3>
+        <div class="desc"><p><strong>AI Automation Engineer (Python)</strong></p>
+<p><strong>Employment Type:</strong>
+Full-time, Remote – Türkiye</p>
+<p><strong>Experience:</strong>
+4–8 years</p>
+<p><strong>Industry:</strong>
+AI Automation / Fintech</p>
+<p><strong>About the Role</strong></p>
+<p>We are looking for an
+<strong>AI Automation Engineer (Python)</strong>
+to join RDC Partner. In this role, you will work with the engineering team of our US-based business partner in the fintech industry.</p>
+<p>Our business partner is developing an AI-powered agent platform designed to automate key business workflows across onboarding, underwriting, risk management, and customer support.</p>
+<p>In this role, you will be responsible for building and enhancing AI agent systems, developing backend services and integrations, and ensuring the reliability, security, and scalability of AI-driven workflows. You will work remotely with teams based in the US and Türkiye, contributing to the development of secure, reliable, and production-ready AI automation solutions.</p>
+<p><strong>Responsibilities</strong></p>
+<ul>
+<li>Build and extend the agent control plane: FastAPI services, Pydantic v2 models, SQLAlchemy 2.0 over PostgreSQL.</li>
+<li>Implement agent rounds — the coordinating agent and its domain sub-agents — with explicit retry budgets, confidence handling, and escalation to human review when the system should not decide on its own.</li>
+<li>Keep calculation and policy in code rather than in the model, and keep a scripted policy path working as the reference implementation and fallback.</li>
+<li>Build and maintain MCP servers that give agents governed access to external systems — the processor interface, Microsoft 365 mail and Teams, Zoho, internal document stores, web search — read-only by contract, with a single audited send path.</li>
+<li>Enforce the outward data contract across every connector: redaction, reference tokens, receipts, and a consistent item shape.</li>
+<li>Work on the document pipeline: offline OCR of scanned packets, person-name redaction and PII masking before any content reaches an external model.</li>
+<li>Build idempotent write paths with receipts, and a shadow-versus-live switch per agent so a new agent can run alongside the existing process before it is trusted with it.</li>
+<li>Handle encryption of identity fields, fingerprinting and key rotation.</li>
+<li>Instrument the system with OpenTelemetry so every agent round, tool step and send is a span you can inspect afterwards.</li>
+<li>Build background work on the thread-based scheduler, using database advisory locks for per-merchant serialization.</li>
+<li>Contribute to the React and TypeScript operator panel — starting and stopping agents, interacting with them, and showing metrics.</li>
+<li>Maintain and extend the pytest suite, which is the main thing standing between a prompt change and a bad decision in production.</li>
+</ul>
+<p><strong>What we are looking for</strong></p>
+<ul>
+<li>4–8 years building production services in Python, with recent hands-on work in a modern async stack.</li>
+<li>FastAPI or a comparable ASGI framework, Pydantic v2, SQLAlchemy 2.0 and PostgreSQL in production — not just in a side project.</li>
+<li>Real LLM application experience: tool and function calling, structured output, prompt design, and handling non-determinism in a system that has to behave predictably.</li>
+<li>A clear view of what belongs in a model and what belongs in code, and the discipline to keep the line in the right place.</li>
+<li>Integration experience with third-party business APIs — authentication, rate limits, pagination, partial failure, and the ways vendor APIs lie to you.</li>
+<li>Idempotency, receipts and audit trails: you have built a write path that could be retried safely.</li>
+<li>Comfortable with tracing and observability, and in the habit of instrumenting rather than adding print statements.</li>
+<li>Strong testing discipline. A large test suite is part of the job rather than an afterthought.</li>
+<li>A security mindset around personal data — you treat a redaction gap as a serious defect, not a cosmetic one.</li>
+<li>Daily hands-on use of AI coding tools (Claude Code, Cursor, GitHub Copilot or similar), with a clear and specific view of where they help and where they mislead.</li>
+<li>Hands-on and comfortable in a deliberately minimal stack, as described above.</li>
+<li>Strong written and spoken English. You will be writing for and speaking with colleagues in the United States every week.</li>
+</ul>
+</div>
+    </div>
+
+    <footer>
+        <a href="https://github.com/milad-rasouli">Created by Milad Rasouli</a>
+    </footer>
+</div>
+
+<script>
+    (function(){
+        const el = document.getElementById('createdAt');
+        if(!el) return;
+        const ts = Number(el.textContent) * 1000;
+        const d = new Date(ts);
+        el.textContent = d.toLocaleString();
+    })();
+</script>
+</body>
+</html>

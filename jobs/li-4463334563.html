@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Backend Software Engineer</title>
+    <style>
+        body{font-family:Inter, Arial, Helvetica, sans-serif;background:#f7fafc;color:#111;margin:0;padding:20px}
+        .wrap{max-width:900px;margin:0 auto;background:#fff;padding:20px;border-radius:8px;box-shadow:0 8px 24px rgba(12,20,30,0.06)}
+        h1{margin:0 0 8px 0}
+        .meta{color:#6b7280;font-size:13px;margin-bottom:8px}
+        .apply{display:inline-block;background:#0ea5a6;color:#fff;padding:8px 12px;border-radius:6px;text-decoration:none}
+        .back{display:inline-block;margin-left:12px;color:#374151;text-decoration:none}
+        .section{margin-top:16px}
+        .apply-section {display: flex;align-items: center;gap: 12px;}
+        .apply-section .apply {margin-left: auto;}
+
+         
+        .desc {line-height:1.6;font-size:15px;color:#111;}
+        .desc h1,.desc h2,.desc h3 {margin-top:20px;margin-bottom:10px;}
+        .desc pre{background:#f8fafc;padding:12px;border-radius:6px;border:1px solid #eef2f7;overflow-x:auto}
+        .desc code{background:#f1f5f9;padding:2px 4px;border-radius:4px}
+        .desc ul{padding-left:20px;margin:8px 0}
+        .desc p{margin:10px 0}
+
+        footer{margin-top:18px;text-align:center;color:#94a3b8}
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <h1>Backend Software Engineer</h1>
+    <div class="meta">Navan • Berlin, Berlin, Germany • fulltime</div>
+
+
+    <div class="section apply-section">
+        <a class="back" href="../list1.html">Back to Home</a>
+        <a class="apply" href="https://www.linkedin.com/jobs/view/4463334563" target="_blank" rel="noopener">Apply</a>
+    </div>
+
+    <div class="section">
+        <strong>Remote:</strong> No •
+        <strong>Relocation:</strong> Yes
+    </div>
+
+    <div class="section">
+        <h3>Description</h3>
+        <div class="desc"><p>Navan (Nasdaq: NAVN) is the AI-powered business travel, payments, and expense platform that makes it easy to book, pay, and close the books. Travelers get a product they actually want to use. Finance teams get real-time control, policy, and reconciliation. Expense is a core part of that story: from the moment a receipt is captured to the moment it lands in the general ledger.</p>
+<p><strong>About The Role</strong>
+We are growing Expense Engineering in Berlin and London. You will join the org that owns the full expense lifecycle for employees, approvers, and finance admins — used by companies worldwide, including complex EMEA tax, VAT, per diem, mileage, and multi-entity setups.</p>
+<p>This is not a research-lab role and not a generic chatbot posting. You will ship in the same systems that already run receipt intelligence, conversational expense capture, missing-info assistants, and admin automation — then raise the bar on accuracy, latency, cost, and safety.</p>
+<p>You may land on employee experience (web/mobile expense), international spend (itemization, per diem, mileage, tax receipts), admin and control (policy, custom fields, audit), or adjacent platform work (cards, statements, ERP). The product problems and the AI problems are shared.</p>
+<p><strong>What You'll Work On</strong>
+The expense product, end to end</p>
+<ul>
+<li>Employee flows: transaction entry, drafts, receipts, trips, reimbursements, cards, and bank-linked spend</li>
+<li>International spend: line-itemization, per diem, mileage, VAT/GST, and tax receipts</li>
+<li>Admin and control: policy, approvals, custom and HR fields, audit logs, reporting</li>
+<li>Money movement and close: statements, purchase cards, reimbursements, accounting postings, and inbound company/user data</li>
+</ul>
+<p>AI that is already in the product</p>
+<ul>
+<li>Receipt intelligence: extract merchant, amount, date, tax, and line items from receipts and documents at high daily volume. Improve quality, latency, and cost; compare and fail over between extraction providers, including large language models where they outperform traditional OCR.</li>
+<li>Conversational expense: multi-agent assistants that help people create and complete expenses in natural language (mileage, policy, personal context, knowledge retrieval). Streaming experiences on web and mobile, and the same command path in workplace chat tools.</li>
+<li>Missing-info assistants: agents that find required fields still empty (cost objects, GL, project, department, description), ground suggestions in the user's history and trips, stream progress, and write back through existing expense APIs — with safe partial updates, clear provenance, and guardrails against prompt injection and off-scope use.</li>
+<li>Admin and finance agents: assistants that can approve, reject, flag, route, and explain spend using tools over our APIs, search, and warehouse data — without bypassing permissions or audit.</li>
+<li>Quality, cost, and safety: evaluation harnesses for accuracy and latency; kill switches; careful handling of PII and payment-sensitive data on receipts and transactions. Prefer deterministic code for policy, catalogs, and tax rules; use models for language, ranking, and tool orchestration.</li>
+</ul>
+<p><strong>What You'll Do</strong></p>
+<ul>
+<li>Design and ship features in backend services (Java and Spring Boot) and/or web (TypeScript), with AI services in Python or TypeScript where that is the right fit</li>
+<li>Own APIs and event-driven flows that move money, receipts, and policy decisions at company scale</li>
+<li>Build or extend LLM-backed agents: tool use, grounding, streaming, session memory, retrieval, and evals — not one-off prompt demos</li>
+<li>Improve document extraction and auto-itemization: quality, tax fields, latency, cost, and provider failover</li>
+<li>Instrument production: observability, quality dashboards, chat satisfaction, extraction accuracy vs. human correction</li>
+<li>Partner with Product and Design on employee, admin, and mobile AI surfaces (including unified travel-and-expense chat)</li>
+<li>Review for correctness in financial systems: idempotency, auditability, permissions, no silent partial writes</li>
+<li>Mentor others and write designs that teams across time zones can implement from</li>
+</ul>
+<p>What we’re looking for</p>
+<ul>
+<li>1–3 years of software engineering experience, including internships or strong academic/personal projects.</li>
+<li>Strong computer science fundamentals and backend experience in Java/Spring Boot, TypeScript/Node.js or Python.</li>
+<li>Java is preferred but not mandatory if you have strong transferable backend skills.</li>
+<li>Experience with APIs, relational databases and cloud platforms. Kafka or similar messaging systems are a plus.</li>
+<li>Exposure to AI tools or projects involving LLMs, chatbots, RAG, document processing or AI-assisted development.</li>
+<li>Interest in financial or workflow-heavy products such as payments, expenses, accounting or tax.</li>
+<li>Good communication, willingness to learn and understanding of testing, debugging and production-quality engineering.</li>
+<li>Based in Berlin or London, or willing to relocate.</li>
+</ul>
+<p>Nice to have</p>
+<ul>
+<li>Java/Spring Boot</li>
+<li>AWS, Docker or Kubernetes</li>
+<li>PostgreSQL, Kafka or event-driven architecture</li>
+<li>OCR, financial workflows, multi-currency or policy engines</li>
+<li>AI agents or evaluation tools</li>
+</ul>
+<p><em><strong>Why this team, why these cities</strong></em>
+Expense is where Navan's &quot;AI-powered T&amp;E&quot; claim has to be true: receipts, chat, and admin agents sit on the same ledger as reimbursements and accounting close. Berlin and London put you next to EMEA customers who care about VAT, per diem, and audit — and next to a growing Expense engineering presence, not a satellite office doing overflow tickets.</p>
+<p>Navan uses AI-assisted Automated Employment Decision Tool (Metaview) to assist with evaluating resumes against job qualifications for this role. All final decisions are made by human recruiters and hiring managers.</p>
+<p><strong>Human oversight:</strong>
+Metaview does not automatically reject candidates or make final hiring decisions. Our recruiters and hiring managers review all outputs and make the final hiring decision regarding every application.</p>
+<ul>
+<li>Your rights: If you prefer to have your application reviewed without AI assistance, you may request a human evaluation by entering your email here. Your decision to do so will not affect how your candidacy is evaluated.</li>
+</ul>
+<p>Please refer to our Candidate Privacy Notice for more information about our processing of personal data, and your rights.</p>
+</div>
+    </div>
+
+    <footer>
+        <a href="https://github.com/milad-rasouli">Created by Milad Rasouli</a>
+    </footer>
+</div>
+
+<script>
+    (function(){
+        const el = document.getElementById('createdAt');
+        if(!el) return;
+        const ts = Number(el.textContent) * 1000;
+        const d = new Date(ts);
+        el.textContent = d.toLocaleString();
+    })();
+</script>
+</body>
+</html>

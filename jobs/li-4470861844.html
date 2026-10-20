@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Senior Software Engineer (python/go, infrastructure)</title>
+    <style>
+        body{font-family:Inter, Arial, Helvetica, sans-serif;background:#f7fafc;color:#111;margin:0;padding:20px}
+        .wrap{max-width:900px;margin:0 auto;background:#fff;padding:20px;border-radius:8px;box-shadow:0 8px 24px rgba(12,20,30,0.06)}
+        h1{margin:0 0 8px 0}
+        .meta{color:#6b7280;font-size:13px;margin-bottom:8px}
+        .apply{display:inline-block;background:#0ea5a6;color:#fff;padding:8px 12px;border-radius:6px;text-decoration:none}
+        .back{display:inline-block;margin-left:12px;color:#374151;text-decoration:none}
+        .section{margin-top:16px}
+        .apply-section {display: flex;align-items: center;gap: 12px;}
+        .apply-section .apply {margin-left: auto;}
+
+         
+        .desc {line-height:1.6;font-size:15px;color:#111;}
+        .desc h1,.desc h2,.desc h3 {margin-top:20px;margin-bottom:10px;}
+        .desc pre{background:#f8fafc;padding:12px;border-radius:6px;border:1px solid #eef2f7;overflow-x:auto}
+        .desc code{background:#f1f5f9;padding:2px 4px;border-radius:4px}
+        .desc ul{padding-left:20px;margin:8px 0}
+        .desc p{margin:10px 0}
+
+        footer{margin-top:18px;text-align:center;color:#94a3b8}
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <h1>Senior Software Engineer (python/go, infrastructure)</h1>
+    <div class="meta">Sauce Labs • Warsaw, Mazowieckie, Poland • fulltime</div>
+
+
+    <div class="section apply-section">
+        <a class="back" href="../list1.html">Back to Home</a>
+        <a class="apply" href="https://www.linkedin.com/jobs/view/4470861844" target="_blank" rel="noopener">Apply</a>
+    </div>
+
+    <div class="section">
+        <strong>Remote:</strong> Yes •
+        <strong>Relocation:</strong> No
+    </div>
+
+    <div class="section">
+        <h3>Description</h3>
+        <div class="desc"><p><strong>About Us</strong>
+Sauce Labs is the leading provider of continuous test and error reporting solutions that give companies the confidence to develop, deliver and update high quality software at speed. The Sauce Labs Continuous Testing Cloud identifies quality signals in development and production, accelerating the ability to release and update web and mobile applications that look, function and perform exactly as they should on every browser, operating system and device, every single time. Sauce Labs is a privately held company funded by TPG and Riverwood Capital.</p>
+<p><strong>The Role</strong>
+Sauce Labs seeks a Senior Software Engineer to join the Virtual Device Cloud team, which builds and operates the infrastructure that hosts remote iOS, macOS, Windows, and Linux devices at scale for automated app and browser testing.</p>
+<p>This is not a narrow specialist role. We need someone who can move across the whole stack of a distributed system: understand how the pieces fit together, make the system observable enough that we know what's working and can diagnose what isn't, write and structure code with clear boundaries and the right things encapsulated, and be just as comfortable SSHing into a fleet machine to dig into a live problem as designing the system on a whiteboard.</p>
+<p>You'll join the Virtual Device Cloud team, which has deep, concentrated strength in macOS, CoreSimulator and APFS internals, and work closely with the Product Manager and with the Test Orchestration and Cloud teams. Your job is to improve testing discipline and cross-platform observability, and to raise delivery cadence, correctness, and visibility across the fleet.</p>
+<p><strong>Responsibilities</strong></p>
+<ul>
+<li>Lead by example - set the team’s standard for testing, observability and delivery through code review and pairing, and bring others along.</li>
+<li>Own the device lifecycle - design and build the services this team owns across the whole device lifecycle, from the image a device boots to its teardown. That covers readiness, session lifecycle and the fleet definitions that plug simulators and VMs into our orchestration layer, whether the fleet runs as pods on Kubernetes with Agones or as VMs on bare-metal and cloud hosts.</li>
+<li>Automate build and release - bring image, browser and payload releases onto CI/CD with automated checks, so a release is a pipeline run rather than a manual procedure. Ship in Go or Python on standard, repeatable deployment paths.</li>
+<li>Make the fleet observable - build and use the observability tooling that answers &quot;is it working as intended, and if not, why not&quot; across the fleet and the image build pipeline, including guests and VMs that fail silently before their payload even starts.</li>
+<li>Fix lifecycle problems for good - root-cause and fix recurring lifecycle regressions with tests and automated release checks, so the same bug does not ship twice.</li>
+<li>Make devices boot and recycle faster - measure and reduce boot, ready and teardown time end to end, and put image and side-disk footprint on a budget.</li>
+<li>Work across teams - work with the Cloud and Test Orchestration teams to propose and land evidence-backed changes to systems you do not own. Keep the contracts between our layers explicit.</li>
+</ul>
+<p><strong>Required Skills</strong></p>
+<ul>
+<li>Solid experience designing, building, and operating distributed systems in production.</li>
+<li>Hands-on experience with Kubernetes, ideally including fleet orchestration such as Agones or a comparable session-fleet model.</li>
+<li>Proven ability to ship production code in Go and/or Python through a standard CI/CD deployment path, including building and maintaining the pipelines themselves.</li>
+<li>Strong observability instincts and experience: metrics, logging, tracing, and building visibility into systems that don't have it yet.</li>
+<li>Hands-on DevOps and Linux/Unix systems experience: able to log into a machine (VM, container host, or bare metal) and work confidently - diagnosing, fixing, and understanding what's actually happening on the box.</li>
+<li>Delivers through the team: a track record of shipping via review and pairing on systems others operate, not alone.</li>
+</ul>
+<p><strong>Valued Skills</strong></p>
+<ul>
+<li>macOS literacy: simctl, launchd, XPC, and how Apple's virtualization/simulator stack fits together.</li>
+<li>Storage and copy-on-write design knowledge (e.g. APFS or similar filesystem internals).</li>
+<li>Working experience across Windows and Linux infrastructure.</li>
+<li>Familiarity with the Apple Virtualization Framework and related tooling (e.g. tart).</li>
+<li>Browser or mobile app test-automation familiarity (Appium, XCTest, WebDriver).</li>
+<li>Has owned a startup, boot or ready-time number for VMs, containers, CI runners or game servers and driven it down.</li>
+<li>Swift: some of our repositories use it, and reviewing them is part of the role.</li>
+<li>Experience building and maintaining OS or VM images with tools such as Packer, tart, Ansible, cloud-init or sysprep.</li>
+</ul>
+<p>We are a hybrid workplace that recognizes the importance of flexibility while valuing in-person collaboration and relationship building. As a result, Saucers located near an office location must be able and willing to come into the office. Those hired remotely must be able and willing to travel to an office as required by the specific role.</p>
+<p>Please note our privacy terms when applying for a job at Sauce Labs.</p>
+<p>Sauce Labs is proud to be an Equal Opportunity employer and values diversity at our company. We do not discriminate on the basis of race, religion, color, national origin, gender identity/expression/status, sexual orientation, age, marital status, veteran status or disability status.</p>
+<p><strong>Security Responsibilities At Sauce</strong>
+At Sauce, we will commit to supporting the health and safety of employees and properties, partnering with internal stakeholders to learn and act on ever-evolving security protocols and procedures. You’ll be expected to fully comply with all policies and procedures related to security at the department and org wide level and exercise a ‘security first’ approach to how we design, build &amp; run our products and services.</p>
+<p>The compensation range provided below represents the base salary only for a Full-time Employment contract (umowa o pracę) and excludes fringe benefits, potential bonuses, or stock-based compensation (equity). Your individual offer will be determined based on factors such as skills, education, professional experience, and internal equity (alignment with similarly situated team members at Sauce Labs).</p>
+<p>Benefits and Perks that we offer include but are not limited to: wellness benefit, commuter benefit, WFH stipend, professional development budget, pension Program (PPK). There is no collective agreement in force at the workplace. To see more about benefits and perks at Sauce Labs, please check out our careers page at saucelabs.com/company/careers.</p>
+<p>Poland Compensation Range</p>
+<p>29 000 zł—33 000 zł PLN</p>
+</div>
+    </div>
+
+    <footer>
+        <a href="https://github.com/milad-rasouli">Created by Milad Rasouli</a>
+    </footer>
+</div>
+
+<script>
+    (function(){
+        const el = document.getElementById('createdAt');
+        if(!el) return;
+        const ts = Number(el.textContent) * 1000;
+        const d = new Date(ts);
+        el.textContent = d.toLocaleString();
+    })();
+</script>
+</body>
+</html>
