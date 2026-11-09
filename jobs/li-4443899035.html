@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Senior Engineer</title>
+    <style>
+        body{font-family:Inter, Arial, Helvetica, sans-serif;background:#f7fafc;color:#111;margin:0;padding:20px}
+        .wrap{max-width:900px;margin:0 auto;background:#fff;padding:20px;border-radius:8px;box-shadow:0 8px 24px rgba(12,20,30,0.06)}
+        h1{margin:0 0 8px 0}
+        .meta{color:#6b7280;font-size:13px;margin-bottom:8px}
+        .apply{display:inline-block;background:#0ea5a6;color:#fff;padding:8px 12px;border-radius:6px;text-decoration:none}
+        .back{display:inline-block;margin-left:12px;color:#374151;text-decoration:none}
+        .section{margin-top:16px}
+        .apply-section {display: flex;align-items: center;gap: 12px;}
+        .apply-section .apply {margin-left: auto;}
+
+         
+        .desc {line-height:1.6;font-size:15px;color:#111;}
+        .desc h1,.desc h2,.desc h3 {margin-top:20px;margin-bottom:10px;}
+        .desc pre{background:#f8fafc;padding:12px;border-radius:6px;border:1px solid #eef2f7;overflow-x:auto}
+        .desc code{background:#f1f5f9;padding:2px 4px;border-radius:4px}
+        .desc ul{padding-left:20px;margin:8px 0}
+        .desc p{margin:10px 0}
+
+        footer{margin-top:18px;text-align:center;color:#94a3b8}
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <h1>Senior Engineer</h1>
+    <div class="meta">Caylent •  • fulltime</div>
+
+
+    <div class="section apply-section">
+        <a class="back" href="../list1.html">Back to Home</a>
+        <a class="apply" href="https://www.linkedin.com/jobs/view/4443899035" target="_blank" rel="noopener">Apply</a>
+    </div>
+
+    <div class="section">
+        <strong>Remote:</strong> Yes •
+        <strong>Relocation:</strong> Yes
+    </div>
+
+    <div class="section">
+        <h3>Description</h3>
+        <div class="desc"><p>Caylent is an AI-first cloud services company that helps organizations turn ambitious ideas into meaningful business impact. As an AWS Premier Tier Services Partner and a charter member of Anthropic’s Claude Partner Network, we combine deep expertise in AWS, artificial intelligence, and Anthropic’s Claude platform to help customers modernize their technology, build intelligent products, and move AI from experimentation into production.</p>
+<p>Our capabilities span generative and agentic AI, cloud migration and modernization, cloud-native application development, data and analytics, DevOps, managed services, security and compliance, and customer experience transformation. At Caylent, our people always come first.</p>
+<p>We are a fully remote global company with employees in Canada, the United States and Latin America. We celebrate the culture of each of our team members and foster a community of technological curiosity. Come talk to us to learn more about what it means to be a Caylien!</p>
+<p><strong>The Mission</strong>
+As a Senior CXE Engineer, you are a hands-on builder on enterprise contact center transformations. You will spend the majority of your time in code and in the AWS console: building contact flows and AI agents, writing Lambda functions and CDK stacks, developing React-based agent and admin tooling, and debugging production issues on systems that serve tens of thousands of agents and millions of customer interactions. You work within architectures set by practice leads, and you’re expected to pressure-test them, propose better patterns, and own the implementation quality of your workstream from first commit through production cutover. This role blends deep Amazon Connect platform engineering, generative AI development on Bedrock and Claude, and full-stack serverless work, with regular direct interaction with customer engineering teams.</p>
+<p><strong>Your Assignment</strong>
+<em>AI Agent &amp; Conversational AI Development</em></p>
+<ul>
+<li>Build AI-native self-service using Amazon Connect AI agents, Amazon Q in Connect, and Amazon Bedrock (Claude model family), implementing multi-agent orchestration patterns, orchestrator agents delegating to task-specific agents with escalation paths to human queues</li>
+<li>Engineer prompts and tool-calling integrations at production scale: SearchProfiles lookups, case creation, external API tools, authentication flows, and guardrails against hallucination and verification loops</li>
+<li>Implement barge-in handling, fallback, and error-recovery behavior for voice AI, and validate it with turn-by-turn trace analysis</li>
+<li>Optimize inference cost and latency hands-on: model tier selection (Haiku vs. Sonnet vs. Opus), prompt caching, and token budgeting against containment- rate targets</li>
+<li>Diagnose AI agent performance using observability tooling (agent spans, and CloudWatch) that correlates contact flow logs, conversation transcripts, AI agent spans, tool executions, and token usage to isolate latency, cost, and quality issues</li>
+<li>Build conversational experiences where intent-based NLU is the right fit, including multilingual support and SSML-tuned voice interactions</li>
+</ul>
+<p><em>Amazon Connect Platform Engineering</em></p>
+<ul>
+<li>Build contact flows that integrate AI agents, Lambda-backed business logic, Customer Profiles, and dynamic data-driven routing</li>
+<li>Implement Amazon Connect Cases and Tasks solutions: case templates, queue-based work allocation, SLA/TAT monitoring, approval workflows, and migrations from legacy case systems (e.g., consolidating hundreds of service categories and thousands of business rules into a unified Cases model)</li>
+<li>Configure and operationalize Contact Lens for real-time sentiment, post-contact summaries, category rules, and quality management</li>
+<li>Implement proficiency-based and attribute-driven routing, outbound campaigns (including answering machine detection and compliance controls), and workforce management (WFM) integrations for forecasting, scheduling, and adherence (FCS)</li>
+<li>Build out the Amazon Connect analytics data lake (Glue, Lake Formation, Athena) and QuickSight dashboards for real-time operations and executive reporting</li>
+<li>Support legacy platform migrations (Avaya, Genesys, Cisco, Oracle, Salesforce): flow conversion, data migration, parallel-run validation, and production cutover on live contact centers</li>
+</ul>
+<p><em>Full-Stack &amp; Portal Engineering</em></p>
+<ul>
+<li>Build custom Agent Workspace experiences with the Amazon Connect Streams API, third-party app embedding, and CRM screen-pop integrations (Salesforce, ServiceNow, Oracle, custom systems)</li>
+<li>Build serverless, event-driven backends with Lambda, EventBridge, Step Functions, SQS/SNS, DynamoDB, and Kinesis for real-time event processing and customer journey orchestration</li>
+<li>Treat accessibility as a first-class requirement: WCAG 2.1 AA compliant components, automated axe-core/Playwright accessibility scanning, and support for VPAT/Section 508 documentation on government and enterprise engagements</li>
+</ul>
+<p><em>Infrastructure, Delivery &amp; Quality</em></p>
+<ul>
+<li>Author infrastructure as code with AWS CDK (TypeScript) as the primary tool and CloudFormation or Terraform where customer environments require them</li>
+<li>Build and maintain CI/CD pipelines (GitHub Actions) and automated test suites: Jest/Vitest unit tests, Playwright E2E and API tests, and integration tests against live Connect instances</li>
+<li>Follow phased rollout patterns for production contact centers where downtime is measured in missed calls; write the runbooks that make cutovers boring</li>
+<li>Instrument monitoring and alerting (CloudWatch metrics, alarms, and custom dashboards across voice, chat, tasks, queues, agents, Lambda, and AI agents) and participate in production incident triage</li>
+<li>Apply security and compliance baselines in everything you ship: least-privilege IAM, DevSecOps scanning, encryption standards</li>
+</ul>
+<p><em>Collaboration &amp; Practice Contribution</em></p>
+<ul>
+<li>Work directly with customer engineering teams: pair on integrations, run technical working sessions, demo completed workstreams, and lead knowledge transfer so customers can operate what you build</li>
+<li>Contribute to architecture decisions within your workstream; evaluate native Connect capability before custom builds (“configuration over customization”), surface trade-offs to practice leads, and document decisions</li>
+<li>Perform code reviews, uphold engineering standards, and mentor junior and mid-level CX engineers through pairing and review feedback</li>
+<li>Contribute reusable assets back to the practice, shared CDK constructs, skills/plugins, demo environments, and internal tooling, so the next engagement starts further ahead</li>
+<li>Support pre-sales when needed: build proof-of-concept demos and provide implementation-grounded input on estimates and SOW technical scope</li>
+</ul>
+<p><strong>Your Qualifications</strong></p>
+<ul>
+<li>7+ years of hands-on software engineering experience, including 2+ years building on Amazon Connect or comparable CCaaS platforms at enterprise scale</li>
+<li>Strong, current Amazon Connect skills: contact flows, routing, Cases and Tasks, Contact Lens, Customer Profiles, Streams API, and the Connect data/analytics stack</li>
+<li>Hands-on experience with conversational and generative AI, Amazon Lex plus LLM- based development (Amazon Bedrock, Q in Connect, or equivalent), including prompt engineering and tool calling</li>
+<li>Strong TypeScript/Node.js and Python; production React experience; solid AWS serverless engineering (Lambda, EventBridge, API Gateway, DynamoDB, Step Functions, Kinesis)</li>
+<li>Infrastructure as code proficiency with AWS CDK or Terraform, including multi- account deployment patterns</li>
+<li>Experience shipping and supporting production systems, testing discipline, observability instrumentation, and incident debugging across the full stack</li>
+<li>Clear communication with customer-facing composure, able to demo your work, explain trade-offs, and run working sessions with client engineers</li>
+</ul>
+<p><strong>Preferred Qualifications</strong></p>
+<ul>
+<li>AWS certifications (Solutions Architect, Developer, or ML/Connect-relevant Specialty)</li>
+<li>Contact center migration experience (Avaya, Genesys, Cisco, Oracle, or Salesforce to Amazon Connect)</li>
+<li>Experience in regulated verticals: government/public sector (Section 508, FedRAMP), healthcare (HIPAA), or financial services</li>
+<li>Contact center operations fluency: WFM concepts (forecasting, scheduling, adherence), quality management, outbound compliance (TCPA), and CX KPIs (containment, AHT, CSAT, SLA/TAT)</li>
+<li>Experience with AI observability (trace correlation, token/cost attribution, latency profiling) or accessibility engineering (WCAG 2.1 AA, axe-core automation)</li>
+<li>Consulting or client-delivery background</li>
+</ul>
+<p><strong>Benefits</strong></p>
+<ul>
+<li>100% remote work</li>
+<li>Generous holidays and flexible PTO</li>
+<li>Competitive phantom equity</li>
+<li>Paid for exams and certifications</li>
+<li>Peer bonus awards</li>
+<li>State of the art laptop and tools</li>
+<li>Equipment &amp; Office Stipend</li>
+<li>Individual professional development plan</li>
+<li>Annual stipend for Learning and Development</li>
+<li>Work with an amazing worldwide team and in an incredible corporate culture</li>
+</ul>
+<p><em><strong>NOTE: This position requires current legal authorization to work in the country where this position is located. Caylent is not able to sponsor visa or work permit applications at this time.</strong></em>
+At Caylent, we are committed to fair, transparent, and inclusive hiring practices. As part of our recruitment process, we may use artificial intelligence (AI) tools or automated systems to assist with the screening and evaluation of applications to help match candidate qualifications with job requirements.</p>
+<p>These tools are designed to support — not replace — human decision-making. Final hiring decisions are always made by our trained recruitment professionals.</p>
+<p>If an AI or automated tool is used during your application process, it will only be in accordance with applicable laws and regulations, and your information will be handled in a secure and confidential manner.</p>
+<p>If you have any questions, please contact talent@caylent.com</p>
+<p>Caylent is a place where everyone belongs. We celebrate diversity and are committed to creating an inclusive environment for all employees. Our approach helps us to build a winning team that represents a variety of backgrounds, perspectives, and abilities. So, regardless of how your diversity expresses itself, you can find a home here at Caylent.</p>
+<p>We are proud to be an equal opportunity employer. We prohibit discrimination and harassment of any kind based on race, color, religion, national origin, sex (including pregnancy), sexual orientation, gender identity, gender expression, age, veteran status, genetic information, disability, or other applicable legally protected characteristics. If you would like to request an accommodation due to a disability, please contact us at hr@caylent.com.</p>
+</div>
+    </div>
+
+    <footer>
+        <a href="https://github.com/milad-rasouli">Created by Milad Rasouli</a>
+    </footer>
+</div>
+
+<script>
+    (function(){
+        const el = document.getElementById('createdAt');
+        if(!el) return;
+        const ts = Number(el.textContent) * 1000;
+        const d = new Date(ts);
+        el.textContent = d.toLocaleString();
+    })();
+</script>
+</body>
+</html>

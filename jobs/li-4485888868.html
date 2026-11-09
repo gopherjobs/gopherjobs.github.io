@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Teleop Platform Engineer, Real-Time Systems &amp; UI</title>
+    <style>
+        body{font-family:Inter, Arial, Helvetica, sans-serif;background:#f7fafc;color:#111;margin:0;padding:20px}
+        .wrap{max-width:900px;margin:0 auto;background:#fff;padding:20px;border-radius:8px;box-shadow:0 8px 24px rgba(12,20,30,0.06)}
+        h1{margin:0 0 8px 0}
+        .meta{color:#6b7280;font-size:13px;margin-bottom:8px}
+        .apply{display:inline-block;background:#0ea5a6;color:#fff;padding:8px 12px;border-radius:6px;text-decoration:none}
+        .back{display:inline-block;margin-left:12px;color:#374151;text-decoration:none}
+        .section{margin-top:16px}
+        .apply-section {display: flex;align-items: center;gap: 12px;}
+        .apply-section .apply {margin-left: auto;}
+
+         
+        .desc {line-height:1.6;font-size:15px;color:#111;}
+        .desc h1,.desc h2,.desc h3 {margin-top:20px;margin-bottom:10px;}
+        .desc pre{background:#f8fafc;padding:12px;border-radius:6px;border:1px solid #eef2f7;overflow-x:auto}
+        .desc code{background:#f1f5f9;padding:2px 4px;border-radius:4px}
+        .desc ul{padding-left:20px;margin:8px 0}
+        .desc p{margin:10px 0}
+
+        footer{margin-top:18px;text-align:center;color:#94a3b8}
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <h1>Teleop Platform Engineer, Real-Time Systems &amp; UI</h1>
+    <div class="meta">Mecka • Richmond Hill, Ontario, Canada • fulltime</div>
+
+
+    <div class="section apply-section">
+        <a class="back" href="../list1.html">Back to Home</a>
+        <a class="apply" href="https://www.linkedin.com/jobs/view/4485888868" target="_blank" rel="noopener">Apply</a>
+    </div>
+
+    <div class="section">
+        <strong>Remote:</strong> Yes •
+        <strong>Relocation:</strong> No
+    </div>
+
+    <div class="section">
+        <h3>Description</h3>
+        <div class="desc"><p><strong>About Mecka AI</strong>
+Mecka AI is building the data infrastructure layer for robotics and embodied AI.</p>
+<p>We design and operate global systems for data capture, data labeling, and hardware-enabled workflows used by leading AI labs and robotics companies to train and validate humanoid and embodied AI systems.</p>
+<p>We work closely with frontier robotics teams to bridge real-world data, simulation, learning-based systems, and deployed hardware.</p>
+<p><strong>The role</strong>
+Our operators control robots across countries and oceans. You'll own the link between them: getting multiple camera streams to the operator and commands back to the robot with as little delay and jitter as physics allows, and building the interface operators use all day. Because every byte you stream is also training data, you'll own recording it on-site and getting it reliably off-site too.</p>
+<p><strong>What You'll Do</strong></p>
+<ul>
+<li>Build the real-time transport between robot sites and operator stations: low-latency video (multiple cameras, possibly depth), robot state, and control commands over the public internet.</li>
+<li>Own the end-to-end latency budget. Instrument glass-to-glass and command-to-motion latency, find where every millisecond goes, and cut it: encoding settings, transport choice, routing, jitter buffers, relay placement.</li>
+<li>Make the link robust: NAT traversal, congestion and packet loss, bandwidth adaptation, reconnection, and clear signals to the operator and robot when quality degrades.</li>
+<li>Design and build the operator interface: camera layouts, robot state and health, task instructions, latency and connection indicators, and fast workflows for starting, labeling, and ending episodes.</li>
+<li>Build operator-facing tooling: queueing operators to robots across sites, session handoff, and basic fleet visibility.</li>
+<li>Own on-site recording: capture synchronized streams and metadata into a well-defined episode format, buffer locally, and upload reliably over constrained site networks.</li>
+<li>Set up the infrastructure for data storage and access of robot teleop episodes.</li>
+</ul>
+<p><strong>What We're Looking For</strong></p>
+<ul>
+<li>3+ years building production level real-time networked systems: video streaming, video conferencing, cloud gaming, remote desktop, live broadcast, or similar.</li>
+<li>Hands-on experience with low-latency media transport (e.g., WebRTC, RTP/SRTP, QUIC/UDP-based protocols) and video encoding trade-offs.</li>
+<li>You've measured and reduced latency in a production system and can explain where the time went.</li>
+<li>Comfortable building a polished interface yourself, web or native, with good product instincts for people who use a tool eight hours a day.</li>
+<li>Strong in at least one of TypeScript, Go, Rust, C++, or Python; comfortable across client, server, and edge devices.</li>
+<li>Comfortable deploying and debugging software on remote Linux machines you can't physically touch.</li>
+</ul>
+<p><strong>Nice to have</strong></p>
+<ul>
+<li>Experience with robotics, teleoperation, drones, or other remote-control systems.</li>
+<li>Hardware video encode/decode on edge devices; multi-camera synchronization.</li>
+<li>Built data pipelines that move large volumes of sensor or video data from the edge to cloud storage.</li>
+<li>Experience with global network deployment: relays/TURN, choosing regions, measuring paths between countries.</li>
+<li>Game development, VR/XR, or other latency-sensitive interaction design.</li>
+</ul>
+<p>If you don't check every box above but believe you can do the job, we encourage you to apply — we're looking for capability and trajectory, not a perfect checklist match.</p>
+<p>We strive to create an inclusive work environment for all; we welcome applicants from all backgrounds and are committed to providing equal opportunities. Should you require any accommodations during the recruitment process, we will partner with you to meet your needs.</p>
+<p>We may use AI-assisted tools to help evaluate applications against the requirements of this role. These tools support our recruiting team in identifying qualified candidates but do not replace human judgment or limit which applications may be reviewed or considered.</p>
+<p>Compensation Range: $200K - $240K</p>
+</div>
+    </div>
+
+    <footer>
+        <a href="https://github.com/milad-rasouli">Created by Milad Rasouli</a>
+    </footer>
+</div>
+
+<script>
+    (function(){
+        const el = document.getElementById('createdAt');
+        if(!el) return;
+        const ts = Number(el.textContent) * 1000;
+        const d = new Date(ts);
+        el.textContent = d.toLocaleString();
+    })();
+</script>
+</body>
+</html>

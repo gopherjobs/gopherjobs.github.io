@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>GPU Performance Engineer (Inference)</title>
+    <style>
+        body{font-family:Inter, Arial, Helvetica, sans-serif;background:#f7fafc;color:#111;margin:0;padding:20px}
+        .wrap{max-width:900px;margin:0 auto;background:#fff;padding:20px;border-radius:8px;box-shadow:0 8px 24px rgba(12,20,30,0.06)}
+        h1{margin:0 0 8px 0}
+        .meta{color:#6b7280;font-size:13px;margin-bottom:8px}
+        .apply{display:inline-block;background:#0ea5a6;color:#fff;padding:8px 12px;border-radius:6px;text-decoration:none}
+        .back{display:inline-block;margin-left:12px;color:#374151;text-decoration:none}
+        .section{margin-top:16px}
+        .apply-section {display: flex;align-items: center;gap: 12px;}
+        .apply-section .apply {margin-left: auto;}
+
+         
+        .desc {line-height:1.6;font-size:15px;color:#111;}
+        .desc h1,.desc h2,.desc h3 {margin-top:20px;margin-bottom:10px;}
+        .desc pre{background:#f8fafc;padding:12px;border-radius:6px;border:1px solid #eef2f7;overflow-x:auto}
+        .desc code{background:#f1f5f9;padding:2px 4px;border-radius:4px}
+        .desc ul{padding-left:20px;margin:8px 0}
+        .desc p{margin:10px 0}
+
+        footer{margin-top:18px;text-align:center;color:#94a3b8}
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <h1>GPU Performance Engineer (Inference)</h1>
+    <div class="meta">TensorX • Dublin, County Dublin, Ireland • fulltime</div>
+
+
+    <div class="section apply-section">
+        <a class="back" href="../list1.html">Back to Home</a>
+        <a class="apply" href="https://www.linkedin.com/jobs/view/4472224600" target="_blank" rel="noopener">Apply</a>
+    </div>
+
+    <div class="section">
+        <strong>Remote:</strong> Yes •
+        <strong>Relocation:</strong> No
+    </div>
+
+    <div class="section">
+        <h3>Description</h3>
+        <div class="desc"><p><strong>Overview</strong></p>
+<p>TensorX is a sovereign AI infrastructure platform headquartered in Dublin. We run frontier open-weight large language models on our own NVIDIA Blackwell GPUs in European datacentres, under EU jurisdiction. Customers reach them through a drop-in OpenAI-compatible API. Nothing they send is retained after the request completes. We serve regulated enterprises in finance, healthcare and government as well as developers and AI platforms. We help them adopt AI without compromising on data privacy, compliance or performance.</p>
+<p>We are looking for multiple GPU Performance Engineers to join our growing engineering team. Reporting to the CTO, you will make each inference engine in our fleet do more work inside its latency target. You will take engine problems from report to fix, patch the open-source engines we depend on and go beneath them to the kernel when the engine is the limit.</p>
+<p>Our margin depends on one number: how many requests each GPU answers inside a latency target. That is not the same as peak tokens per second on a benchmark. Passengers carried, not miles per hour. Our customers send very long contexts at high concurrency, so the constraint that matters is rarely the one the headline number measures.</p>
+<p>The serving engines we depend on, SGLang first, are open source and still maturing. We hit their defects early because we run new models on day zero. We patch them, tune them and change the kernel where the engine itself is the limit. A new open-weight model worth serving arrives most weeks and more GPU capacity is going live now. We are an AI-native team. Tools such as Claude Code and Codex are part of our daily workflow and materially accelerate how we build and operate systems.</p>
+<p>You will work side by side with our Inference Team, who run NVIDIA Dynamo and the serving fleet. You make each worker faster. They make the fleet of workers behave.</p>
+<p>We hire on evidence of skill, not years of experience. We will hire across multiple levels. One of the seats may suit someone earlier in their career.</p>
+<p>This is a hands-on individual contributor role spanning engine performance, GPU kernels, model bring-up and cache behaviour.</p>
+<p><strong>Responsibilities</strong></p>
+<ul>
+<li><strong>Engine tickets end to end</strong>
+<ul>
+<li>Take engine problems from report to fix. A model runs out of memory at long context, a patch cuts throughput or a new release breaks tool calling. Reproduce it, find the mechanism, test a fix, patch it and roll it out. Then write down what you found.</li>
+</ul>
+</li>
+<li><strong>Investigation &amp; diagnosis</strong>
+<ul>
+<li>Debug across GPU memory, the engine scheduler, the container, the router and the traffic shape. Many of our hardest problems sit where two of these meet. When you raise a problem with the team, bring a read, not a question: what you think it is and why.</li>
+</ul>
+</li>
+<li><strong>Goodput per GPU</strong>
+<ul>
+<li>Goodput is the number of requests each GPU answers inside the latency target. Find where it is being lost, whether in a kernel, the scheduler, the router or a configuration flag. Win it back. Measure every gain on production traffic patterns rather than a synthetic load.</li>
+</ul>
+</li>
+<li><strong>Engine patches &amp; upstream</strong>
+<ul>
+<li>Patch SGLang and vLLM defects on new models. Bake each fix into the image and keep the patch set consistent across the fleet. Where a fix is not specific to us, open the pull request upstream, not just the issue.</li>
+</ul>
+</li>
+<li><strong>GPU kernels</strong>
+<ul>
+<li>When profiling shows an engine kernel is the bottleneck, write or modify it. Examples include Blackwell attention/indexer paths, FP8/FP4 paths and memory-bound decode. Profile before you form an opinion.</li>
+</ul>
+</li>
+<li><strong>Model bring-up</strong>
+<ul>
+<li>Bring up new models on day zero. Run A/B bake-offs across parallelism layouts, KV cache configurations and speculative decoding settings. Test tensor, data and expert parallelism for each model. Give the Inference Team the best layout for each model so they can size the pools.</li>
+</ul>
+</li>
+<li><strong>Cache behaviour</strong>
+<ul>
+<li>Tune prefix caching, KV cache behaviour and KV replication under tensor parallelism inside the engine. Work with the Inference Team on cache-aware routing and contribute to the router code.</li>
+</ul>
+</li>
+<li><strong>Pre-production gate</strong>
+<ul>
+<li>Share the pre-production gate with the Inference Team so no change reaches a customer unmeasured. Run it on your own changes and on every model you bring up.</li>
+</ul>
+</li>
+<li><strong>Documentation</strong>
+<ul>
+<li>Write up every finding as a report someone else can rerun. Explain trade-offs plainly enough for the Inference Team and for customers. Keep a benchmark method that works without you in the room.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Skills &amp; Experience</strong></p>
+<ul>
+<li>Evidence that you can read an inference engine's source to find the mechanism behind a problem rather than only the symptom. A pull request, a write-up or a post-mortem we can check</li>
+<li>Solid understanding of GPU architecture and CUDA fundamentals: memory hierarchy, occupancy and what makes a kernel compute-bound or memory-bound</li>
+<li>Working knowledge of transformer inference: attention variants (MLA, DSA, GQA), KV cache behaviour, continuous batching and the accuracy impact of quantisation</li>
+<li>Proficiency in Python and comfort reading C++ and CUDA</li>
+<li>A measure-first habit: one variable per test arm, a pass or fail bar set before you run and a correctness check before you trust a timing</li>
+<li>Honest about results, including the ones that did not work out. Losing to a baseline and saying so counts in your favour</li>
+<li>A drive to learn. The stack changes every week. We value someone who reads the source over someone who already knows last year's answer</li>
+<li>Comfortable using AI-assisted development tools (e.g. Claude Code, Codex) as part of your daily workflow</li>
+<li>A clear and concise communicator who thrives in ambiguity and can articulate technical decisions to both technical and non-technical audiences</li>
+</ul>
+<p><strong>Nice to Have</strong></p>
+<ul>
+<li>A track record of writing and benchmarking CUDA kernels on Hopper or Blackwell</li>
+<li>Upstream contributions to SGLang, vLLM or TensorRT-LLM</li>
+<li>Experience with Triton, CUTLASS, CuTe, ThunderKittens or similar kernel tools</li>
+<li>Kernel entries in GPU Mode leaderboards, MLSys contests or FlashInfer challenges</li>
+<li>Experience profiling memory behaviour and out-of-memory errors on large models</li>
+<li>Hands-on time with Blackwell features (tcgen05, TMEM, TMA)</li>
+<li>Technical writing in public</li>
+</ul>
+<p><strong>Why This Role</strong></p>
+<ul>
+<li><strong>You work inside the engine.</strong>
+Many GPU clouds hire performance engineers for cold starts, storage and containers. We hire them to change the engine and the kernel. That is where our margin is.</li>
+<li><strong>The fleet is ours.</strong>
+Our own NVIDIA B300 GPUs in Dublin and Helsinki. You are not renting time on someone else's cluster.</li>
+<li><strong>The traffic is real.</strong>
+Long-context, high-concurrency production workloads that break assumptions benchmarks never test.</li>
+<li><strong>The results are real.</strong>
+Our inference stack answers roughly twice as many requests inside the latency target as a standard configuration. We measured this on the same hardware with the same production traffic patterns.</li>
+<li><strong>The engine is open.</strong>
+We patch SGLang in production and send the fixes upstream. If there is a paper in the work, we would rather it went out with your name on it.</li>
+<li><strong>The research list is long.</strong>
+The better the day-to-day is covered, the more time goes on KV cache beyond GPU memory, context parallelism, wide expert parallelism and attention/FFN disaggregation.</li>
+</ul>
+<p><strong>Education &amp; Qualifications</strong></p>
+<ul>
+<li>BSc/MSc/PhD in Computer Science, Engineering, Machine Learning or a related technical discipline OR equivalent demonstrable ability</li>
+</ul>
+<p><strong>Remuneration</strong></p>
+<ul>
+<li>Highly competitive package, dependent on experience</li>
+<li>25 days paid annual leave</li>
+<li>Hybrid working from our centrally located Dublin office, with remote flexibility</li>
+<li>Free inference tokens!</li>
+</ul>
+<p><strong>******* NO AGENCY ASSISTANCE REQUIRED *******</strong></p>
+</div>
+    </div>
+
+    <footer>
+        <a href="https://github.com/milad-rasouli">Created by Milad Rasouli</a>
+    </footer>
+</div>
+
+<script>
+    (function(){
+        const el = document.getElementById('createdAt');
+        if(!el) return;
+        const ts = Number(el.textContent) * 1000;
+        const d = new Date(ts);
+        el.textContent = d.toLocaleString();
+    })();
+</script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Software Developer</title>
+    <style>
+        body{font-family:Inter, Arial, Helvetica, sans-serif;background:#f7fafc;color:#111;margin:0;padding:20px}
+        .wrap{max-width:900px;margin:0 auto;background:#fff;padding:20px;border-radius:8px;box-shadow:0 8px 24px rgba(12,20,30,0.06)}
+        h1{margin:0 0 8px 0}
+        .meta{color:#6b7280;font-size:13px;margin-bottom:8px}
+        .apply{display:inline-block;background:#0ea5a6;color:#fff;padding:8px 12px;border-radius:6px;text-decoration:none}
+        .back{display:inline-block;margin-left:12px;color:#374151;text-decoration:none}
+        .section{margin-top:16px}
+        .apply-section {display: flex;align-items: center;gap: 12px;}
+        .apply-section .apply {margin-left: auto;}
+
+         
+        .desc {line-height:1.6;font-size:15px;color:#111;}
+        .desc h1,.desc h2,.desc h3 {margin-top:20px;margin-bottom:10px;}
+        .desc pre{background:#f8fafc;padding:12px;border-radius:6px;border:1px solid #eef2f7;overflow-x:auto}
+        .desc code{background:#f1f5f9;padding:2px 4px;border-radius:4px}
+        .desc ul{padding-left:20px;margin:8px 0}
+        .desc p{margin:10px 0}
+
+        footer{margin-top:18px;text-align:center;color:#94a3b8}
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <h1>Software Developer</h1>
+    <div class="meta">Trans.eu Group • Dolnośląskie, Poland • fulltime</div>
+
+
+    <div class="section apply-section">
+        <a class="back" href="../list1.html">Back to Home</a>
+        <a class="apply" href="https://www.linkedin.com/jobs/view/4486219750" target="_blank" rel="noopener">Apply</a>
+    </div>
+
+    <div class="section">
+        <strong>Remote:</strong> Yes •
+        <strong>Relocation:</strong> No
+    </div>
+
+    <div class="section">
+        <h3>Description</h3>
+        <div class="desc"><p><strong>Are we looking for you?</strong></p>
+<p>Are you ready to build high-quality software in a modern microservices architecture? You will develop and maintain key services using Java and Spring Boot. Your work will directly impact system scalability, delivering real value to our stakeholders and end-users. Join our team to solve complex technical problems and actively drive our technological growth.</p>
+<p><strong>What you’ll work on</strong></p>
+<ul>
+<li>Java 21/25 microservices designed according to Domain-Driven Design, built with Spring Boot 4.x and communicating mainly via RabbitMQ and REST APIs.</li>
+<li>Data stored in MySQL and PostgreSQL, with part of it sourced from Snowflake.</li>
+<li>Caching, mainly with Redis.</li>
+<li>Our Kafka platform: maintaining our Kafka cluster running on the Strimzi operator.</li>
+<li>Stream processing with Kafka Streams and, more recently, Apache Flink.</li>
+<li>Maintaining our RabbitMQ setup.</li>
+<li>Services deployed on AWS ECS and Kubernetes.</li>
+<li>Test-driven development with TDD and BDD (Cucumber), covering unit and integration tests run in Jenkins.</li>
+<li>CI/CD pipelines in GitLab.</li>
+<li>Observability with Prometheus, Grafana and Kibana.</li>
+</ul>
+<p><strong>Your role in the team</strong></p>
+<ul>
+<li>Building and maintaining microservices in line with business requirements and our internal standards.</li>
+<li>Keeping services up to date, including Java and Spring Boot upgrades.</li>
+<li>Contributing to architecture decisions for scalable, modular solutions.</li>
+<li>Helping develop and operate our messaging and streaming infrastructure.</li>
+</ul>
+<p><strong>Experience</strong></p>
+<p><strong>Must have:</strong></p>
+<ul>
+<li>At least 5 years of commercial experience with Java and Spring Boot.</li>
+<li>Experience with microservices and distributed systems.</li>
+<li>Hands-on experience with at least one message broker (RabbitMQ or Kafka).</li>
+<li>Good knowledge of relational databases (MySQL or PostgreSQL).</li>
+<li>Experience with Docker.</li>
+<li>Clear communication with both technical and business stakeholders, and a collaborative approach (knowledge sharing, pair programming).</li>
+</ul>
+<p><strong>Nice to have</strong></p>
+<ul>
+<li>Kafka Streams or Apache Flink.</li>
+<li>Kafka Connect, Strimzi or other Kafka operators.</li>
+<li>Kubernetes.</li>
+<li>GitLab CI/CD.</li>
+<li>Snowflake.</li>
+<li>Redis or other caching solutions.</li>
+<li>Prometheus, Grafana, Kibana / ELK.</li>
+<li>OAuth2 security.</li>
+</ul>
+<p><strong>What’s in it for you:</strong></p>
+<ul>
+<li>Private LuxMed healthcare, free preventive check-ups, spine-relieving massages.</li>
+<li>Budget for remote workstation equipment and gift vouchers.</li>
+<li>On-site buffet breakfasts prepared fresh daily.</li>
+<li>Team-building and family trips to a private lakeside resort.</li>
+<li>Subsidy for a Multisport card.</li>
+</ul>
+</div>
+    </div>
+
+    <footer>
+        <a href="https://github.com/milad-rasouli">Created by Milad Rasouli</a>
+    </footer>
+</div>
+
+<script>
+    (function(){
+        const el = document.getElementById('createdAt');
+        if(!el) return;
+        const ts = Number(el.textContent) * 1000;
+        const d = new Date(ts);
+        el.textContent = d.toLocaleString();
+    })();
+</script>
+</body>
+</html>

@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Senior Inference Engineer</title>
+    <style>
+        body{font-family:Inter, Arial, Helvetica, sans-serif;background:#f7fafc;color:#111;margin:0;padding:20px}
+        .wrap{max-width:900px;margin:0 auto;background:#fff;padding:20px;border-radius:8px;box-shadow:0 8px 24px rgba(12,20,30,0.06)}
+        h1{margin:0 0 8px 0}
+        .meta{color:#6b7280;font-size:13px;margin-bottom:8px}
+        .apply{display:inline-block;background:#0ea5a6;color:#fff;padding:8px 12px;border-radius:6px;text-decoration:none}
+        .back{display:inline-block;margin-left:12px;color:#374151;text-decoration:none}
+        .section{margin-top:16px}
+        .apply-section {display: flex;align-items: center;gap: 12px;}
+        .apply-section .apply {margin-left: auto;}
+
+         
+        .desc {line-height:1.6;font-size:15px;color:#111;}
+        .desc h1,.desc h2,.desc h3 {margin-top:20px;margin-bottom:10px;}
+        .desc pre{background:#f8fafc;padding:12px;border-radius:6px;border:1px solid #eef2f7;overflow-x:auto}
+        .desc code{background:#f1f5f9;padding:2px 4px;border-radius:4px}
+        .desc ul{padding-left:20px;margin:8px 0}
+        .desc p{margin:10px 0}
+
+        footer{margin-top:18px;text-align:center;color:#94a3b8}
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <h1>Senior Inference Engineer</h1>
+    <div class="meta">TensorX • Dublin, County Dublin, Ireland • fulltime</div>
+
+
+    <div class="section apply-section">
+        <a class="back" href="../list1.html">Back to Home</a>
+        <a class="apply" href="https://www.linkedin.com/jobs/view/4466318794" target="_blank" rel="noopener">Apply</a>
+    </div>
+
+    <div class="section">
+        <strong>Remote:</strong> Yes •
+        <strong>Relocation:</strong> No
+    </div>
+
+    <div class="section">
+        <h3>Description</h3>
+        <div class="desc"><p><strong>Overview</strong></p>
+<p>TensorX is a sovereign AI infrastructure platform headquartered in Dublin. We run frontier open-weight large language models on our own NVIDIA Blackwell GPUs in European datacentres, under EU jurisdiction. Customers reach them through a drop-in OpenAI-compatible API. Nothing they send is retained after the request completes. We serve regulated enterprises in finance, healthcare and government as well as developers and AI platforms. We help them adopt AI without compromising on data privacy, compliance or performance.</p>
+<p>We are looking for a Senior Inference Engineer to join our growing engineering team. Reporting to the CTO, you will own the serving layer between our API gateway and the inference engines across more than one site. This covers admission, routing, the prefill/decode split, KV cache movement across the GPU fabric and autoscaling.</p>
+<p>Our customers send very long contexts at high concurrency, often in bursts. The number that decides our margin is not how fast one engine runs. It is how many requests the whole fleet answers inside a latency target when a burst arrives. We run NVIDIA Dynamo in production for disaggregated serving on Kubernetes and are moving the rest of the fleet onto it. We are an AI-native team. Tools such as Claude Code and Codex are part of our daily workflow and materially accelerate how we build and operate systems.</p>
+<p>You will work side by side with our GPU Performance Team, who own the inside of the engines: kernels, engine patches and per-model tuning. They make each worker faster. You make the fleet of workers behave. Our platform team builds and maintains the Kubernetes clusters and hosts. Our backend team owns the API gateway. You will work with all three every day.</p>
+<p>This is a high-impact senior individual contributor role spanning disaggregated serving, routing, autoscaling and multi-site operations.</p>
+<p><strong>Responsibilities</strong></p>
+<ul>
+<li><strong>Disaggregated serving</strong>
+<ul>
+<li>Run and extend our NVIDIA Dynamo deployment. Own the split between prefill and decode workers. Move capacity between them as the traffic shape changes.</li>
+</ul>
+</li>
+<li><strong>Admission &amp; routing</strong>
+<ul>
+<li>Own the router and KV-aware routing so requests land where their prefix is already cached. Build admission control so a burst queues instead of crashing a worker. The GPU Performance Team tunes cache behaviour inside the engine and contributes to the router code.</li>
+</ul>
+</li>
+<li><strong>Autoscaling &amp; capacity</strong>
+<ul>
+<li>Scale prefill and decode against latency targets and scale down when traffic drops. Decide how many GPUs each model pool needs and where it runs. Base these decisions on traffic data and the parallelism layouts the GPU Performance Team validates.</li>
+</ul>
+</li>
+<li><strong>KV cache transfer</strong>
+<ul>
+<li>Own cross-node KV cache movement (NIXL, Mooncake or similar). Test it across nodes so the network is part of every measurement. Add custom telemetry where the stock tools do not see.</li>
+</ul>
+</li>
+<li><strong>Multi-site serving</strong>
+<ul>
+<li>Run several sites behind one front door, each with its own local serving plane. Keep a path open to non-NVIDIA pools through llm-d when we need one.</li>
+</ul>
+</li>
+<li><strong>Observability</strong>
+<ul>
+<li>Instrument the serving layer with per-model metrics that mean something: time to first token, inter-token latency, queue depth, cache hit rate and errors. Work with Prometheus, Grafana and Loki alongside GPU telemetry.</li>
+</ul>
+</li>
+<li><strong>Rollouts &amp; pre-production</strong>
+<ul>
+<li>Roll out serving-layer changes with zero downtime: drain, verify outside the pool, return, repeat. Share the pre-production gate with the GPU Performance Team so no change reaches a customer unmeasured.</li>
+</ul>
+</li>
+<li><strong>Data retention</strong>
+<ul>
+<li>Make sure nothing a customer sends is retained after the request completes. Enforce this by design in the serving path, not only by policy.</li>
+</ul>
+</li>
+<li><strong>Reliability &amp; incidents</strong>
+<ul>
+<li>Own the serving-layer runbook. Lead the response when the fleet, rather than one engine, misbehaves. Write up each incident so it does not happen twice.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Skills &amp; Experience</strong></p>
+<ul>
+<li>5+ years of professional experience in distributed systems, ML infrastructure or production serving. A meaningful portion of this should be on GPU workloads</li>
+<li>Hands-on experience running large language models in production with vLLM, SGLang or TensorRT-LLM. You understand how prefill, decode, KV cache and batching behave under load</li>
+<li>Experience with NVIDIA Dynamo or a comparable disaggregated serving system (e.g. llm-d)</li>
+<li>Kubernetes in production, including deployments, rollouts, operators or controllers and GPU scheduling</li>
+<li>Strong distributed systems fundamentals: queueing, backpressure, admission control, routing and retries under burst load</li>
+<li>Experience instrumenting production systems (e.g. Prometheus, Grafana, Loki) and using that data to guide tuning decisions</li>
+<li>Familiarity with benchmarking methodology: one variable at a time, a pass or fail bar set before the run and results someone else can reproduce</li>
+<li>Proficiency in Python and comfort reading systems code in other languages</li>
+<li>Comfortable using AI-assisted development tools (e.g. Claude Code, Codex) as part of your daily workflow</li>
+<li>A clear and concise communicator who thrives in ambiguity and can articulate technical decisions to both technical and non-technical audiences</li>
+</ul>
+<p><strong>Nice to Have</strong></p>
+<ul>
+<li>Experience with NIXL, Mooncake, LMCache or other KV cache transfer and offload layers</li>
+<li>Experience debugging performance across a GPU fabric (RDMA, RoCE or InfiniBand)</li>
+<li>Gateway API Inference Extension or similar Kubernetes-native inference routing</li>
+<li>Multi-site or multi-cluster operations</li>
+<li>Contributions to open-source inference or serving projects</li>
+</ul>
+<p><strong>Why This Role</strong></p>
+<ul>
+<li><strong>Disaggregated serving is live here, not on a roadmap.</strong>
+You will extend a Dynamo deployment that already carries production traffic.</li>
+<li><strong>The fleet is ours.</strong>
+Our own NVIDIA B300 GPUs in Dublin and Helsinki. You are not renting time on someone else's cluster.</li>
+<li><strong>The traffic is real.</strong>
+Long-context, bursty, high-concurrency workloads that break assumptions benchmarks never test.</li>
+<li><strong>The results are real.</strong>
+Our inference stack answers roughly twice as many requests inside the latency target as a standard configuration. We measured this on the same hardware with the same production traffic patterns.</li>
+<li><strong>You shape the architecture.</strong>
+Dynamo is live, but the multi-site serving layer around it is still being designed. Your decisions become the architecture.</li>
+</ul>
+<p><strong>Education &amp; Qualifications</strong></p>
+<ul>
+<li>BSc/MSc in Computer Science, Software Engineering, Electrical Engineering or a related technical discipline OR equivalent practical experience</li>
+</ul>
+<p><strong>Remuneration</strong></p>
+<ul>
+<li>Highly competitive package, dependent on experience</li>
+<li>25 days paid annual leave</li>
+<li>Hybrid working from our centrally located Dublin office, with remote flexibility</li>
+<li>Free inference tokens!</li>
+</ul>
+<p><strong>******* NO AGENCY ASSISTANCE REQUIRED *******</strong></p>
+</div>
+    </div>
+
+    <footer>
+        <a href="https://github.com/milad-rasouli">Created by Milad Rasouli</a>
+    </footer>
+</div>
+
+<script>
+    (function(){
+        const el = document.getElementById('createdAt');
+        if(!el) return;
+        const ts = Number(el.textContent) * 1000;
+        const d = new Date(ts);
+        el.textContent = d.toLocaleString();
+    })();
+</script>
+</body>
+</html>

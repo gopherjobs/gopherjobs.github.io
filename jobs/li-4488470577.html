@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Desenvolvedor(a) Fullstack Pleno</title>
+    <style>
+        body{font-family:Inter, Arial, Helvetica, sans-serif;background:#f7fafc;color:#111;margin:0;padding:20px}
+        .wrap{max-width:900px;margin:0 auto;background:#fff;padding:20px;border-radius:8px;box-shadow:0 8px 24px rgba(12,20,30,0.06)}
+        h1{margin:0 0 8px 0}
+        .meta{color:#6b7280;font-size:13px;margin-bottom:8px}
+        .apply{display:inline-block;background:#0ea5a6;color:#fff;padding:8px 12px;border-radius:6px;text-decoration:none}
+        .back{display:inline-block;margin-left:12px;color:#374151;text-decoration:none}
+        .section{margin-top:16px}
+        .apply-section {display: flex;align-items: center;gap: 12px;}
+        .apply-section .apply {margin-left: auto;}
+
+         
+        .desc {line-height:1.6;font-size:15px;color:#111;}
+        .desc h1,.desc h2,.desc h3 {margin-top:20px;margin-bottom:10px;}
+        .desc pre{background:#f8fafc;padding:12px;border-radius:6px;border:1px solid #eef2f7;overflow-x:auto}
+        .desc code{background:#f1f5f9;padding:2px 4px;border-radius:4px}
+        .desc ul{padding-left:20px;margin:8px 0}
+        .desc p{margin:10px 0}
+
+        footer{margin-top:18px;text-align:center;color:#94a3b8}
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <h1>Desenvolvedor(a) Fullstack Pleno</h1>
+    <div class="meta">Elevar Internet •  • contract</div>
+
+
+    <div class="section apply-section">
+        <a class="back" href="../list1.html">Back to Home</a>
+        <a class="apply" href="https://www.linkedin.com/jobs/view/4488470577" target="_blank" rel="noopener">Apply</a>
+    </div>
+
+    <div class="section">
+        <strong>Remote:</strong> No •
+        <strong>Relocation:</strong> Yes
+    </div>
+
+    <div class="section">
+        <h3>Description</h3>
+        <div class="desc"><p>Estamos contratando a primeira pessoa desenvolvedora de um produto SaaS que começa agora, pela</p>
+<p>arquitetura. Você vai trabalhar lado a lado com o fundador, como par técnico, e é quem traz rigor de</p>
+<p>engenharia para o projeto</p>
+<ul>
+<li>Backend, frontend e banco de dados, incluindo o papel de DBA no dia a dia.</li>
+<li>Definição da arquitetura desde o primeiro dia, com decisões registradas.</li>
+<li>Assistentes e agentes de IA no centro do fluxo de trabalho, com revisão crítica de tudo o que eles geram.</li>
+</ul>
+<p><strong>Requisitos obrigatórios:</strong></p>
+<ul>
+<li>Python no backend com FastAPI (ou similar) e programação assíncrona. Saber quando uma chamada bloqueante trava o servidor e o que deve ir para uma fila (Celery e Redis, ou equivalente).</li>
+<li>PostgreSQL de verdade: modelagem, índices, migrations, transações, locks e leitura de plano de execução (EXPLAIN).</li>
+<li>React ou Next.js com TypeScript.</li>
+<li>Testes automatizados (pytest, com testes de integração contra um Postgres real) e CI.</li>
+<li>Git no dia a dia, Docker, colocar a aplicação no ar e ler logs para diagnosticar problemas.</li>
+<li>Uso diário de IA para programar (Claude Code, Cursor, ChatGPT ou similares), entendendo e revisando tudo o que a IA gera. Nunca aceitar código que você não entende.</li>
+</ul>
+<p><strong>Diferenciais:</strong></p>
+<ul>
+<li>Integração de LLMs em produto: API da Anthropic ou da OpenAI, tool use, saídas estruturadas e controle de custo.</li>
+<li>RAG: embeddings, pgvector, busca híbrida e avaliação de qualidade.</li>
+<li>MCP (Model Context Protocol): ter construído ou usado servidores MCP.</li>
+<li>Sistemas multiempresa (multi-tenant) e segurança de aplicação: isolamento de dados por empresa, autenticação e webhooks assinados.</li>
+<li>Integrações com APIs de terceiros (Meta, Google, CRMs).</li>
+<li>Experiência com SaaS B2B, marketing digital ou provedores de internet.</li>
+</ul>
+<p><strong>Condições:</strong></p>
+<ul>
+<li>Presencial na sede da Elevar, em Hortolândia (SP).</li>
+<li>Forma de contratação e remuneração apresentadas na entrevista.</li>
+<li>Assinatura de ferramentas de IA paga pela empresa.</li>
+<li>Equipamento fornecido</li>
+</ul>
+</div>
+    </div>
+
+    <footer>
+        <a href="https://github.com/milad-rasouli">Created by Milad Rasouli</a>
+    </footer>
+</div>
+
+<script>
+    (function(){
+        const el = document.getElementById('createdAt');
+        if(!el) return;
+        const ts = Number(el.textContent) * 1000;
+        const d = new Date(ts);
+        el.textContent = d.toLocaleString();
+    })();
+</script>
+</body>
+</html>
