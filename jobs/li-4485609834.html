@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Platform Support Engineer</title>
+    <style>
+        body{font-family:Inter, Arial, Helvetica, sans-serif;background:#f7fafc;color:#111;margin:0;padding:20px}
+        .wrap{max-width:900px;margin:0 auto;background:#fff;padding:20px;border-radius:8px;box-shadow:0 8px 24px rgba(12,20,30,0.06)}
+        h1{margin:0 0 8px 0}
+        .meta{color:#6b7280;font-size:13px;margin-bottom:8px}
+        .apply{display:inline-block;background:#0ea5a6;color:#fff;padding:8px 12px;border-radius:6px;text-decoration:none}
+        .back{display:inline-block;margin-left:12px;color:#374151;text-decoration:none}
+        .section{margin-top:16px}
+        .apply-section {display: flex;align-items: center;gap: 12px;}
+        .apply-section .apply {margin-left: auto;}
+
+         
+        .desc {line-height:1.6;font-size:15px;color:#111;}
+        .desc h1,.desc h2,.desc h3 {margin-top:20px;margin-bottom:10px;}
+        .desc pre{background:#f8fafc;padding:12px;border-radius:6px;border:1px solid #eef2f7;overflow-x:auto}
+        .desc code{background:#f1f5f9;padding:2px 4px;border-radius:4px}
+        .desc ul{padding-left:20px;margin:8px 0}
+        .desc p{margin:10px 0}
+
+        footer{margin-top:18px;text-align:center;color:#94a3b8}
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <h1>Platform Support Engineer</h1>
+    <div class="meta">PhysicsX • Singapore, Singapore • fulltime</div>
+
+
+    <div class="section apply-section">
+        <a class="back" href="../list1.html">Back to Home</a>
+        <a class="apply" href="https://www.linkedin.com/jobs/view/4485609834" target="_blank" rel="noopener">Apply</a>
+    </div>
+
+    <div class="section">
+        <strong>Remote:</strong> Yes •
+        <strong>Relocation:</strong> No
+    </div>
+
+    <div class="section">
+        <h3>Description</h3>
+        <div class="desc"><p><strong>About Us</strong>
+<strong>Re-architecting Engineering for the Age of Intelligence</strong>
+PhysicsX is the physics AI company for industrials. The company’s mission is to accelerate hardware innovation by overhauling what industrial engineering and manufacturing look like today. PhysicsX is building a new simulation software stack to deliver deep physics AI enablement across the entire engineering lifecycle. The company partners with leading organisations in aerospace &amp; defence, automotive, semiconductors, materials, and energy &amp; renewables, supporting them on some of their most critical and complex challenges. PhysicsX is headquartered in the United Kingdom, with offices in London, New York, and Singapore and an expanding presence in the Bay Area.</p>
+<p><strong>The role</strong>
+Platform Support Engineers are PhysicsX’s first technical responders for enterprise customers and internal users of the Platform. You’ll own the path from intake to resolution: triage, first-pass investigation, customer updates, and, where you can’t fix it yourself, a high-quality escalation to Product, SRE, FDSE or Deployment Engineering. This isn’t a service desk. You’re building the repeatable front door into PhysicsX’s deeper technical capability.</p>
+<p><strong>What You’ll Do</strong>
+<em>Own it, investigate it, fix it where you can.</em>
+You’re the first engineer on every issue, and you own it until it’s closed, whether you resolve it yourself or bring in Product, SRE, FDSE or Deployment Engineering. Your goal is to resolve a growing share of issues without escalation, and to hand over a root-cause diagnosis rather than a symptom when you do escalate.</p>
+<ul>
+<li>Triage incoming issues, classify severity, and run the first-pass investigation across product, platform, infrastructure and customer environment to find where the problem most likely lies.</li>
+<li>Resolve what you can. When you can’t, hand over with the logs, events, config, timeline, what you’ve already tried, and a recommended next step.</li>
+<li>Work within a structured incident process: response targets, clean handovers, and post-mortems.</li>
+</ul>
+<p><em>Debug inside the platform.</em></p>
+<ul>
+<li>Navigate Kubernetes (EKS, AKS and others): inspect workloads, ingress, permissions and cluster health, read events and logs, and work out what’s failing and why. You don’t need to be a cluster admin, but you do need to know when to hand over.</li>
+<li>Use Linux, container and Helm knowledge, monitoring signals (logs, metrics, alerts, Prometheus-style) and cloud fundamentals (networking, compute, storage, IAM) to tell whether a symptom points at the application, the cluster or the cloud layer.</li>
+<li>Time-box investigations and escalate promptly when progress stalls.</li>
+</ul>
+<p><em>Work the GitOps way.</em></p>
+<ul>
+<li>Use the cluster to look and Git to change. Fixes go through reviewed pull requests (or a ready-to-review change handed to the owning team), because live edits get reverted by reconciliation (e.g. Argo CD) or drift from Git. Call out drift when you see it.</li>
+<li>When urgent action is needed to stabilise things (like restarting a workload), take it deliberately, record it on the ticket, and capture the lasting fix in Git.</li>
+</ul>
+<p><em>Communicate clearly.</em></p>
+<ul>
+<li>Give customers and internal stakeholders plain-language updates: what’s known, what isn’t, and what happens next.</li>
+<li>Coach customer engineers step by step when you can’t access their environment, as with air-gapped deployments.</li>
+<li>Keep a defensible priority order across competing issues, and say explicitly what’s being deprioritised, why, and when it will be revisited.</li>
+</ul>
+<p><em>Build the function.</em></p>
+<ul>
+<li>Write runbooks, capture repeatable fixes, and feed recurring issues back to Product and Platform teams so they’re fixed at the source.</li>
+<li>Work across SaaS, hosted/VPC and air-gapped deployments, and understand how release, scanning and promotion differ in each and what that means for resolution time.</li>
+<li>PhysicsX support is being stood up now, and tools (including ticketing) will change. Help shape what comes next.</li>
+<li>You’ll work with a globally distributed team. Coverage includes planned evening shifts and a weekend rota, with the pattern evolving as demand grows.</li>
+</ul>
+<p><strong>What We’re Looking For</strong>
+<em>Must have</em></p>
+<ul>
+<li>Clear communication with non-technical stakeholders, including during live incidents and when guiding someone remotely</li>
+<li>Sound triage and escalation judgement: distinguishing PX defects from deployment/config issues and customer-side dependencies, knowing what justifies out-of-hours contact, and staying calm when something is broken</li>
+<li>Working Kubernetes familiarity: investigating pods that won’t start or keep restarting, and knowing when to hand over</li>
+<li>A GitOps mindset: Git as source of truth, PR-based change, environment promotion (Argo CD experience helps, but the mindset matters more than the tool)</li>
+<li>Strong Linux and troubleshooting fundamentals</li>
+<li>Cloud fundamentals (networking, compute, storage, IAM) and comfort reading logs, metrics and alerts</li>
+<li>Comfort working across teams and with change in a fast-moving, new function</li>
+</ul>
+<p><em>Nice to have</em></p>
+<ul>
+<li>Experience with structured support or incident management (ITSM, severity classification, post-incident reviews)</li>
+<li>Hands-on Argo CD, Helm, Docker or YAML troubleshooting</li>
+<li>Deeper EKS/AKS experience</li>
+<li>Experience across SaaS, VPC and air-gapped deployments</li>
+<li>A habit of writing runbooks and improving playbooks</li>
+</ul>
+<p><em>What we use today (a snapshot, not a requirement):</em>
+Kubernetes, Argo CD, Docker, Helm, Prometheus-style monitoring, Linear for engineering work, Slack for coordination, and Zendesk for our ticketing platform.</p>
+<p><strong>What We Offer</strong>
+<strong>Build what actually matters</strong>
+Help shape an AI-native engineering company at a formative stage, tackling problems that genuinely matter for industry and society. This is work with real-world impact - and something you can be proud to stand behind.</p>
+<p><strong>Learn alongside exceptional people</strong>
+Work with a high-caliber, collaborative team of engineers, scientists, and operators who care deeply about doing great work, and about helping each other get better. We come from diverse backgrounds, but we share a commitment to operating at the highest level and addressing some of the most complex challenges out there. If you’re ambitious, thoughtful, and driven by impact, you’ll feel at home.</p>
+<p><strong>Influence over hierarchy</strong>
+We operate with a flat structure: good ideas win - wherever they come from. Questioning assumptions and challenging the status quo isn’t just welcomed, it’s expected.</p>
+<p><strong>Sustainable pace, long-term ambition</strong>
+Building meaningful technology is a marathon, not a sprint. We believe in balancing focused, ambitious work with a life beyond it.</p>
+<p>We value diversity and are committed to equal employment opportunity regardless of sex, race, religion, ethnicity, nationality, disability, age, sexual orientation or gender identity. We strongly encourage individuals from groups traditionally underrepresented in tech to apply. To help make a change, we sponsor bright women from disadvantaged backgrounds through their university degrees in science and mathematics.</p>
+<p>We collect diversity and inclusion data solely for the purpose of monitoring the effectiveness of our equal opportunities policies and ensuring compliance with employment and equality legislation. This information is confidential, used only in aggregate form, and will not influence the outcome of your application.</p>
+</div>
+    </div>
+
+    <footer>
+        <a href="https://github.com/milad-rasouli">Created by Milad Rasouli</a>
+    </footer>
+</div>
+
+<script>
+    (function(){
+        const el = document.getElementById('createdAt');
+        if(!el) return;
+        const ts = Number(el.textContent) * 1000;
+        const d = new Date(ts);
+        el.textContent = d.toLocaleString();
+    })();
+</script>
+</body>
+</html>
